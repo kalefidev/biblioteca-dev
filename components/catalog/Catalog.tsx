@@ -12,7 +12,7 @@ import { cardMeta } from "@/lib/catalog";
 import { dur, ease } from "@/lib/motion";
 import { Facets } from "./Facets";
 import { ADVANCED, MAIN, facetGroups, valueLabel } from "./groups";
-import { useFilterState } from "./useFilterState";
+import { FilterUrlSync, useFilterState } from "./useFilterState";
 
 const PAGE = 24;
 
@@ -49,8 +49,8 @@ export function Catalog({ lockedCategory }: { lockedCategory?: string }) {
   const shown = more.key === key ? more.n : PAGE;
   const visible = results.slice(0, shown);
 
-  // Os cards da primeira pintura substituem os do HTML do servidor: entram parados (animar daria um "piscar" e
-  // atrasaria o LCP, que só conta quando o card fica visível). Depois disso, quem entra anima.
+  // Os cards da primeira pintura vêm prontos no HTML do servidor: não animam (animar daria um "piscar" e atrasaria
+  // o LCP, que só conta quando o card fica visível). Depois disso, quem entra anima.
   const [mounted, setMounted] = useState(false);
   useEffect(() => {
     const id = requestAnimationFrame(() => setMounted(true));
@@ -78,6 +78,7 @@ export function Catalog({ lockedCategory }: { lockedCategory?: string }) {
 
   return (
     <div className="gap-10 lg:grid lg:grid-cols-[15rem_1fr]">
+      <FilterUrlSync />
       <aside aria-label={t.catalog.filters} className="hidden lg:block">
         <a href="#resultados" className="sr-only focus:not-sr-only focus:mb-3 focus:inline-flex focus:h-11 focus:items-center focus:rounded-lg focus:border focus:border-line focus:bg-surface focus:px-4 focus:text-sm">
           {t.catalog.skipFilters}

@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import { Suspense } from "react";
 import { Catalog } from "@/components/catalog/Catalog";
-import { CatalogSkeleton } from "@/components/catalog/CatalogSkeleton";
 import { Link } from "@/components/Link";
 import { categories } from "@/lib/catalog";
 import { full } from "@/lib/catalog-i18n";
@@ -41,9 +39,7 @@ export default async function CategoryPage({ params }: PageProps<"/[lang]/c/[cat
         {category.label}
       </h1>
       <p className="mt-3 mb-10 text-fg-muted">{t.catalog.results(count)}</p>
-      <Suspense fallback={<CatalogSkeleton lockedCategory={category.id} />}>
-        <Catalog lockedCategory={category.id} />
-      </Suspense>
+      <Catalog lockedCategory={category.id} />
     </section>
   );
 }

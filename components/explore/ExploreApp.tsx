@@ -6,7 +6,7 @@ import { Link } from '@/components/Link'
 import { useFull } from '@/components/useFull'
 import { Facets } from '@/components/catalog/Facets'
 import { ADVANCED, MAIN, facetGroups } from '@/components/catalog/groups'
-import { useFilterState } from '@/components/catalog/useFilterState'
+import { FilterUrlSync, useFilterState } from '@/components/catalog/useFilterState'
 import { Dialog } from '@/components/ui/Dialog'
 import { activeFilterCount, runQuery, serializeState } from '@/lib/search'
 import { clusters, nodeBySlug, nodes } from '@/lib/data'
@@ -45,6 +45,7 @@ export default function ExploreApp() {
 
   return (
     <main id="content" className="fixed inset-0 overflow-hidden bg-bg text-fg" data-theme="dark">
+      <FilterUrlSync />
       {flat ? (
         <Fallback2D sel={sel} lit={lit} onTool={pickTool} onCat={pickCat} />
       ) : (
