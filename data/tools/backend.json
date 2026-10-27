@@ -62,5 +62,245 @@
     "kind": "language", "pricing": "open-source", "license": "MIT", "platforms": ["web", "cloud"], "languages": ["javascript", "typescript"],
     "tags": ["api", "query"], "url": "https://graphql.org", "repo": "graphql/graphql-js", "npm": "graphql",
     "featured": false, "alternatives": ["trpc"]
+  },
+  {
+    "slug": "deno", "name": "Deno", "category": "backend", "subcategory": "Runtimes",
+    "tagline": "Runtime seguro para JavaScript e TypeScript, com TypeScript nativo.",
+    "description": "Runtime criado pelo autor do Node.js, com TypeScript sem configuração, permissões explícitas, biblioteca padrão e ferramentas embutidas.",
+    "kind": "runtime", "pricing": "open-source", "license": "MIT", "platforms": ["cli"], "languages": ["javascript", "typescript"],
+    "tags": ["runtime", "ts", "secure"], "url": "https://deno.com", "repo": "denoland/deno",
+    "featured": false, "alternatives": ["nodejs", "bun"]
+  },
+  {
+    "slug": "flask", "name": "Flask", "category": "backend", "subcategory": "Frameworks",
+    "tagline": "Microframework Python simples e flexível.",
+    "description": "Microframework web em Python com núcleo pequeno e extensões opcionais, que deixa você escolher as peças do projeto.",
+    "kind": "framework", "pricing": "open-source", "license": "BSD-3-Clause", "platforms": ["web", "cloud"], "languages": ["python"],
+    "tags": ["python", "micro", "http"], "url": "https://flask.palletsprojects.com", "repo": "pallets/flask",
+    "featured": false, "alternatives": ["fastapi", "django"]
+  },
+  {
+    "slug": "nestjs", "name": "NestJS", "category": "backend", "subcategory": "Frameworks",
+    "tagline": "Framework Node com arquitetura modular, inspirado no Angular.",
+    "description": "Framework para backends em Node.js e TypeScript com módulos, injeção de dependência e decoradores, rodando sobre Express ou Fastify.",
+    "kind": "framework", "pricing": "open-source", "license": "MIT", "platforms": ["web", "cloud"], "languages": ["typescript"],
+    "tags": ["node", "ts", "framework"], "url": "https://nestjs.com", "repo": "nestjs/nest", "npm": "@nestjs/core",
+    "featured": false, "alternatives": ["express", "fastify"]
+  },
+  {
+    "slug": "fastify", "name": "Fastify", "category": "backend", "subcategory": "Frameworks",
+    "tagline": "Framework HTTP para Node focado em desempenho e validação.",
+    "description": "Framework web para Node.js com baixo overhead, validação por JSON Schema, sistema de plugins e logging integrado.",
+    "kind": "framework", "pricing": "open-source", "license": "MIT", "platforms": ["web", "cloud"], "languages": ["javascript", "typescript"],
+    "tags": ["node", "http", "fast"], "url": "https://fastify.dev", "repo": "fastify/fastify", "npm": "fastify",
+    "featured": false, "alternatives": ["express", "hono"]
+  },
+  {
+    "slug": "laravel", "name": "Laravel", "category": "backend", "subcategory": "Frameworks",
+    "tagline": "Framework PHP elegante e completo.",
+    "description": "Framework PHP com ORM (Eloquent), filas, autenticação, migrações e um ecossistema amplo, conhecido pela boa experiência de desenvolvimento.",
+    "kind": "framework", "pricing": "open-source", "license": "MIT", "platforms": ["web", "cloud"], "languages": ["php"],
+    "tags": ["php", "framework", "full-stack"], "url": "https://laravel.com", "repo": "laravel/framework",
+    "featured": false, "alternatives": ["rails", "django"]
+  },
+  {
+    "slug": "rails", "name": "Ruby on Rails", "category": "backend", "subcategory": "Frameworks",
+    "tagline": "Framework Ruby de convenção sobre configuração.",
+    "description": "Framework web completo em Ruby, com ORM, rotas, jobs e geradores, que popularizou a ideia de convenção sobre configuração.",
+    "kind": "framework", "pricing": "open-source", "license": "MIT", "platforms": ["web", "cloud"], "languages": ["ruby"],
+    "tags": ["ruby", "framework", "full-stack"], "url": "https://rubyonrails.org", "repo": "rails/rails",
+    "featured": false, "alternatives": ["django", "laravel"]
+  },
+  {
+    "slug": "spring-boot", "name": "Spring Boot", "category": "backend", "subcategory": "Frameworks",
+    "tagline": "Padrão corporativo para serviços Java e Kotlin.",
+    "description": "Framework que simplifica a criação de aplicações Spring prontas para produção, com configuração automática, servidor embutido e métricas.",
+    "kind": "framework", "pricing": "open-source", "license": "Apache-2.0", "platforms": ["web", "cloud"], "languages": ["java", "kotlin"],
+    "tags": ["java", "enterprise", "framework"], "url": "https://spring.io/projects/spring-boot", "repo": "spring-projects/spring-boot",
+    "featured": false, "alternatives": ["aspnet-core"]
+  },
+  {
+    "slug": "aspnet-core", "name": "ASP.NET Core", "category": "backend", "subcategory": "Frameworks",
+    "tagline": "Framework web da Microsoft para C#, multiplataforma e rápido.",
+    "description": "Framework para APIs e aplicações web em C# e .NET, multiplataforma, com alto desempenho e integração forte com o ecossistema Microsoft.",
+    "kind": "framework", "pricing": "open-source", "license": "MIT", "platforms": ["web", "cloud"], "languages": ["csharp"],
+    "tags": ["dotnet", "framework", "microsoft"], "url": "https://dotnet.microsoft.com/apps/aspnet", "repo": "dotnet/aspnetcore",
+    "featured": false, "alternatives": ["spring-boot"]
+  },
+  {
+    "slug": "gin", "name": "Gin", "category": "backend", "subcategory": "Frameworks",
+    "tagline": "Framework HTTP rápido e popular para Go.",
+    "description": "Framework web em Go com roteador de alto desempenho, middlewares e validação de dados, bastante usado para APIs REST.",
+    "kind": "framework", "pricing": "open-source", "license": "MIT", "platforms": ["web", "cloud"], "languages": ["go"],
+    "tags": ["go", "http", "api"], "url": "https://gin-gonic.com", "repo": "gin-gonic/gin",
+    "featured": false, "alternatives": ["express"]
+  },
+  {
+    "slug": "axum", "name": "Axum", "category": "backend", "subcategory": "Frameworks",
+    "tagline": "Framework web ergonômico para Rust, sobre Tokio e Tower.",
+    "description": "Framework web em Rust, modular e assíncrono, construído sobre Tokio, Hyper e Tower, com extratores tipados para requisições.",
+    "kind": "framework", "pricing": "open-source", "license": "MIT", "platforms": ["web", "cloud"], "languages": ["rust"],
+    "tags": ["rust", "http", "async"], "url": "https://github.com/tokio-rs/axum", "repo": "tokio-rs/axum",
+    "featured": false, "alternatives": ["gin"]
+  },
+  {
+    "slug": "phoenix", "name": "Phoenix", "category": "backend", "subcategory": "Frameworks",
+    "tagline": "Framework Elixir para apps em tempo real e muito concorrentes.",
+    "description": "Framework web em Elixir com canais, LiveView para interfaces em tempo real e a robustez da máquina virtual Erlang.",
+    "kind": "framework", "pricing": "open-source", "license": "MIT", "platforms": ["web", "cloud"], "languages": ["elixir"],
+    "tags": ["elixir", "realtime", "framework"], "url": "https://www.phoenixframework.org", "repo": "phoenixframework/phoenix",
+    "featured": false, "alternatives": ["rails", "django"]
+  },
+  {
+    "slug": "go", "name": "Go (Golang)", "category": "backend", "subcategory": "Linguagens",
+    "tagline": "Linguagem compilada simples, ótima para serviços e ferramentas.",
+    "description": "Linguagem do Google com compilação rápida, concorrência embutida (goroutines) e binários únicos, muito usada em infraestrutura e APIs.",
+    "kind": "language", "pricing": "open-source", "license": "BSD-3-Clause", "platforms": ["cli", "cloud"], "languages": ["go"],
+    "tags": ["go", "compiled", "concurrency"], "url": "https://go.dev", "repo": "golang/go",
+    "featured": false, "alternatives": ["rust"]
+  },
+  {
+    "slug": "rust", "name": "Rust", "category": "backend", "subcategory": "Linguagens",
+    "tagline": "Linguagem de sistemas com segurança de memória e alto desempenho.",
+    "description": "Linguagem compilada que garante segurança de memória sem coletor de lixo, com desempenho próximo ao de C e C++.",
+    "kind": "language", "pricing": "open-source", "license": "MIT OR Apache-2.0", "platforms": ["cli", "cloud", "web"], "languages": ["rust"],
+    "tags": ["rust", "compiled", "safe"], "url": "https://www.rust-lang.org", "repo": "rust-lang/rust",
+    "featured": false, "alternatives": ["go"]
+  },
+  {
+    "slug": "python", "name": "Python", "category": "backend", "subcategory": "Linguagens",
+    "tagline": "Linguagem versátil, líder em dados, IA e automação.",
+    "description": "Linguagem de sintaxe clara, usada em web, automação, ciência de dados e IA, com uma biblioteca padrão ampla e um ecossistema gigante.",
+    "kind": "language", "pricing": "open-source", "license": "PSF-2.0", "platforms": ["cli", "cloud", "web"], "languages": ["python"],
+    "tags": ["python", "scripting", "data"], "url": "https://www.python.org", "repo": "python/cpython",
+    "featured": false, "alternatives": []
+  },
+  {
+    "slug": "authjs", "name": "Auth.js", "category": "backend", "subcategory": "Autenticação",
+    "tagline": "Autenticação para apps web com dezenas de provedores prontos.",
+    "description": "Biblioteca de autenticação (ex-NextAuth) com login social, e-mail e credenciais, sessões e adaptadores de banco para vários frameworks.",
+    "kind": "library", "pricing": "open-source", "license": "ISC", "platforms": ["web"], "languages": ["typescript"],
+    "tags": ["auth", "oauth", "node"], "url": "https://authjs.dev", "repo": "nextauthjs/next-auth", "npm": "next-auth",
+    "featured": false, "alternatives": ["keycloak"]
+  },
+  {
+    "slug": "keycloak", "name": "Keycloak", "category": "backend", "subcategory": "Autenticação",
+    "tagline": "Servidor de identidade open source com SSO e OAuth/OIDC.",
+    "description": "Plataforma de gestão de identidade e acesso com login único, OAuth 2.0, OpenID Connect, SAML e administração de usuários, auto-hospedável.",
+    "kind": "service", "pricing": "open-source", "license": "Apache-2.0", "platforms": ["web", "cloud"], "languages": ["java"],
+    "tags": ["auth", "sso", "self-hosted"], "url": "https://www.keycloak.org", "repo": "keycloak/keycloak",
+    "featured": false, "alternatives": ["authjs"]
+  },
+  {
+    "slug": "openapi-generator", "name": "OpenAPI Generator", "category": "backend", "subcategory": "APIs",
+    "tagline": "Gera clientes e servidores a partir de uma especificação OpenAPI.",
+    "description": "Gera SDKs de cliente, stubs de servidor e documentação em dezenas de linguagens a partir de um arquivo OpenAPI.",
+    "kind": "cli", "pricing": "open-source", "license": "Apache-2.0", "platforms": ["cli"], "languages": ["java"],
+    "tags": ["openapi", "codegen", "api"], "url": "https://openapi-generator.tech", "repo": "OpenAPITools/openapi-generator", "npm": "@openapitools/openapi-generator-cli",
+    "featured": false, "alternatives": ["trpc"]
+  },
+  {
+    "slug": "grpc", "name": "gRPC", "category": "backend", "subcategory": "APIs",
+    "tagline": "RPC de alto desempenho com contratos em Protocol Buffers.",
+    "description": "Framework de chamadas remotas do Google, com contratos em Protobuf, streaming bidirecional e geração de código para várias linguagens.",
+    "kind": "framework", "pricing": "open-source", "license": "Apache-2.0", "platforms": ["cloud", "cli"], "languages": [],
+    "tags": ["rpc", "api", "protobuf"], "url": "https://grpc.io", "repo": "grpc/grpc",
+    "featured": false, "alternatives": ["graphql", "trpc"]
+  },
+  {
+    "slug": "rabbitmq", "name": "RabbitMQ", "category": "backend", "subcategory": "Mensageria e jobs",
+    "tagline": "Broker de mensagens maduro, com filas e roteamento flexível.",
+    "description": "Broker de mensagens que implementa AMQP, com filas, trocas e confirmações, usado para desacoplar serviços e distribuir trabalho.",
+    "kind": "service", "pricing": "open-source", "license": "MPL-2.0", "platforms": ["cloud"], "languages": [],
+    "tags": ["queue", "messaging", "amqp"], "url": "https://www.rabbitmq.com", "repo": "rabbitmq/rabbitmq-server",
+    "featured": false, "alternatives": ["kafka"]
+  },
+  {
+    "slug": "kafka", "name": "Apache Kafka", "category": "backend", "subcategory": "Mensageria e jobs",
+    "tagline": "Plataforma de streaming de eventos distribuída e durável.",
+    "description": "Plataforma distribuída para publicar, guardar e processar fluxos de eventos em grande escala, com retenção e reprocessamento.",
+    "kind": "service", "pricing": "open-source", "license": "Apache-2.0", "platforms": ["cloud"], "languages": ["java"],
+    "tags": ["streaming", "events", "messaging"], "url": "https://kafka.apache.org", "repo": "apache/kafka",
+    "featured": false, "alternatives": ["rabbitmq"]
+  },
+  {
+    "slug": "bullmq", "name": "BullMQ", "category": "backend", "subcategory": "Mensageria e jobs",
+    "tagline": "Filas de jobs para Node.js sobre Redis.",
+    "description": "Biblioteca de filas com Redis para Node.js, com jobs atrasados, repetição, prioridades, limites de taxa e processamento em paralelo.",
+    "kind": "library", "pricing": "open-source", "license": "MIT", "platforms": ["cloud"], "languages": ["typescript"],
+    "tags": ["queue", "redis", "node"], "url": "https://bullmq.io", "repo": "taskforcesh/bullmq", "npm": "bullmq",
+    "featured": false, "alternatives": ["rabbitmq", "temporal"]
+  },
+  {
+    "slug": "zod", "name": "Zod", "category": "backend", "subcategory": "Validação",
+    "tagline": "Validação de dados com schemas e tipos TypeScript inferidos.",
+    "description": "Biblioteca de schemas para TypeScript que valida dados em tempo de execução e infere os tipos estáticos a partir do mesmo schema.",
+    "kind": "library", "pricing": "open-source", "license": "MIT", "platforms": ["web", "cloud"], "languages": ["typescript"],
+    "tags": ["validation", "ts", "schema"], "url": "https://zod.dev", "repo": "colinhacks/zod", "npm": "zod",
+    "featured": false, "alternatives": ["pydantic"]
+  },
+  {
+    "slug": "pydantic", "name": "Pydantic", "category": "backend", "subcategory": "Validação",
+    "tagline": "Validação de dados em Python usando type hints.",
+    "description": "Biblioteca que valida e converte dados em Python a partir de anotações de tipo, base do FastAPI e de muitas ferramentas de IA.",
+    "kind": "library", "pricing": "open-source", "license": "MIT", "platforms": ["cloud", "cli"], "languages": ["python"],
+    "tags": ["validation", "python", "types"], "url": "https://docs.pydantic.dev", "repo": "pydantic/pydantic",
+    "featured": false, "alternatives": ["zod", "fastapi"]
+  },
+  {
+    "slug": "socket-io", "name": "Socket.IO", "category": "backend", "subcategory": "Mensageria e jobs",
+    "tagline": "Comunicação em tempo real bidirecional, com reconexão automática.",
+    "description": "Biblioteca para comunicação em tempo real entre cliente e servidor, sobre WebSocket com fallback, salas, reconexão e confirmações.",
+    "kind": "library", "pricing": "open-source", "license": "MIT", "platforms": ["web", "cloud"], "languages": ["javascript", "typescript"],
+    "tags": ["realtime", "websocket", "node"], "url": "https://socket.io", "repo": "socketio/socket.io", "npm": "socket.io",
+    "featured": false, "alternatives": []
+  },
+  {
+    "slug": "temporal", "name": "Temporal", "category": "backend", "subcategory": "Mensageria e jobs",
+    "tagline": "Workflows duráveis: código que sobrevive a falhas e reinícios.",
+    "description": "Plataforma de execução durável que retoma workflows longos exatamente de onde pararam, com retentativas, timers e estado gerenciados.",
+    "kind": "service", "pricing": "open-source", "license": "MIT", "platforms": ["cloud"], "languages": ["go", "typescript", "java"],
+    "tags": ["workflow", "durable", "orchestration"], "url": "https://temporal.io", "repo": "temporalio/temporal",
+    "featured": false, "alternatives": ["bullmq"]
+  },
+  {
+    "slug": "strapi", "name": "Strapi", "category": "backend", "subcategory": "CMS e backend pronto",
+    "tagline": "CMS headless em Node, com painel e API prontos.",
+    "description": "CMS headless open source em que você modela o conteúdo pelo painel e recebe uma API REST ou GraphQL pronta.",
+    "kind": "service", "pricing": "open-source", "license": "MIT", "platforms": ["web", "cloud"], "languages": ["javascript", "typescript"],
+    "tags": ["cms", "headless", "node"], "url": "https://strapi.io", "repo": "strapi/strapi", "npm": "@strapi/strapi",
+    "featured": false, "alternatives": ["pocketbase", "supabase"]
+  },
+  {
+    "slug": "pocketbase", "name": "PocketBase", "category": "backend", "subcategory": "CMS e backend pronto",
+    "tagline": "Backend completo em um único arquivo, com SQLite, auth e painel.",
+    "description": "Backend open source em um único executável Go, com banco SQLite, autenticação, armazenamento de arquivos, tempo real e painel de administração.",
+    "kind": "service", "pricing": "open-source", "license": "MIT", "platforms": ["web", "cloud"], "languages": ["go"],
+    "tags": ["baas", "sqlite", "self-hosted"], "url": "https://pocketbase.io", "repo": "pocketbase/pocketbase",
+    "featured": false, "alternatives": ["supabase", "strapi"]
+  },
+  {
+    "slug": "swagger-ui", "name": "Swagger UI", "category": "backend", "subcategory": "APIs",
+    "tagline": "Documentação interativa de APIs a partir de OpenAPI.",
+    "description": "Gera uma página de documentação interativa a partir de uma especificação OpenAPI, em que dá para testar os endpoints no próprio navegador.",
+    "kind": "library", "pricing": "open-source", "license": "Apache-2.0", "platforms": ["web"], "languages": ["javascript"],
+    "tags": ["openapi", "docs", "api"], "url": "https://swagger.io/tools/swagger-ui", "repo": "swagger-api/swagger-ui", "npm": "swagger-ui",
+    "featured": false, "alternatives": ["openapi-generator"]
+  },
+  {
+    "slug": "apollo-server", "name": "Apollo Server", "category": "backend", "subcategory": "APIs",
+    "tagline": "Servidor GraphQL para Node.js, popular e extensível.",
+    "description": "Servidor GraphQL para Node.js que funciona com vários frameworks HTTP, com cache, plugins e boas ferramentas de desenvolvimento.",
+    "kind": "library", "pricing": "open-source", "license": "MIT", "platforms": ["cloud"], "languages": ["typescript", "javascript"],
+    "tags": ["graphql", "node", "api"], "url": "https://www.apollographql.com/docs/apollo-server", "repo": "apollographql/apollo-server", "npm": "@apollo/server",
+    "featured": false, "alternatives": ["graphql"]
+  },
+  {
+    "slug": "elysia", "name": "Elysia", "category": "backend", "subcategory": "Frameworks",
+    "tagline": "Framework para Bun com tipos de ponta a ponta.",
+    "description": "Framework web pensado para o Bun, com validação integrada e inferência de tipos de ponta a ponta entre servidor e cliente.",
+    "kind": "framework", "pricing": "open-source", "license": "MIT", "platforms": ["web", "cloud"], "languages": ["typescript"],
+    "tags": ["bun", "http", "ts"], "url": "https://elysiajs.com", "repo": "elysiajs/elysia", "npm": "elysia",
+    "featured": false, "alternatives": ["hono", "fastify"]
   }
 ]

@@ -1,8 +1,11 @@
-import { pt } from "@/messages/pt-BR";
+"use client";
+
+import { useI18n } from "@/components/I18nProvider";
 
 // Um bloco cinza que pulsa; o motion-reduce do globals.css já neutraliza a animação.
 export function Skeleton({ className = "" }: { className?: string }) {
-  return <div role="status" aria-label={pt.states.loading} className={`animate-pulse rounded-md bg-surface-2 ${className}`} />;
+  const { t } = useI18n();
+  return <div role="status" aria-label={t.states.loading} className={`animate-pulse rounded-md bg-surface-2 ${className}`} />;
 }
 
 export function ToolCardSkeleton() {

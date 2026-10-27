@@ -1,0 +1,36 @@
+# Atualiza data/metrics.json toda segunda e commita se mudou; a Vercel faz o redeploy do push.
+# O GITHUB_TOKEN embutido basta (só lê repositórios públicos); não precisa criar segredo.
+name: enrich
+
+on:
+  schedule:
+    - cron: '17 6 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency: enrich
+
+jobs:
+  enrich:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - run: npm run enrich
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - run: npm run validate
+      - name: Commit se houve mudança
+        run: |
+          git diff --quiet data/metrics.json && exit 0
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/metrics.json
+          git commit -m 'chore: atualiza métricas (enrich)'
+          git push

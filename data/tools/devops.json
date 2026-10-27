@@ -62,5 +62,245 @@
     "kind": "app", "pricing": "open-source", "license": "AGPL-3.0", "platforms": ["web", "cloud"], "languages": [],
     "tags": ["monitoramento"], "url": "https://grafana.com", "repo": "grafana/grafana",
     "featured": false, "alternatives": []
+  },
+  {
+    "slug": "netlify", "name": "Netlify", "category": "devops", "subcategory": "Hospedagem",
+    "tagline": "Hospedagem e deploy de sites e frontends, com previews.",
+    "description": "Plataforma para publicar sites estáticos e frontends com deploy a cada push, previews de PR, funções serverless e formulários.",
+    "kind": "service", "pricing": "freemium", "license": "Proprietary", "platforms": ["cloud", "web"], "languages": [],
+    "tags": ["hosting", "jamstack", "cdn"], "url": "https://www.netlify.com",
+    "featured": false, "alternatives": ["vercel", "cloudflare"]
+  },
+  {
+    "slug": "railway", "name": "Railway", "category": "devops", "subcategory": "Hospedagem",
+    "tagline": "Plataforma para publicar apps e bancos com poucos cliques.",
+    "description": "PaaS que publica aplicações, bancos de dados e serviços direto do repositório, com cobrança por uso e interface visual.",
+    "kind": "service", "pricing": "paid", "license": "Proprietary", "platforms": ["cloud"], "languages": [],
+    "tags": ["paas", "hosting", "deploy"], "url": "https://railway.com",
+    "featured": false, "alternatives": ["render", "fly-io"]
+  },
+  {
+    "slug": "render", "name": "Render", "category": "devops", "subcategory": "Hospedagem",
+    "tagline": "PaaS simples para sites, APIs, bancos e jobs agendados.",
+    "description": "Plataforma de hospedagem com deploy a partir do Git para serviços web, workers, cron jobs e bancos Postgres gerenciados.",
+    "kind": "service", "pricing": "freemium", "license": "Proprietary", "platforms": ["cloud"], "languages": [],
+    "tags": ["paas", "hosting", "deploy"], "url": "https://render.com",
+    "featured": false, "alternatives": ["railway", "fly-io"]
+  },
+  {
+    "slug": "fly-io", "name": "Fly.io", "category": "devops", "subcategory": "Hospedagem",
+    "tagline": "Roda containers perto dos usuários, em várias regiões.",
+    "description": "Plataforma que executa aplicações em containers (microVMs) em dezenas de regiões, com CLI própria, volumes e redes privadas.",
+    "kind": "service", "pricing": "paid", "license": "Apache-2.0", "platforms": ["cloud"], "languages": [],
+    "tags": ["hosting", "edge", "containers"], "url": "https://fly.io", "repo": "superfly/flyctl",
+    "featured": false, "alternatives": ["railway", "render"]
+  },
+  {
+    "slug": "digitalocean", "name": "DigitalOcean", "category": "devops", "subcategory": "Nuvem",
+    "tagline": "Nuvem simples, com VPS, bancos e Kubernetes gerenciados.",
+    "description": "Provedor de nuvem focado em simplicidade, com droplets (VPS), bancos gerenciados, Kubernetes, armazenamento e preços previsíveis.",
+    "kind": "service", "pricing": "paid", "license": "Proprietary", "platforms": ["cloud"], "languages": [],
+    "tags": ["cloud", "vps", "hosting"], "url": "https://www.digitalocean.com",
+    "featured": false, "alternatives": ["aws", "google-cloud"]
+  },
+  {
+    "slug": "google-cloud", "name": "Google Cloud", "category": "devops", "subcategory": "Nuvem",
+    "tagline": "Nuvem do Google, forte em dados, IA e Kubernetes.",
+    "description": "Plataforma de nuvem com computação, bancos, análise de dados (BigQuery), IA e Kubernetes (GKE), com camada gratuita limitada.",
+    "kind": "service", "pricing": "freemium", "license": "Proprietary", "platforms": ["cloud"], "languages": [],
+    "tags": ["cloud", "gcp", "google"], "url": "https://cloud.google.com",
+    "featured": false, "alternatives": ["aws", "azure"]
+  },
+  {
+    "slug": "azure", "name": "Microsoft Azure", "category": "devops", "subcategory": "Nuvem",
+    "tagline": "Nuvem da Microsoft, integrada a .NET, Windows e Microsoft 365.",
+    "description": "Plataforma de nuvem com ampla gama de serviços, forte integração com o ecossistema Microsoft e opções híbridas para empresas.",
+    "kind": "service", "pricing": "freemium", "license": "Proprietary", "platforms": ["cloud"], "languages": [],
+    "tags": ["cloud", "microsoft"], "url": "https://azure.microsoft.com",
+    "featured": false, "alternatives": ["aws", "google-cloud"]
+  },
+  {
+    "slug": "nginx", "name": "NGINX", "category": "devops", "subcategory": "Servidores web e proxy",
+    "tagline": "Servidor web e proxy reverso de alto desempenho.",
+    "description": "Servidor web, proxy reverso e balanceador de carga leve e muito rápido, presente em grande parte da internet.",
+    "kind": "app", "pricing": "open-source", "license": "BSD-2-Clause", "platforms": ["cloud", "cli"], "languages": [],
+    "tags": ["web-server", "proxy", "load-balancer"], "url": "https://nginx.org", "repo": "nginx/nginx",
+    "featured": false, "alternatives": ["caddy", "traefik"]
+  },
+  {
+    "slug": "caddy", "name": "Caddy", "category": "devops", "subcategory": "Servidores web e proxy",
+    "tagline": "Servidor web com HTTPS automático e configuração simples.",
+    "description": "Servidor web e proxy reverso em Go que obtém e renova certificados HTTPS automaticamente, com arquivo de configuração enxuto.",
+    "kind": "app", "pricing": "open-source", "license": "Apache-2.0", "platforms": ["cloud", "cli"], "languages": ["go"],
+    "tags": ["web-server", "https", "proxy"], "url": "https://caddyserver.com", "repo": "caddyserver/caddy",
+    "featured": false, "alternatives": ["nginx", "traefik"]
+  },
+  {
+    "slug": "traefik", "name": "Traefik", "category": "devops", "subcategory": "Servidores web e proxy",
+    "tagline": "Proxy reverso que se configura sozinho com Docker e Kubernetes.",
+    "description": "Proxy reverso e balanceador que descobre serviços automaticamente em Docker, Kubernetes e outros orquestradores, com HTTPS automático.",
+    "kind": "app", "pricing": "open-source", "license": "MIT", "platforms": ["cloud"], "languages": ["go"],
+    "tags": ["proxy", "containers", "ingress"], "url": "https://traefik.io", "repo": "traefik/traefik",
+    "featured": false, "alternatives": ["nginx", "caddy"]
+  },
+  {
+    "slug": "helm", "name": "Helm", "category": "devops", "subcategory": "Containers",
+    "tagline": "Gerenciador de pacotes (charts) para Kubernetes.",
+    "description": "Empacota aplicações Kubernetes em charts parametrizáveis, facilitando instalar, atualizar e reverter versões em clusters.",
+    "kind": "cli", "pricing": "open-source", "license": "Apache-2.0", "platforms": ["cli"], "languages": ["go"],
+    "tags": ["kubernetes", "packages"], "url": "https://helm.sh", "repo": "helm/helm",
+    "featured": false, "alternatives": []
+  },
+  {
+    "slug": "argo-cd", "name": "Argo CD", "category": "devops", "subcategory": "CI/CD",
+    "tagline": "Entrega contínua GitOps para Kubernetes.",
+    "description": "Mantém o estado do cluster Kubernetes sincronizado com manifests em um repositório Git, mostrando diferenças e permitindo reverter.",
+    "kind": "app", "pricing": "open-source", "license": "Apache-2.0", "platforms": ["cloud"], "languages": ["go"],
+    "tags": ["gitops", "kubernetes", "cd"], "url": "https://argo-cd.readthedocs.io", "repo": "argoproj/argo-cd",
+    "featured": false, "alternatives": []
+  },
+  {
+    "slug": "ansible", "name": "Ansible", "category": "devops", "subcategory": "Infraestrutura",
+    "tagline": "Automação de configuração e servidores, sem agentes.",
+    "description": "Ferramenta de automação que configura servidores e implanta aplicações com playbooks em YAML, sem instalar agentes nas máquinas.",
+    "kind": "cli", "pricing": "open-source", "license": "GPL-3.0", "platforms": ["cli"], "languages": ["python"],
+    "tags": ["automation", "config", "iac"], "url": "https://www.ansible.com", "repo": "ansible/ansible",
+    "featured": false, "alternatives": ["terraform"]
+  },
+  {
+    "slug": "pulumi", "name": "Pulumi", "category": "devops", "subcategory": "Infraestrutura",
+    "tagline": "Infraestrutura como código em TypeScript, Python, Go e outras linguagens.",
+    "description": "Descreve infraestrutura de nuvem usando linguagens de programação comuns, com loops, funções e testes, em vez de uma linguagem declarativa própria.",
+    "kind": "cli", "pricing": "open-source", "license": "Apache-2.0", "platforms": ["cli", "cloud"], "languages": ["typescript", "python", "go"],
+    "tags": ["iac", "cloud"], "url": "https://www.pulumi.com", "repo": "pulumi/pulumi",
+    "featured": false, "alternatives": ["terraform", "opentofu"]
+  },
+  {
+    "slug": "opentofu", "name": "OpenTofu", "category": "devops", "subcategory": "Infraestrutura",
+    "tagline": "Fork open source do Terraform, mantido pela Linux Foundation.",
+    "description": "Ferramenta de infraestrutura como código compatível com o Terraform, criada após a mudança de licença, com governança aberta.",
+    "kind": "cli", "pricing": "open-source", "license": "MPL-2.0", "platforms": ["cli"], "languages": ["go"],
+    "tags": ["iac", "terraform"], "url": "https://opentofu.org", "repo": "opentofu/opentofu",
+    "featured": false, "alternatives": ["terraform", "pulumi"]
+  },
+  {
+    "slug": "prometheus", "name": "Prometheus", "category": "devops", "subcategory": "Observabilidade",
+    "tagline": "Coleta e armazena métricas, com alertas e linguagem PromQL.",
+    "description": "Sistema de monitoramento que coleta métricas por pull, as armazena como séries temporais e permite consultas e alertas com PromQL.",
+    "kind": "service", "pricing": "open-source", "license": "Apache-2.0", "platforms": ["cloud"], "languages": ["go"],
+    "tags": ["metrics", "monitoring", "alerts"], "url": "https://prometheus.io", "repo": "prometheus/prometheus",
+    "featured": false, "alternatives": ["grafana"]
+  },
+  {
+    "slug": "loki", "name": "Grafana Loki", "category": "devops", "subcategory": "Observabilidade",
+    "tagline": "Agregação de logs barata, inspirada no Prometheus.",
+    "description": "Sistema de logs que indexa só rótulos em vez do texto completo, o que reduz custo e combina com o Grafana e o Prometheus.",
+    "kind": "service", "pricing": "open-source", "license": "AGPL-3.0", "platforms": ["cloud"], "languages": ["go"],
+    "tags": ["logs", "monitoring"], "url": "https://grafana.com/oss/loki", "repo": "grafana/loki",
+    "featured": false, "alternatives": ["grafana", "prometheus"]
+  },
+  {
+    "slug": "opentelemetry", "name": "OpenTelemetry", "category": "devops", "subcategory": "Observabilidade",
+    "tagline": "Padrão aberto para traces, métricas e logs, sem prender a um fornecedor.",
+    "description": "Conjunto de APIs, SDKs e um coletor para instrumentar aplicações e enviar traces, métricas e logs a qualquer backend de observabilidade.",
+    "kind": "framework", "pricing": "open-source", "license": "Apache-2.0", "platforms": ["cloud"], "languages": [],
+    "tags": ["tracing", "metrics", "logs"], "url": "https://opentelemetry.io", "repo": "open-telemetry/opentelemetry-collector",
+    "featured": false, "alternatives": []
+  },
+  {
+    "slug": "datadog", "name": "Datadog", "category": "devops", "subcategory": "Observabilidade",
+    "tagline": "Plataforma de observabilidade completa, como serviço.",
+    "description": "Serviço gerenciado que reúne métricas, logs, traces, monitoramento de usuário e segurança em uma só plataforma.",
+    "kind": "service", "pricing": "paid", "license": "Proprietary", "platforms": ["cloud"], "languages": [],
+    "tags": ["monitoring", "apm", "saas"], "url": "https://www.datadoghq.com",
+    "featured": false, "alternatives": ["grafana"]
+  },
+  {
+    "slug": "podman", "name": "Podman", "category": "devops", "subcategory": "Containers",
+    "tagline": "Containers sem daemon e sem root, compatível com o Docker.",
+    "description": "Motor de containers compatível com a CLI do Docker, que roda sem daemon central e permite containers sem privilégios de root.",
+    "kind": "cli", "pricing": "open-source", "license": "Apache-2.0", "platforms": ["cli", "desktop"], "languages": ["go"],
+    "tags": ["containers", "rootless"], "url": "https://podman.io", "repo": "containers/podman",
+    "featured": false, "alternatives": ["docker"]
+  },
+  {
+    "slug": "docker-compose", "name": "Docker Compose", "category": "devops", "subcategory": "Containers",
+    "tagline": "Define e sobe vários containers com um arquivo YAML.",
+    "description": "Ferramenta que descreve uma aplicação com vários serviços (app, banco, cache) em um arquivo YAML e sobe tudo com um comando.",
+    "kind": "cli", "pricing": "open-source", "license": "Apache-2.0", "platforms": ["cli"], "languages": ["go"],
+    "tags": ["containers", "yaml", "dev"], "url": "https://docs.docker.com/compose", "repo": "docker/compose",
+    "featured": false, "alternatives": ["kubernetes"]
+  },
+  {
+    "slug": "k3s", "name": "K3s", "category": "devops", "subcategory": "Containers",
+    "tagline": "Kubernetes leve, em um único binário, para borda e servidores pequenos.",
+    "description": "Distribuição certificada do Kubernetes, empacotada em um binário pequeno, ideal para borda, IoT, laboratórios e servidores modestos.",
+    "kind": "cli", "pricing": "open-source", "license": "Apache-2.0", "platforms": ["cli", "cloud"], "languages": ["go"],
+    "tags": ["kubernetes", "lightweight", "edge"], "url": "https://k3s.io", "repo": "k3s-io/k3s",
+    "featured": false, "alternatives": ["kubernetes"]
+  },
+  {
+    "slug": "vault", "name": "HashiCorp Vault", "category": "devops", "subcategory": "Segurança",
+    "tagline": "Gestão de segredos, certificados e criptografia como serviço.",
+    "description": "Armazena e controla o acesso a segredos (senhas, chaves, certificados), gerando credenciais dinâmicas com auditoria e rotação.",
+    "kind": "service", "pricing": "open-source", "license": "BUSL-1.1", "platforms": ["cloud", "cli"], "languages": ["go"],
+    "tags": ["secrets", "security"], "url": "https://developer.hashicorp.com/vault", "repo": "hashicorp/vault",
+    "featured": false, "alternatives": []
+  },
+  {
+    "slug": "jenkins", "name": "Jenkins", "category": "devops", "subcategory": "CI/CD",
+    "tagline": "Servidor de CI/CD clássico, auto-hospedado e extensível por plugins.",
+    "description": "Servidor de automação open source com milhares de plugins para construir, testar e implantar, rodando na sua própria infraestrutura.",
+    "kind": "service", "pricing": "open-source", "license": "MIT", "platforms": ["cloud"], "languages": ["java"],
+    "tags": ["ci", "cd", "self-hosted"], "url": "https://www.jenkins.io", "repo": "jenkinsci/jenkins",
+    "featured": false, "alternatives": ["github-actions"]
+  },
+  {
+    "slug": "circleci", "name": "CircleCI", "category": "devops", "subcategory": "CI/CD",
+    "tagline": "CI/CD na nuvem, rápido e com cache e paralelismo avançados.",
+    "description": "Serviço de integração e entrega contínuas com pipelines em YAML, cache, paralelismo e runners em vários sistemas.",
+    "kind": "service", "pricing": "freemium", "license": "Proprietary", "platforms": ["cloud"], "languages": [],
+    "tags": ["ci", "cd", "saas"], "url": "https://circleci.com",
+    "featured": false, "alternatives": ["github-actions", "jenkins"]
+  },
+  {
+    "slug": "turborepo", "name": "Turborepo", "category": "devops", "subcategory": "Monorepo",
+    "tagline": "Builds de monorepo rápidos, com cache local e remoto.",
+    "description": "Sistema de build para monorepos JavaScript e TypeScript que executa tarefas em paralelo e reaproveita resultados por cache.",
+    "kind": "cli", "pricing": "open-source", "license": "MIT", "platforms": ["cli"], "languages": ["rust", "javascript"],
+    "tags": ["monorepo", "build", "cache"], "url": "https://turborepo.dev", "repo": "vercel/turborepo", "npm": "turbo",
+    "featured": false, "alternatives": ["nx"]
+  },
+  {
+    "slug": "nx", "name": "Nx", "category": "devops", "subcategory": "Monorepo",
+    "tagline": "Plataforma de monorepo com grafo de dependências, cache e geradores.",
+    "description": "Sistema de build para monorepos com análise de dependências, execução afetada, cache distribuído, geradores de código e plugins.",
+    "kind": "cli", "pricing": "open-source", "license": "MIT", "platforms": ["cli"], "languages": ["typescript", "javascript"],
+    "tags": ["monorepo", "build", "cache"], "url": "https://nx.dev", "repo": "nrwl/nx", "npm": "nx",
+    "featured": false, "alternatives": ["turborepo"]
+  },
+  {
+    "slug": "k9s", "name": "K9s", "category": "devops", "subcategory": "Containers",
+    "tagline": "Interface de terminal para navegar e gerenciar clusters Kubernetes.",
+    "description": "TUI que mostra pods, logs, eventos e recursos do cluster em tempo real, com atalhos para inspecionar, editar e reiniciar.",
+    "kind": "cli", "pricing": "open-source", "license": "Apache-2.0", "platforms": ["cli"], "languages": ["go"],
+    "tags": ["kubernetes", "tui"], "url": "https://k9scli.io", "repo": "derailed/k9s",
+    "featured": false, "alternatives": []
+  },
+  {
+    "slug": "coolify", "name": "Coolify", "category": "devops", "subcategory": "Hospedagem",
+    "tagline": "PaaS auto-hospedado: sua própria Vercel/Heroku no seu servidor.",
+    "description": "Plataforma open source para publicar apps, bancos e serviços em servidores próprios com deploy por Git, HTTPS e painel web.",
+    "kind": "service", "pricing": "open-source", "license": "Apache-2.0", "platforms": ["cloud", "web"], "languages": ["php"],
+    "tags": ["paas", "self-hosted", "deploy"], "url": "https://coolify.io", "repo": "coollabsio/coolify",
+    "featured": false, "alternatives": ["vercel", "railway"]
+  },
+  {
+    "slug": "tailscale", "name": "Tailscale", "category": "devops", "subcategory": "Rede",
+    "tagline": "VPN em malha baseada em WireGuard, sem configuração.",
+    "description": "Rede privada que conecta seus dispositivos e servidores de forma segura, com identidade por login e sem abrir portas.",
+    "kind": "service", "pricing": "freemium", "license": "BSD-3-Clause", "platforms": ["desktop", "mobile", "cli"], "languages": ["go"],
+    "tags": ["vpn", "wireguard", "network"], "url": "https://tailscale.com", "repo": "tailscale/tailscale",
+    "featured": false, "alternatives": []
   }
 ]

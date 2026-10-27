@@ -1,16 +1,16 @@
 "use client";
 
 import { m } from "motion/react";
-import Link from "next/link";
+import { Link } from "@/components/Link";
+import { useFull } from "@/components/useFull";
 import { Badge } from "@/components/ui/Badge";
-import { categories, metrics, toolBySlug, toolHref } from "@/lib/catalog";
+import { metrics, toolHref } from "@/lib/catalog";
 import { dur, ease } from "@/lib/motion";
-import { pt } from "@/messages/pt-BR";
-
-const compact = new Intl.NumberFormat("pt-BR", { notation: "compact", maximumFractionDigits: 1 });
 
 /** Mesmas informações do topo da página da ferramenta, em formato de painel flutuante. */
 export function ToolPanel({ slug, onClose }: { slug: string; onClose: () => void }) {
+  const { t, locale, categories, toolBySlug } = useFull();
+  const compact = new Intl.NumberFormat(locale, { notation: "compact", maximumFractionDigits: 1 });
   const tool = toolBySlug.get(slug);
   if (!tool) return null;
   const category = categories.find((c) => c.id === tool.category)!;
@@ -29,7 +29,7 @@ export function ToolPanel({ slug, onClose }: { slug: string; onClose: () => void
       <button
         type="button"
         onClick={onClose}
-        aria-label={pt.explore.close}
+        aria-label={t.explore.close}
         className="absolute top-2 right-2 grid size-11 place-items-center rounded-lg text-fg-muted transition-colors duration-150 hover:text-fg"
       >
         <svg aria-hidden viewBox="0 0 16 16" className="size-4" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="m4 4 8 8M12 4l-8 8" /></svg>
@@ -38,8 +38,8 @@ export function ToolPanel({ slug, onClose }: { slug: string; onClose: () => void
       <h2 className="mt-2 pr-8 font-display text-xl tracking-tight">{tool.name}</h2>
       <p className="mt-2 text-sm text-fg-muted">{tool.tagline}</p>
       <div className="mt-4 flex flex-wrap items-center gap-2">
-        <Badge>{pt.kind[tool.kind]}</Badge>
-        <Badge>{pt.pricing[tool.pricing]}</Badge>
+        <Badge>{t.kind[tool.kind]}</Badge>
+        <Badge>{t.pricing[tool.pricing]}</Badge>
         {metric?.stars != null && <span className="font-mono text-xs text-fg-subtle tabular-nums">★ {compact.format(metric.stars)}</span>}
         {metric?.version && <span className="font-mono text-xs text-fg-subtle">{metric.version}</span>}
       </div>
@@ -48,7 +48,7 @@ export function ToolPanel({ slug, onClose }: { slug: string; onClose: () => void
           href={toolHref(tool)}
           className="inline-flex h-11 items-center rounded-lg bg-accent px-4 text-sm font-medium text-accent-fg transition-opacity duration-150 hover:opacity-90"
         >
-          {pt.explore.openPage}
+          {t.explore.openPage}
         </Link>
         <a
           href={tool.url}
@@ -56,9 +56,9 @@ export function ToolPanel({ slug, onClose }: { slug: string; onClose: () => void
           rel="noopener noreferrer"
           className="inline-flex h-11 items-center gap-1.5 rounded-lg border border-line px-4 text-sm text-fg-muted transition-colors duration-150 hover:border-line-strong hover:bg-surface-2 hover:text-fg"
         >
-          {pt.explore.openSite}
+          {t.explore.openSite}
           <span aria-hidden>↗</span>
-          <span className="sr-only">({pt.tool.external})</span>
+          <span className="sr-only">({t.tool.external})</span>
         </a>
       </div>
     </m.aside>

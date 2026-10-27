@@ -10,7 +10,11 @@ const check = async (url: string) => {
   }
 }
 
-const results = await Promise.all(tools.map(async (t) => ({ t, ...(await check(t.url)) })))
+// Em lotes: 300 conexões de uma vez estouram o tempo limite e dão falso erro.
+const results: { t: (typeof tools)[number]; status: number; final: string }[] = []
+for (let i = 0; i < tools.length; i += 10) {
+  results.push(...(await Promise.all(tools.slice(i, i + 10).map(async (t) => ({ t, ...(await check(t.url)) })))))
+}
 let bad = 0
 for (const { t, status, final } of results) {
   const moved = status && new URL(final).origin !== new URL(t.url).origin ? ` → ${final}` : ''

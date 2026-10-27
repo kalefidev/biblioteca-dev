@@ -1,15 +1,18 @@
-import Link from "next/link";
-import { categories, metrics, toolHref } from "@/lib/catalog";
+"use client";
+
+import { Link } from "@/components/Link";
+import { useI18n } from "@/components/I18nProvider";
+import { toolHref } from "@/lib/tool-href";
 import type { Tool } from "@/lib/schema";
-import { pt } from "@/messages/pt-BR";
 import { Badge } from "@/components/ui/Badge";
 import { PickToggle } from "@/components/site/PickToggle";
 import { Highlight } from "@/components/ui/Highlight";
 
-const compact = new Intl.NumberFormat("pt-BR", { notation: "compact", maximumFractionDigits: 1 });
-
 type Props = {
   tool: Tool;
+  /** Cor da categoria e estrelas (use `cardMeta(tool)`); ficam fora daqui para o catálogo não entrar no JS global. */
+  color?: string;
+  stars?: number | null;
   href?: string;
   showFeatured?: boolean;
   /** "list" = linha compacta para o catálogo. */
@@ -18,13 +21,13 @@ type Props = {
   highlight?: string[];
 };
 
-export function ToolCard({ tool, href = toolHref(tool), showFeatured = true, layout = "card", highlight = [] }: Props) {
-  const color = categories.find((c) => c.id === tool.category)?.color;
-  const stars = metrics[tool.slug]?.stars;
+export function ToolCard({ tool, color, stars, href = toolHref(tool), showFeatured = true, layout = "card", highlight = [] }: Props) {
+  const { t, locale } = useI18n();
+  const compact = new Intl.NumberFormat(locale, { notation: "compact", maximumFractionDigits: 1 });
   const list = layout === "list";
 
   const starsEl = stars != null && (
-    <span className="font-mono tabular-nums" title={`${stars.toLocaleString("pt-BR")} ${pt.card.stars}`}>
+    <span className="font-mono tabular-nums" title={`${stars.toLocaleString(locale)} ${t.card.stars}`}>
       ★ {compact.format(stars)}
     </span>
   );
@@ -52,7 +55,7 @@ export function ToolCard({ tool, href = toolHref(tool), showFeatured = true, lay
             >
               <Highlight text={tool.name} terms={highlight} />
             </Link>
-            {showFeatured && tool.featured && <Badge tone="accent">{pt.card.featured}</Badge>}
+            {showFeatured && tool.featured && <Badge tone="accent">{t.card.featured}</Badge>}
           </h3>
           {list && (
             <p className="truncate text-sm text-fg-muted">
@@ -71,8 +74,8 @@ export function ToolCard({ tool, href = toolHref(tool), showFeatured = true, lay
           list ? "shrink-0 max-sm:hidden" : "mt-auto pt-1"
         }`}
       >
-        <Badge>{pt.kind[tool.kind]}</Badge>
-        <span>{pt.pricing[tool.pricing]}</span>
+        <Badge>{t.kind[tool.kind]}</Badge>
+        <span>{t.pricing[tool.pricing]}</span>
         <span className="ml-auto flex items-center gap-3">
           {starsEl && <span className={list ? "w-20 text-right whitespace-nowrap" : ""}>{starsEl}</span>}
           <PickToggle slug={tool.slug} list="compare" size="sm" />

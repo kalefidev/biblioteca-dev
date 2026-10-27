@@ -4,6 +4,7 @@ import { useEffect, useLayoutEffect, useRef, useState, type ElementRef, type Rea
 import { Canvas, useFrame, useThree } from '@react-three/fiber'
 import { AdaptiveDpr, CameraControls, Stars, useCursor } from '@react-three/drei'
 import { Color, Object3D, Vector3, type InstancedMesh } from 'three'
+import { useFull } from '@/components/useFull'
 import { clusters, clusterById, nodes, CLUSTER_R, SPREAD_R, type V3 } from '@/lib/data'
 
 export type Sel = { cat: string | null; tool: string | null }
@@ -148,6 +149,7 @@ function Project({ items, els }: { items: Item[]; els: RefObject<Map<string, HTM
 export default function Scene({ sel, lit, filtered, onTool, onCat }: {
   sel: Sel; lit: Set<string>; filtered: boolean; onTool: (slug: string) => void; onCat: (id: string) => void
 }) {
+  const { categories } = useFull()
   const els = useRef(new Map<string, HTMLElement>())
   const [hover, setHover] = useState<string | null>(null)
   const [aspect, setAspect] = useState(() => innerWidth / innerHeight)
@@ -171,7 +173,7 @@ export default function Scene({ sel, lit, filtered, onTool, onCat }: {
             style={{ ['--c' as string]: c.color, color: c.color, borderColor: c.color }}
             onClick={() => onCat(c.id)}
           >
-            {c.label}
+            {categories.find((x) => x.id === c.id)!.label}
           </button>
         ),
       })

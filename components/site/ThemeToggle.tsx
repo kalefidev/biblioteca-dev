@@ -1,9 +1,10 @@
 "use client";
 
-import { pt } from "@/messages/pt-BR";
+import { useI18n } from "@/components/I18nProvider";
 
 // Sem estado: o ícone certo é escolhido por CSS a partir de <html data-theme>, então não há mismatch de hidratação.
 export function ThemeToggle() {
+  const { t } = useI18n();
   const toggle = () => {
     const next = document.documentElement.dataset.theme === "dark" ? "light" : "dark";
     document.documentElement.dataset.theme = next;
@@ -16,7 +17,7 @@ export function ThemeToggle() {
     <button
       type="button"
       onClick={toggle}
-      aria-label={pt.theme.toggle}
+      aria-label={t.theme.toggle}
       className="grid size-11 place-items-center rounded-lg text-fg-muted transition-colors duration-150 hover:bg-surface-2 hover:text-fg active:bg-line"
     >
       <svg viewBox="0 0 24 24" className={`${icon} [[data-theme=dark]_&]:hidden`} aria-hidden>

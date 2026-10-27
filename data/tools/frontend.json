@@ -62,5 +62,245 @@
     "kind": "library", "pricing": "open-source", "license": "MIT", "platforms": ["web"], "languages": ["javascript", "typescript"],
     "tags": ["3d", "webgl"], "url": "https://threejs.org", "repo": "mrdoob/three.js", "npm": "three",
     "featured": false, "alternatives": []
+  },
+  {
+    "slug": "vue", "name": "Vue", "category": "frontend", "subcategory": "UI",
+    "tagline": "Framework progressivo de UI, fácil de adotar aos poucos.",
+    "description": "Framework JavaScript para interfaces com componentes de arquivo único e reatividade simples, que pode ser adotado aos poucos em uma página ou usado em apps completos.",
+    "kind": "framework", "pricing": "open-source", "license": "MIT", "platforms": ["web"], "languages": ["javascript", "typescript"],
+    "tags": ["ui", "js", "framework"], "url": "https://vuejs.org", "repo": "vuejs/core", "npm": "vue",
+    "featured": false, "alternatives": ["react", "svelte"]
+  },
+  {
+    "slug": "nuxt", "name": "Nuxt", "category": "frontend", "subcategory": "Frameworks",
+    "tagline": "Framework full-stack sobre Vue, com SSR e rotas por arquivo.",
+    "description": "Framework para aplicações Vue com roteamento por arquivos, renderização no servidor, geração estática e módulos prontos.",
+    "kind": "framework", "pricing": "open-source", "license": "MIT", "platforms": ["web"], "languages": ["javascript", "typescript"],
+    "tags": ["framework", "vue", "ssr"], "url": "https://nuxt.com", "repo": "nuxt/nuxt", "npm": "nuxt",
+    "featured": false, "alternatives": ["nextjs", "sveltekit"]
+  },
+  {
+    "slug": "angular", "name": "Angular", "category": "frontend", "subcategory": "Frameworks",
+    "tagline": "Framework completo do Google, com TypeScript e injeção de dependência.",
+    "description": "Plataforma completa para aplicações web, com roteamento, formulários, HTTP, testes e CLI integrados, baseada em TypeScript.",
+    "kind": "framework", "pricing": "open-source", "license": "MIT", "platforms": ["web"], "languages": ["typescript"],
+    "tags": ["framework", "ts", "spa"], "url": "https://angular.dev", "repo": "angular/angular", "npm": "@angular/core",
+    "featured": false, "alternatives": ["react", "vue"]
+  },
+  {
+    "slug": "solidjs", "name": "SolidJS", "category": "frontend", "subcategory": "UI",
+    "tagline": "UI reativa de granularidade fina, com sintaxe parecida com React.",
+    "description": "Biblioteca de UI com reatividade por sinais e sem virtual DOM, com JSX parecido com o do React e desempenho muito alto.",
+    "kind": "library", "pricing": "open-source", "license": "MIT", "platforms": ["web"], "languages": ["javascript", "typescript"],
+    "tags": ["ui", "js", "reactive"], "url": "https://www.solidjs.com", "repo": "solidjs/solid", "npm": "solid-js",
+    "featured": false, "alternatives": ["react", "svelte"]
+  },
+  {
+    "slug": "preact", "name": "Preact", "category": "frontend", "subcategory": "UI",
+    "tagline": "Alternativa de 3 KB ao React, quase totalmente compatível.",
+    "description": "Biblioteca de UI minúscula, com a mesma API moderna do React e uma camada de compatibilidade para usar bibliotecas do ecossistema React.",
+    "kind": "library", "pricing": "open-source", "license": "MIT", "platforms": ["web"], "languages": ["javascript", "typescript"],
+    "tags": ["ui", "js", "react"], "url": "https://preactjs.com", "repo": "preactjs/preact", "npm": "preact",
+    "featured": false, "alternatives": ["react"]
+  },
+  {
+    "slug": "qwik", "name": "Qwik", "category": "frontend", "subcategory": "Frameworks",
+    "tagline": "Framework que carrega JavaScript só quando o usuário interage.",
+    "description": "Framework com resumabilidade: o servidor envia HTML já interativo e o JavaScript é baixado sob demanda, reduzindo o tempo de carregamento.",
+    "kind": "framework", "pricing": "open-source", "license": "MIT", "platforms": ["web"], "languages": ["typescript"],
+    "tags": ["framework", "ssr", "performance"], "url": "https://qwik.dev", "repo": "QwikDev/qwik", "npm": "@builder.io/qwik",
+    "featured": false, "alternatives": ["astro", "nextjs"]
+  },
+  {
+    "slug": "react-router", "name": "React Router", "category": "frontend", "subcategory": "Frameworks",
+    "tagline": "Roteamento e framework full-stack para React (sucessor do Remix).",
+    "description": "Biblioteca de roteamento do React que, a partir da v7, também funciona como framework com carregamento de dados, SSR e ações, incorporando o Remix.",
+    "kind": "framework", "pricing": "open-source", "license": "MIT", "platforms": ["web"], "languages": ["typescript"],
+    "tags": ["react", "routing", "ssr"], "url": "https://reactrouter.com", "repo": "remix-run/react-router", "npm": "react-router",
+    "featured": false, "alternatives": ["nextjs"]
+  },
+  {
+    "slug": "sveltekit", "name": "SvelteKit", "category": "frontend", "subcategory": "Frameworks",
+    "tagline": "Framework full-stack oficial do Svelte.",
+    "description": "Framework de aplicações para Svelte com roteamento por arquivos, SSR, geração estática e adaptadores para vários provedores de hospedagem.",
+    "kind": "framework", "pricing": "open-source", "license": "MIT", "platforms": ["web"], "languages": ["javascript", "typescript"],
+    "tags": ["framework", "svelte", "ssr"], "url": "https://svelte.dev/docs/kit", "repo": "sveltejs/kit", "npm": "@sveltejs/kit",
+    "featured": false, "alternatives": ["nextjs", "nuxt"]
+  },
+  {
+    "slug": "htmx", "name": "htmx", "category": "frontend", "subcategory": "UI",
+    "tagline": "Interatividade por atributos HTML, sem escrever JavaScript.",
+    "description": "Biblioteca que permite fazer requisições, trocar trechos da página e usar WebSockets apenas com atributos HTML, mantendo a lógica no servidor.",
+    "kind": "library", "pricing": "open-source", "license": "BSD-2-Clause", "platforms": ["web"], "languages": ["javascript"],
+    "tags": ["html", "js", "hypermedia"], "url": "https://htmx.org", "repo": "bigskysoftware/htmx", "npm": "htmx.org",
+    "featured": false, "alternatives": ["alpinejs"]
+  },
+  {
+    "slug": "alpinejs", "name": "Alpine.js", "category": "frontend", "subcategory": "UI",
+    "tagline": "Reatividade leve, declarada direto no HTML.",
+    "description": "Framework minúsculo que adiciona reatividade e comportamento ao HTML com atributos, no estilo do Vue e do Tailwind, sem etapa de build.",
+    "kind": "library", "pricing": "open-source", "license": "MIT", "platforms": ["web"], "languages": ["javascript"],
+    "tags": ["html", "js", "lightweight"], "url": "https://alpinejs.dev", "repo": "alpinejs/alpine", "npm": "alpinejs",
+    "featured": false, "alternatives": ["htmx"]
+  },
+  {
+    "slug": "lit", "name": "Lit", "category": "frontend", "subcategory": "UI",
+    "tagline": "Biblioteca para criar Web Components rápidos e leves.",
+    "description": "Biblioteca pequena, do Google, para criar Web Components padrão, que funcionam em qualquer framework ou sem nenhum.",
+    "kind": "library", "pricing": "open-source", "license": "BSD-3-Clause", "platforms": ["web"], "languages": ["javascript", "typescript"],
+    "tags": ["web-components", "ui"], "url": "https://lit.dev", "repo": "lit/lit", "npm": "lit",
+    "featured": false, "alternatives": ["preact"]
+  },
+  {
+    "slug": "typescript", "name": "TypeScript", "category": "frontend", "subcategory": "Linguagens",
+    "tagline": "JavaScript com tipos estáticos.",
+    "description": "Superconjunto do JavaScript que adiciona tipagem estática, capturando erros antes da execução e melhorando o autocompletar nos editores.",
+    "kind": "language", "pricing": "open-source", "license": "Apache-2.0", "platforms": ["web", "cli"], "languages": ["typescript"],
+    "tags": ["ts", "types", "js"], "url": "https://www.typescriptlang.org", "repo": "microsoft/TypeScript", "npm": "typescript",
+    "featured": false, "alternatives": []
+  },
+  {
+    "slug": "webpack", "name": "webpack", "category": "frontend", "subcategory": "Build",
+    "tagline": "Bundler configurável e consagrado, com ecossistema enorme.",
+    "description": "Empacotador de módulos muito configurável, com loaders e plugins para praticamente qualquer tipo de arquivo.",
+    "kind": "library", "pricing": "open-source", "license": "MIT", "platforms": ["cli"], "languages": ["javascript"],
+    "tags": ["build", "bundler", "js"], "url": "https://webpack.js.org", "repo": "webpack/webpack", "npm": "webpack",
+    "featured": false, "alternatives": ["vite", "esbuild"]
+  },
+  {
+    "slug": "esbuild", "name": "esbuild", "category": "frontend", "subcategory": "Build",
+    "tagline": "Bundler e minificador extremamente rápido, escrito em Go.",
+    "description": "Empacotador e minificador de JavaScript e TypeScript escrito em Go, dezenas de vezes mais rápido que as alternativas tradicionais.",
+    "kind": "cli", "pricing": "open-source", "license": "MIT", "platforms": ["cli"], "languages": ["javascript", "typescript"],
+    "tags": ["build", "bundler", "fast"], "url": "https://esbuild.github.io", "repo": "evanw/esbuild", "npm": "esbuild",
+    "featured": false, "alternatives": ["vite", "webpack"]
+  },
+  {
+    "slug": "rollup", "name": "Rollup", "category": "frontend", "subcategory": "Build",
+    "tagline": "Bundler focado em módulos ES, ideal para bibliotecas.",
+    "description": "Empacotador de módulos ES com tree-shaking eficiente, muito usado para publicar bibliotecas e como base do build do Vite.",
+    "kind": "library", "pricing": "open-source", "license": "MIT", "platforms": ["cli"], "languages": ["javascript"],
+    "tags": ["build", "bundler", "esm"], "url": "https://rollupjs.org", "repo": "rollup/rollup", "npm": "rollup",
+    "featured": false, "alternatives": ["esbuild", "vite"]
+  },
+  {
+    "slug": "parcel", "name": "Parcel", "category": "frontend", "subcategory": "Build",
+    "tagline": "Bundler sem configuração: aponte para o HTML e pronto.",
+    "description": "Empacotador que detecta o que o projeto usa e se configura sozinho, com servidor de desenvolvimento, hot reload e otimizações de produção.",
+    "kind": "cli", "pricing": "open-source", "license": "MIT", "platforms": ["cli"], "languages": ["javascript"],
+    "tags": ["build", "bundler", "zero-config"], "url": "https://parceljs.org", "repo": "parcel-bundler/parcel", "npm": "parcel",
+    "featured": false, "alternatives": ["vite", "webpack"]
+  },
+  {
+    "slug": "redux-toolkit", "name": "Redux Toolkit", "category": "frontend", "subcategory": "Estado e dados",
+    "tagline": "A forma oficial e moderna de usar Redux.",
+    "description": "Conjunto oficial de ferramentas para Redux, que reduz o código repetitivo e inclui o RTK Query para buscar e cachear dados.",
+    "kind": "library", "pricing": "open-source", "license": "MIT", "platforms": ["web"], "languages": ["typescript", "javascript"],
+    "tags": ["state", "react", "redux"], "url": "https://redux.js.org/toolkit", "repo": "reduxjs/redux-toolkit", "npm": "@reduxjs/toolkit",
+    "featured": false, "alternatives": ["zustand"]
+  },
+  {
+    "slug": "zustand", "name": "Zustand", "category": "frontend", "subcategory": "Estado e dados",
+    "tagline": "Estado global mínimo para React, sem boilerplate.",
+    "description": "Biblioteca pequena de estado para React, baseada em hooks, com uma API mínima e sem necessidade de provedores.",
+    "kind": "library", "pricing": "open-source", "license": "MIT", "platforms": ["web"], "languages": ["typescript", "javascript"],
+    "tags": ["state", "react"], "url": "https://zustand-demo.pmnd.rs", "repo": "pmndrs/zustand", "npm": "zustand",
+    "featured": false, "alternatives": ["redux-toolkit"]
+  },
+  {
+    "slug": "tanstack-query", "name": "TanStack Query", "category": "frontend", "subcategory": "Estado e dados",
+    "tagline": "Busca, cache e sincronização de dados do servidor.",
+    "description": "Gerencia dados vindos do servidor com cache, revalidação em segundo plano, paginação e estados de carregamento e erro prontos.",
+    "kind": "library", "pricing": "open-source", "license": "MIT", "platforms": ["web"], "languages": ["typescript", "javascript"],
+    "tags": ["data", "cache", "react"], "url": "https://tanstack.com/query", "repo": "TanStack/query", "npm": "@tanstack/react-query",
+    "featured": false, "alternatives": []
+  },
+  {
+    "slug": "radix-ui", "name": "Radix UI", "category": "frontend", "subcategory": "Componentes",
+    "tagline": "Primitivos de UI acessíveis e sem estilo para React.",
+    "description": "Componentes sem estilo (diálogos, menus, tabs) com acessibilidade e foco tratados corretamente, para você estilizar como quiser.",
+    "kind": "library", "pricing": "open-source", "license": "MIT", "platforms": ["web"], "languages": ["typescript"],
+    "tags": ["ui", "a11y", "headless"], "url": "https://www.radix-ui.com", "repo": "radix-ui/primitives", "npm": "radix-ui",
+    "featured": false, "alternatives": ["shadcn-ui", "chakra-ui"]
+  },
+  {
+    "slug": "mui", "name": "MUI", "category": "frontend", "subcategory": "Componentes",
+    "tagline": "Biblioteca de componentes React baseada no Material Design.",
+    "description": "Conjunto grande de componentes React prontos, seguindo o Material Design, com tema customizável e versões pagas com componentes avançados.",
+    "kind": "library", "pricing": "open-source", "license": "MIT", "platforms": ["web"], "languages": ["typescript"],
+    "tags": ["ui", "react", "material"], "url": "https://mui.com", "repo": "mui/material-ui", "npm": "@mui/material",
+    "featured": false, "alternatives": ["chakra-ui", "bootstrap"]
+  },
+  {
+    "slug": "chakra-ui", "name": "Chakra UI", "category": "frontend", "subcategory": "Componentes",
+    "tagline": "Componentes React acessíveis, com props de estilo.",
+    "description": "Biblioteca de componentes React com foco em acessibilidade e produtividade, usando props de estilo e um sistema de temas.",
+    "kind": "library", "pricing": "open-source", "license": "MIT", "platforms": ["web"], "languages": ["typescript"],
+    "tags": ["ui", "react", "a11y"], "url": "https://chakra-ui.com", "repo": "chakra-ui/chakra-ui", "npm": "@chakra-ui/react",
+    "featured": false, "alternatives": ["mui", "radix-ui"]
+  },
+  {
+    "slug": "bootstrap", "name": "Bootstrap", "category": "frontend", "subcategory": "Estilo",
+    "tagline": "Framework CSS clássico, com grade e componentes prontos.",
+    "description": "Framework de CSS e JavaScript com grade responsiva e dezenas de componentes prontos, muito usado em sites e painéis.",
+    "kind": "framework", "pricing": "open-source", "license": "MIT", "platforms": ["web"], "languages": ["css", "javascript"],
+    "tags": ["css", "ui", "grid"], "url": "https://getbootstrap.com", "repo": "twbs/bootstrap", "npm": "bootstrap",
+    "featured": false, "alternatives": ["tailwindcss"]
+  },
+  {
+    "slug": "motion", "name": "Motion", "category": "frontend", "subcategory": "Animação",
+    "tagline": "Biblioteca de animação para React e JavaScript (ex-Framer Motion).",
+    "description": "Biblioteca de animação declarativa com gestos, layout e transições de saída, com versão para React e para JavaScript puro.",
+    "kind": "library", "pricing": "open-source", "license": "MIT", "platforms": ["web"], "languages": ["typescript", "javascript"],
+    "tags": ["animation", "react"], "url": "https://motion.dev", "repo": "motiondivision/motion", "npm": "motion",
+    "featured": false, "alternatives": []
+  },
+  {
+    "slug": "storybook", "name": "Storybook", "category": "frontend", "subcategory": "Ferramentas",
+    "tagline": "Oficina para desenvolver, documentar e testar componentes de UI.",
+    "description": "Ambiente isolado para construir componentes, documentar suas variações e testá-los visualmente, compatível com os principais frameworks.",
+    "kind": "app", "pricing": "open-source", "license": "MIT", "platforms": ["web", "cli"], "languages": ["typescript", "javascript"],
+    "tags": ["ui", "docs", "testing"], "url": "https://storybook.js.org", "repo": "storybookjs/storybook", "npm": "storybook",
+    "featured": false, "alternatives": []
+  },
+  {
+    "slug": "react-three-fiber", "name": "React Three Fiber", "category": "frontend", "subcategory": "Gráficos",
+    "tagline": "Three.js de forma declarativa, com componentes React.",
+    "description": "Renderizador React para o Three.js, que permite montar cenas 3D com componentes e hooks, com um grande ecossistema de ajudantes (drei).",
+    "kind": "library", "pricing": "open-source", "license": "MIT", "platforms": ["web"], "languages": ["typescript", "javascript"],
+    "tags": ["3d", "react", "webgl"], "url": "https://r3f.docs.pmnd.rs", "repo": "pmndrs/react-three-fiber", "npm": "@react-three/fiber",
+    "featured": false, "alternatives": ["threejs"]
+  },
+  {
+    "slug": "d3", "name": "D3", "category": "frontend", "subcategory": "Visualização de dados",
+    "tagline": "Visualizações de dados sob medida, em SVG e Canvas.",
+    "description": "Biblioteca de baixo nível para ligar dados ao DOM e criar visualizações totalmente personalizadas, com escalas, formas e layouts.",
+    "kind": "library", "pricing": "open-source", "license": "ISC", "platforms": ["web"], "languages": ["javascript"],
+    "tags": ["charts", "svg", "data"], "url": "https://d3js.org", "repo": "d3/d3", "npm": "d3",
+    "featured": false, "alternatives": ["chartjs"]
+  },
+  {
+    "slug": "chartjs", "name": "Chart.js", "category": "frontend", "subcategory": "Visualização de dados",
+    "tagline": "Gráficos simples e responsivos em Canvas.",
+    "description": "Biblioteca com os tipos de gráfico mais comuns (barras, linhas, pizza, radar), responsiva e com animações prontas.",
+    "kind": "library", "pricing": "open-source", "license": "MIT", "platforms": ["web"], "languages": ["javascript", "typescript"],
+    "tags": ["charts", "canvas"], "url": "https://www.chartjs.org", "repo": "chartjs/Chart.js", "npm": "chart.js",
+    "featured": false, "alternatives": ["d3"]
+  },
+  {
+    "slug": "react-hook-form", "name": "React Hook Form", "category": "frontend", "subcategory": "Estado e dados",
+    "tagline": "Formulários performáticos e simples em React.",
+    "description": "Biblioteca de formulários baseada em hooks, com poucos re-renders e integração com validadores como o Zod.",
+    "kind": "library", "pricing": "open-source", "license": "MIT", "platforms": ["web"], "languages": ["typescript"],
+    "tags": ["forms", "react", "validation"], "url": "https://react-hook-form.com", "repo": "react-hook-form/react-hook-form", "npm": "react-hook-form",
+    "featured": false, "alternatives": []
+  },
+  {
+    "slug": "pnpm", "name": "pnpm", "category": "frontend", "subcategory": "Ferramentas",
+    "tagline": "Gerenciador de pacotes rápido que economiza espaço em disco.",
+    "description": "Gerenciador de pacotes para Node.js que guarda cada versão uma única vez em disco e liga aos projetos, com ótimo suporte a monorepos.",
+    "kind": "cli", "pricing": "open-source", "license": "MIT", "platforms": ["cli"], "languages": ["javascript"],
+    "tags": ["package-manager", "node", "monorepo"], "url": "https://pnpm.io", "repo": "pnpm/pnpm", "npm": "pnpm",
+    "featured": false, "alternatives": ["bun"]
   }
 ]

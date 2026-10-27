@@ -1,26 +1,22 @@
 "use client";
 
 import { usePicks, type PickKey } from "@/lib/picks";
-import { pt } from "@/messages/pt-BR";
-
-const labels = {
-  compare: [pt.picks.compare, pt.picks.comparing],
-  stack: [pt.picks.stackAdd, pt.picks.stackIn],
-} as const;
+import { useI18n } from "@/components/I18nProvider";
 
 /** Liga/desliga uma ferramenta na lista de comparação ou na stack. `size="sm"` é a versão dos cards. */
 export function PickToggle({ slug, list, size = "md" }: { slug: string; list: PickKey; size?: "sm" | "md" }) {
+  const { t } = useI18n();
   const { has, full, toggle } = usePicks(list);
   const on = has(slug);
   const blocked = full && !on;
-  const [off, active] = labels[list];
+  const [off, active] = list === "compare" ? [t.picks.compare, t.picks.comparing] : [t.picks.stackAdd, t.picks.stackIn];
 
   return (
     <button
       type="button"
       aria-pressed={on}
       disabled={blocked}
-      title={blocked ? pt.picks.compareFull : undefined}
+      title={blocked ? t.picks.compareFull : undefined}
       onClick={() => toggle(slug)}
       className={`relative z-10 inline-flex items-center gap-1.5 rounded-lg border whitespace-nowrap transition-colors duration-150 disabled:cursor-not-allowed disabled:opacity-50 ${
         size === "sm" ? "h-8 px-2.5 text-xs after:absolute after:inset-x-0 after:-inset-y-1.5 after:content-['']" : "h-11 px-4 text-sm"

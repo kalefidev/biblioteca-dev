@@ -1,4 +1,4 @@
-import { fold } from "@/lib/search";
+import { fold } from "@/lib/text";
 
 // Destaca no texto os trechos que casam com os termos da busca (sem acento, sem diferenciar caixa).
 export function Highlight({ text, terms }: { text: string; terms: string[] }) {

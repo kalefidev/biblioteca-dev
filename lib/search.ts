@@ -1,6 +1,9 @@
 // Busca fuzzy + filtros por faceta + ordenação. Lógica pura (sem React), roda no navegador.
 import MiniSearch from 'minisearch'
 import { categories, metrics, tools } from './catalog.ts'
+import { full } from './catalog-i18n.ts'
+import type { Locale } from './i18n.ts'
+import { fold, queryTerms } from './text.ts'
 import type { Tool } from './schema.ts'
 
 export const FACET_KEYS = ['cat', 'kind', 'price', 'lic', 'plat', 'lang', 'tag'] as const
@@ -21,10 +24,7 @@ const getters: Record<FacetKey, (t: Tool) => string[]> = {
   tag: (t) => t.tags,
 }
 
-/** Minúsculas e sem acento, caractere a caractere (mantém o comprimento para o destaque). */
-export const fold = (s: string) => Array.from(s, (c) => c.normalize('NFD')[0].toLowerCase()).join('')
-
-export const queryTerms = (q: string) => fold(q).split(/[^\p{L}\p{N}]+/u).filter(Boolean)
+export { fold, queryTerms }
 
 // ---------- URL <-> estado ----------
 export function parseState(params: URLSearchParams): CatalogState {
@@ -50,22 +50,25 @@ export function serializeState(s: CatalogState) {
 export const activeFilterCount = (s: CatalogState) => FACET_KEYS.reduce((n, k) => n + s.sel[k].length, 0)
 
 // ---------- índice de busca ----------
-let index: MiniSearch | undefined
-function getIndex() {
+// Um índice por idioma: tagline, descrição e subcategoria mudam com a tradução.
+const indexes = new Map<Locale, MiniSearch>()
+function getIndex(locale: Locale) {
+  let index = indexes.get(locale)
   if (!index) {
     index = new MiniSearch({
       idField: 'slug',
       fields: ['name', 'tags', 'subcategory', 'tagline', 'description'],
       processTerm: fold,
     })
-    index.addAll(tools.map((t) => ({ ...t, tags: t.tags.join(' ') })))
+    index.addAll(full(locale).tools.map((t) => ({ ...t, tags: t.tags.join(' ') })))
+    indexes.set(locale, index)
   }
   return index
 }
 
 /** slug -> relevância. Nome pesa mais que tag, que pesa mais que descrição. */
-export function searchScores(q: string) {
-  const hits = getIndex().search(q, {
+export function searchScores(q: string, locale: Locale) {
+  const hits = getIndex(locale).search(q, {
     boost: { name: 5, tags: 3, subcategory: 2 },
     prefix: true,
     fuzzy: (term) => (term.length > 3 ? 0.2 : false),
@@ -78,9 +81,9 @@ export function searchScores(q: string) {
 const stars = (t: Tool) => metrics[t.slug]?.stars ?? -1
 const byName = (a: Tool, b: Tool) => a.name.localeCompare(b.name)
 
-export function runQuery(state: CatalogState, lockedCategory?: string) {
-  const scores = state.q.trim() ? searchScores(state.q) : null
-  const pool = tools.filter((t) => (!lockedCategory || t.category === lockedCategory) && (!scores || scores.has(t.slug)))
+export function runQuery(state: CatalogState, locale: Locale, lockedCategory?: string) {
+  const scores = state.q.trim() ? searchScores(state.q, locale) : null
+  const pool = full(locale).tools.filter((t) => (!lockedCategory || t.category === lockedCategory) && (!scores || scores.has(t.slug)))
   // OR dentro da faceta, AND entre facetas; `skip` ignora a própria faceta ao contar suas opções.
   const matches = (t: Tool, skip?: FacetKey) =>
     FACET_KEYS.every((k) => k === skip || !state.sel[k].length || getters[k](t).some((v) => state.sel[k].includes(v)))

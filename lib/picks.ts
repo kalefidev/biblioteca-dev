@@ -3,7 +3,6 @@
 // Listas do usuário guardadas no navegador: "compare" (até 3) e "stack" (qualquer quantidade).
 // localStorage pode falhar (aba privada, bloqueio): nesse caso a lista vive só em memória nesta sessão.
 import { useCallback, useMemo, useSyncExternalStore } from "react";
-import { toolBySlug } from "@/lib/catalog";
 
 export const COMPARE_MAX = 3;
 export type PickKey = "compare" | "stack";
@@ -39,7 +38,7 @@ function subscribe(cb: () => void) {
   };
 }
 
-/** Só slugs que existem no catálogo, sem repetição (o valor salvo pode ter sido editado à mão). */
+/** Só slugs bem formados, sem repetição (o valor salvo pode ter sido editado à mão). Quem exibe a lista ignora os que não existem no catálogo; importar o catálogo aqui o poria no JS de todas as páginas. */
 function parse(value: string, key: PickKey): string[] {
   let list: unknown;
   try {
@@ -48,7 +47,7 @@ function parse(value: string, key: PickKey): string[] {
     return [];
   }
   if (!Array.isArray(list)) return [];
-  const ok = [...new Set(list)].filter((s): s is string => typeof s === "string" && toolBySlug.has(s));
+  const ok = [...new Set(list)].filter((s): s is string => typeof s === "string" && /^[a-z0-9]+(-[a-z0-9]+)*$/.test(s));
   return key === "compare" ? ok.slice(0, COMPARE_MAX) : ok;
 }
 

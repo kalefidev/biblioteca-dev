@@ -62,5 +62,237 @@
     "kind": "app", "pricing": "free", "license": "Proprietary", "platforms": ["desktop", "mobile"], "languages": [],
     "tags": ["notas"], "url": "https://obsidian.md",
     "featured": false, "alternatives": []
+  },
+  {
+    "slug": "aider", "name": "Aider", "category": "ia", "subcategory": "Agentes de código",
+    "tagline": "Programação em par com IA no terminal, integrada ao Git.",
+    "description": "Ferramenta de linha de comando que edita o código do seu repositório conversando com modelos de IA, commitando as mudanças no Git.",
+    "kind": "cli", "pricing": "open-source", "license": "Apache-2.0", "platforms": ["cli"], "languages": ["python"],
+    "tags": ["agente", "cli", "git"], "url": "https://aider.chat", "repo": "Aider-AI/aider",
+    "featured": false, "alternatives": ["claude-code", "cline"]
+  },
+  {
+    "slug": "cline", "name": "Cline", "category": "ia", "subcategory": "Agentes de código",
+    "tagline": "Agente de código open source dentro do VS Code.",
+    "description": "Extensão do VS Code que age como agente: lê o projeto, edita arquivos e executa comandos com a sua aprovação, usando o modelo que você escolher.",
+    "kind": "app", "pricing": "open-source", "license": "Apache-2.0", "platforms": ["desktop"], "languages": ["typescript"],
+    "tags": ["agente", "vscode", "ia"], "url": "https://cline.bot", "repo": "cline/cline",
+    "featured": false, "alternatives": ["github-copilot", "continue"]
+  },
+  {
+    "slug": "continue", "name": "Continue", "category": "ia", "subcategory": "Agentes de código",
+    "tagline": "Assistente de código open source para VS Code e JetBrains.",
+    "description": "Extensão de código aberto que traz chat, autocompletar e edição por IA ao editor, com modelos locais ou na nuvem à sua escolha.",
+    "kind": "app", "pricing": "open-source", "license": "Apache-2.0", "platforms": ["desktop"], "languages": ["typescript"],
+    "tags": ["ia", "vscode", "jetbrains"], "url": "https://continue.dev", "repo": "continuedev/continue",
+    "featured": false, "alternatives": ["github-copilot", "cline"]
+  },
+  {
+    "slug": "codex-cli", "name": "Codex CLI", "category": "ia", "subcategory": "Agentes de código",
+    "tagline": "Agente de código da OpenAI para o terminal.",
+    "description": "Agente de programação de código aberto da OpenAI que roda no terminal, lê e edita arquivos do projeto e executa comandos em modo sandbox.",
+    "kind": "cli", "pricing": "open-source", "license": "Apache-2.0", "platforms": ["cli"], "languages": ["rust"],
+    "tags": ["agente", "cli", "openai"], "url": "https://github.com/openai/codex", "repo": "openai/codex",
+    "featured": false, "alternatives": ["claude-code", "gemini-cli"]
+  },
+  {
+    "slug": "gemini-cli", "name": "Gemini CLI", "category": "ia", "subcategory": "Agentes de código",
+    "tagline": "Agente de código do Google no terminal, com o Gemini.",
+    "description": "Agente de linha de comando de código aberto do Google, que usa os modelos Gemini para entender o projeto, editar arquivos e executar comandos.",
+    "kind": "cli", "pricing": "open-source", "license": "Apache-2.0", "platforms": ["cli"], "languages": ["typescript"],
+    "tags": ["agente", "cli", "google"], "url": "https://github.com/google-gemini/gemini-cli", "repo": "google-gemini/gemini-cli", "npm": "@google/gemini-cli",
+    "featured": false, "alternatives": ["claude-code", "codex-cli"]
+  },
+  {
+    "slug": "ollama", "name": "Ollama", "category": "ia", "subcategory": "Modelos locais",
+    "tagline": "Roda modelos de linguagem na sua máquina com um comando.",
+    "description": "Ferramenta que baixa e executa modelos de linguagem abertos localmente, com API compatível e CLI simples.",
+    "kind": "cli", "pricing": "open-source", "license": "MIT", "platforms": ["cli", "desktop"], "languages": ["go"],
+    "tags": ["llm", "local", "ia"], "url": "https://ollama.com", "repo": "ollama/ollama",
+    "featured": false, "alternatives": ["lm-studio", "llama-cpp"]
+  },
+  {
+    "slug": "lm-studio", "name": "LM Studio", "category": "ia", "subcategory": "Modelos locais",
+    "tagline": "Aplicativo gráfico para baixar e conversar com modelos locais.",
+    "description": "Aplicativo de desktop para descobrir, baixar e executar modelos de linguagem abertos localmente, com chat e servidor de API compatível.",
+    "kind": "app", "pricing": "free", "license": "Proprietary", "platforms": ["desktop"], "languages": [],
+    "tags": ["llm", "local", "gui"], "url": "https://lmstudio.ai",
+    "featured": false, "alternatives": ["ollama"]
+  },
+  {
+    "slug": "llama-cpp", "name": "llama.cpp", "category": "ia", "subcategory": "Modelos locais",
+    "tagline": "Inferência de LLMs em C/C++, eficiente até em CPU comum.",
+    "description": "Motor de inferência em C/C++ para modelos de linguagem, com quantização e suporte a CPU, GPU e Apple Silicon; base de várias ferramentas locais.",
+    "kind": "library", "pricing": "open-source", "license": "MIT", "platforms": ["cli", "desktop"], "languages": ["cpp"],
+    "tags": ["llm", "local", "inference"], "url": "https://github.com/ggml-org/llama.cpp", "repo": "ggml-org/llama.cpp",
+    "featured": false, "alternatives": ["ollama"]
+  },
+  {
+    "slug": "vercel-ai-sdk", "name": "AI SDK", "category": "ia", "subcategory": "Frameworks de IA",
+    "tagline": "Kit TypeScript para apps com IA, com streaming e vários provedores.",
+    "description": "Biblioteca da Vercel para construir chats, agentes e geração de texto estruturado com uma API única para vários provedores de modelos.",
+    "kind": "library", "pricing": "open-source", "license": "Apache-2.0", "platforms": ["web", "cloud"], "languages": ["typescript"],
+    "tags": ["ia", "llm", "streaming"], "url": "https://ai-sdk.dev", "repo": "vercel/ai", "npm": "ai",
+    "featured": false, "alternatives": ["langchain"]
+  },
+  {
+    "slug": "langchain", "name": "LangChain", "category": "ia", "subcategory": "Frameworks de IA",
+    "tagline": "Framework para encadear LLMs, ferramentas e dados.",
+    "description": "Framework em Python e JavaScript para construir aplicações com LLMs: cadeias, agentes, ferramentas, memória e integrações com bancos vetoriais.",
+    "kind": "framework", "pricing": "open-source", "license": "MIT", "platforms": ["cloud"], "languages": ["python", "typescript"],
+    "tags": ["ia", "llm", "agents"], "url": "https://www.langchain.com", "repo": "langchain-ai/langchain", "npm": "langchain",
+    "featured": false, "alternatives": ["llamaindex", "vercel-ai-sdk"]
+  },
+  {
+    "slug": "llamaindex", "name": "LlamaIndex", "category": "ia", "subcategory": "Frameworks de IA",
+    "tagline": "Framework para conectar LLMs aos seus dados (RAG).",
+    "description": "Framework focado em ingestão, indexação e consulta de dados próprios para uso com LLMs, com conectores para dezenas de fontes.",
+    "kind": "framework", "pricing": "open-source", "license": "MIT", "platforms": ["cloud"], "languages": ["python", "typescript"],
+    "tags": ["ia", "rag", "data"], "url": "https://www.llamaindex.ai", "repo": "run-llama/llama_index",
+    "featured": false, "alternatives": ["langchain"]
+  },
+  {
+    "slug": "hugging-face", "name": "Hugging Face", "category": "ia", "subcategory": "Frameworks de IA",
+    "tagline": "Hub de modelos e datasets de IA, e a biblioteca Transformers.",
+    "description": "Plataforma com centenas de milhares de modelos, datasets e demos abertos, além das bibliotecas Transformers e Datasets para usá-los.",
+    "kind": "service", "pricing": "freemium", "license": "Apache-2.0", "platforms": ["web", "cloud"], "languages": ["python"],
+    "tags": ["ia", "models", "datasets"], "url": "https://huggingface.co", "repo": "huggingface/transformers", "npm": "@huggingface/transformers",
+    "featured": false, "alternatives": []
+  },
+  {
+    "slug": "mcp", "name": "Model Context Protocol", "category": "ia", "subcategory": "Frameworks de IA",
+    "tagline": "Protocolo aberto para conectar agentes de IA a ferramentas e dados.",
+    "description": "Padrão aberto para expor ferramentas, dados e prompts a aplicações de IA por servidores, com SDKs em várias linguagens.",
+    "kind": "framework", "pricing": "open-source", "license": "MIT", "platforms": ["cli", "cloud"], "languages": ["typescript", "python"],
+    "tags": ["ia", "protocol", "tools"], "url": "https://modelcontextprotocol.io", "repo": "modelcontextprotocol/modelcontextprotocol",
+    "featured": false, "alternatives": []
+  },
+  {
+    "slug": "n8n", "name": "n8n", "category": "ia", "subcategory": "Automação",
+    "tagline": "Automação de fluxos de trabalho visual, auto-hospedável.",
+    "description": "Plataforma de automação com editor visual de fluxos e centenas de integrações, que pode ser auto-hospedada ou usada na nuvem; licença de código aberto restrito (fair-code).",
+    "kind": "app", "pricing": "freemium", "license": "Sustainable Use License", "platforms": ["web", "cloud"], "languages": ["typescript"],
+    "tags": ["automation", "workflow", "self-hosted"], "url": "https://n8n.io", "repo": "n8n-io/n8n", "npm": "n8n",
+    "featured": false, "alternatives": []
+  },
+  {
+    "slug": "v0", "name": "v0", "category": "ia", "subcategory": "Assistentes",
+    "tagline": "Gera interfaces React a partir de descrições, da Vercel.",
+    "description": "Ferramenta de IA da Vercel que gera componentes e páginas em React e Tailwind a partir de texto ou imagens, com preview e código.",
+    "kind": "service", "pricing": "freemium", "license": "Proprietary", "platforms": ["web"], "languages": ["typescript"],
+    "tags": ["ia", "ui", "generator"], "url": "https://v0.app",
+    "featured": false, "alternatives": []
+  },
+  {
+    "slug": "chatgpt", "name": "ChatGPT", "category": "ia", "subcategory": "Assistentes",
+    "tagline": "Assistente de IA da OpenAI, para conversar, programar e analisar.",
+    "description": "Assistente conversacional da OpenAI para escrever, programar, analisar dados e arquivos e pesquisar, com planos gratuito e pagos.",
+    "kind": "service", "pricing": "freemium", "license": "Proprietary", "platforms": ["web", "mobile", "desktop"], "languages": [],
+    "tags": ["ia", "chat", "openai"], "url": "https://chatgpt.com",
+    "featured": false, "alternatives": ["claude"]
+  },
+  {
+    "slug": "claude", "name": "Claude", "category": "ia", "subcategory": "Assistentes",
+    "tagline": "Assistente de IA da Anthropic, forte em código e textos longos.",
+    "description": "Assistente conversacional da Anthropic para programar, escrever e analisar documentos longos, com planos gratuito e pagos.",
+    "kind": "service", "pricing": "freemium", "license": "Proprietary", "platforms": ["web", "mobile", "desktop"], "languages": [],
+    "tags": ["ia", "chat", "anthropic"], "url": "https://claude.ai",
+    "featured": false, "alternatives": ["chatgpt"]
+  },
+  {
+    "slug": "notion", "name": "Notion", "category": "ia", "subcategory": "Produtividade",
+    "tagline": "Documentos, wikis e bancos de dados num espaço de trabalho só.",
+    "description": "Espaço de trabalho colaborativo que une documentos, wikis, tarefas e bancos de dados, com API e uma grande biblioteca de modelos.",
+    "kind": "service", "pricing": "freemium", "license": "Proprietary", "platforms": ["web", "mobile", "desktop"], "languages": [],
+    "tags": ["notas", "docs", "wiki"], "url": "https://www.notion.com",
+    "featured": false, "alternatives": ["obsidian"]
+  },
+  {
+    "slug": "linear", "name": "Linear", "category": "ia", "subcategory": "Produtividade",
+    "tagline": "Gestão de issues e projetos rápida, feita para times de produto.",
+    "description": "Ferramenta de gestão de tarefas e projetos com interface muito rápida, ciclos, roadmaps e integração com GitHub.",
+    "kind": "service", "pricing": "freemium", "license": "Proprietary", "platforms": ["web", "desktop", "mobile"], "languages": [],
+    "tags": ["issues", "project", "planning"], "url": "https://linear.app",
+    "featured": false, "alternatives": []
+  },
+  {
+    "slug": "excalidraw", "name": "Excalidraw", "category": "ia", "subcategory": "Diagramas",
+    "tagline": "Quadro branco virtual com traço de desenho à mão.",
+    "description": "Editor de diagramas e esquemas no navegador, com visual de rascunho feito à mão, colaboração em tempo real e exportação para imagem.",
+    "kind": "app", "pricing": "open-source", "license": "MIT", "platforms": ["web"], "languages": ["typescript"],
+    "tags": ["diagram", "whiteboard", "draw"], "url": "https://excalidraw.com", "repo": "excalidraw/excalidraw", "npm": "@excalidraw/excalidraw",
+    "featured": false, "alternatives": ["mermaid"]
+  },
+  {
+    "slug": "mermaid", "name": "Mermaid", "category": "ia", "subcategory": "Diagramas",
+    "tagline": "Diagramas a partir de texto, direto no Markdown.",
+    "description": "Gera fluxogramas, diagramas de sequência, ER e outros a partir de texto simples, com suporte nativo no GitHub, GitLab e muitos editores.",
+    "kind": "library", "pricing": "open-source", "license": "MIT", "platforms": ["web", "cli"], "languages": ["javascript"],
+    "tags": ["diagram", "markdown", "docs"], "url": "https://mermaid.js.org", "repo": "mermaid-js/mermaid", "npm": "mermaid",
+    "featured": false, "alternatives": ["excalidraw"]
+  },
+  {
+    "slug": "bitwarden", "name": "Bitwarden", "category": "ia", "subcategory": "Segurança",
+    "tagline": "Gerenciador de senhas open source, na nuvem ou auto-hospedado.",
+    "description": "Gerenciador de senhas com clientes para navegador, desktop e celular, criptografia de ponta a ponta e opção de hospedar o servidor.",
+    "kind": "app", "pricing": "freemium", "license": "GPL-3.0", "platforms": ["web", "desktop", "mobile"], "languages": ["typescript"],
+    "tags": ["passwords", "security", "self-hosted"], "url": "https://bitwarden.com", "repo": "bitwarden/clients",
+    "featured": false, "alternatives": []
+  },
+  {
+    "slug": "homebrew", "name": "Homebrew", "category": "ia", "subcategory": "Utilitários de terminal",
+    "tagline": "Gerenciador de pacotes para macOS e Linux.",
+    "description": "Gerenciador de pacotes que instala ferramentas de linha de comando e aplicativos no macOS e no Linux com um único comando.",
+    "kind": "cli", "pricing": "open-source", "license": "BSD-2-Clause", "platforms": ["cli"], "languages": ["ruby"],
+    "tags": ["package-manager", "macos", "linux"], "url": "https://brew.sh", "repo": "Homebrew/brew",
+    "featured": false, "alternatives": []
+  },
+  {
+    "slug": "fzf", "name": "fzf", "category": "ia", "subcategory": "Utilitários de terminal",
+    "tagline": "Busca fuzzy interativa para qualquer lista no terminal.",
+    "description": "Filtro interativo em linha de comando que busca de forma aproximada em arquivos, histórico, branches e qualquer lista de texto.",
+    "kind": "cli", "pricing": "open-source", "license": "MIT", "platforms": ["cli"], "languages": ["go"],
+    "tags": ["fuzzy", "cli", "search"], "url": "https://github.com/junegunn/fzf", "repo": "junegunn/fzf",
+    "featured": false, "alternatives": []
+  },
+  {
+    "slug": "ripgrep", "name": "ripgrep", "category": "ia", "subcategory": "Utilitários de terminal",
+    "tagline": "Busca em arquivos extremamente rápida, que respeita o .gitignore.",
+    "description": "Ferramenta de busca por expressões regulares em diretórios, muito mais rápida que o grep, que ignora por padrão arquivos do .gitignore.",
+    "kind": "cli", "pricing": "open-source", "license": "Unlicense", "platforms": ["cli"], "languages": ["rust"],
+    "tags": ["search", "grep", "cli"], "url": "https://github.com/BurntSushi/ripgrep", "repo": "BurntSushi/ripgrep",
+    "featured": false, "alternatives": []
+  },
+  {
+    "slug": "jq", "name": "jq", "category": "ia", "subcategory": "Utilitários de terminal",
+    "tagline": "Processador de JSON de linha de comando.",
+    "description": "Ferramenta para filtrar, transformar e formatar JSON no terminal, com uma linguagem de consulta compacta.",
+    "kind": "cli", "pricing": "open-source", "license": "MIT", "platforms": ["cli"], "languages": ["cpp"],
+    "tags": ["json", "cli"], "url": "https://jqlang.org", "repo": "jqlang/jq",
+    "featured": false, "alternatives": []
+  },
+  {
+    "slug": "bat", "name": "bat", "category": "ia", "subcategory": "Utilitários de terminal",
+    "tagline": "Um cat com destaque de sintaxe, numeração e integração com Git.",
+    "description": "Substituto do cat que mostra arquivos com destaque de sintaxe, numeração de linhas, paginação automática e marcação de mudanças do Git.",
+    "kind": "cli", "pricing": "open-source", "license": "MIT OR Apache-2.0", "platforms": ["cli"], "languages": ["rust"],
+    "tags": ["cat", "syntax", "cli"], "url": "https://github.com/sharkdp/bat", "repo": "sharkdp/bat",
+    "featured": false, "alternatives": []
+  },
+  {
+    "slug": "httpie", "name": "HTTPie", "category": "ia", "subcategory": "APIs",
+    "tagline": "Cliente HTTP de terminal com sintaxe amigável e saída colorida.",
+    "description": "Cliente de linha de comando para APIs, com sintaxe intuitiva, JSON por padrão, destaque de sintaxe e sessões.",
+    "kind": "cli", "pricing": "open-source", "license": "BSD-3-Clause", "platforms": ["cli", "desktop"], "languages": ["python"],
+    "tags": ["http", "cli", "api"], "url": "https://httpie.io", "repo": "httpie/cli",
+    "featured": false, "alternatives": ["postman", "insomnia"]
+  },
+  {
+    "slug": "bruno", "name": "Bruno", "category": "ia", "subcategory": "APIs",
+    "tagline": "Cliente de API open source que guarda coleções em arquivos, no Git.",
+    "description": "Cliente de API para REST e GraphQL que armazena coleções como arquivos de texto no seu repositório, sem conta nem nuvem obrigatória.",
+    "kind": "app", "pricing": "open-source", "license": "MIT", "platforms": ["desktop"], "languages": ["javascript"],
+    "tags": ["api", "git", "local"], "url": "https://www.usebruno.com", "repo": "usebruno/bruno",
+    "featured": false, "alternatives": ["postman", "insomnia"]
   }
 ]

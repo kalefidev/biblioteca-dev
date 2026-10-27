@@ -62,5 +62,237 @@
     "kind": "cli", "pricing": "open-source", "license": "MIT", "platforms": ["cli"], "languages": ["python"],
     "tags": ["hooks", "qualidade"], "url": "https://pre-commit.com", "repo": "pre-commit/pre-commit",
     "featured": false, "alternatives": []
+  },
+  {
+    "slug": "git-lfs", "name": "Git LFS", "category": "git", "subcategory": "Ferramentas",
+    "tagline": "Guarda arquivos grandes fora do repositório Git.",
+    "description": "Extensão do Git que substitui arquivos grandes (imagens, vídeos, modelos) por ponteiros leves e os guarda em um servidor separado.",
+    "kind": "cli", "pricing": "open-source", "license": "MIT", "platforms": ["cli"], "languages": [],
+    "tags": ["git", "arquivos"], "url": "https://git-lfs.com", "repo": "git-lfs/git-lfs",
+    "featured": false, "alternatives": []
+  },
+  {
+    "slug": "gitkraken", "name": "GitKraken", "category": "git", "subcategory": "Clientes",
+    "tagline": "Cliente Git gráfico com visualização clara do histórico.",
+    "description": "Cliente Git para desktop com grafo de commits, resolução de conflitos visual e integração com GitHub, GitLab e Bitbucket.",
+    "kind": "app", "pricing": "freemium", "license": "Proprietary", "platforms": ["desktop"], "languages": [],
+    "tags": ["git", "gui"], "url": "https://www.gitkraken.com",
+    "featured": false, "alternatives": ["sourcetree", "github-desktop"]
+  },
+  {
+    "slug": "sourcetree", "name": "Sourcetree", "category": "git", "subcategory": "Clientes",
+    "tagline": "Cliente Git gráfico gratuito da Atlassian.",
+    "description": "Cliente Git gratuito para Windows e macOS, com visualização de branches, staging por trecho e integração com Bitbucket.",
+    "kind": "app", "pricing": "free", "license": "Proprietary", "platforms": ["desktop"], "languages": [],
+    "tags": ["git", "gui"], "url": "https://www.sourcetreeapp.com",
+    "featured": false, "alternatives": ["gitkraken", "github-desktop"]
+  },
+  {
+    "slug": "github-desktop", "name": "GitHub Desktop", "category": "git", "subcategory": "Clientes",
+    "tagline": "Cliente Git simples, feito para o fluxo do GitHub.",
+    "description": "Aplicativo gratuito e simples para clonar, commitar e abrir pull requests no GitHub sem usar a linha de comando.",
+    "kind": "app", "pricing": "open-source", "license": "MIT", "platforms": ["desktop"], "languages": ["typescript"],
+    "tags": ["git", "gui", "github"], "url": "https://desktop.github.com", "repo": "desktop/desktop",
+    "featured": false, "alternatives": ["gitkraken", "sourcetree"]
+  },
+  {
+    "slug": "tig", "name": "tig", "category": "git", "subcategory": "Ferramentas",
+    "tagline": "Navegador de repositórios Git em modo texto.",
+    "description": "Interface ncurses para explorar histórico, diffs, blame e árvore de arquivos de um repositório Git direto no terminal.",
+    "kind": "cli", "pricing": "open-source", "license": "GPL-2.0", "platforms": ["cli"], "languages": [],
+    "tags": ["git", "tui"], "url": "https://jonas.github.io/tig", "repo": "jonas/tig",
+    "featured": false, "alternatives": ["lazygit", "gitui"]
+  },
+  {
+    "slug": "gitui", "name": "GitUI", "category": "git", "subcategory": "Ferramentas",
+    "tagline": "Interface Git de terminal, rápida e escrita em Rust.",
+    "description": "TUI para Git com staging, commits, branches, stash e log, projetada para ser rápida mesmo em repositórios grandes.",
+    "kind": "cli", "pricing": "open-source", "license": "MIT", "platforms": ["cli"], "languages": ["rust"],
+    "tags": ["git", "tui"], "url": "https://github.com/gitui-org/gitui", "repo": "gitui-org/gitui",
+    "featured": false, "alternatives": ["lazygit", "tig"]
+  },
+  {
+    "slug": "delta", "name": "delta", "category": "git", "subcategory": "Ferramentas",
+    "tagline": "Visualizador de diffs com destaque de sintaxe para o Git.",
+    "description": "Pager para git diff, log e blame com destaque de sintaxe, numeração de linhas e diferenças palavra a palavra.",
+    "kind": "cli", "pricing": "open-source", "license": "MIT", "platforms": ["cli"], "languages": ["rust"],
+    "tags": ["git", "diff"], "url": "https://dandavison.github.io/delta", "repo": "dandavison/delta",
+    "featured": false, "alternatives": ["difftastic"]
+  },
+  {
+    "slug": "difftastic", "name": "Difftastic", "category": "git", "subcategory": "Ferramentas",
+    "tagline": "Diff que entende a estrutura sintática do código.",
+    "description": "Ferramenta de diff que compara a árvore sintática em vez de linhas, ignorando mudanças de formatação e mostrando o que de fato mudou.",
+    "kind": "cli", "pricing": "open-source", "license": "MIT", "platforms": ["cli"], "languages": ["rust"],
+    "tags": ["git", "diff"], "url": "https://difftastic.wilfred.me.uk", "repo": "Wilfred/difftastic",
+    "featured": false, "alternatives": ["delta"]
+  },
+  {
+    "slug": "husky", "name": "Husky", "category": "git", "subcategory": "Hooks e commits",
+    "tagline": "Hooks de Git simples para projetos Node.",
+    "description": "Configura hooks de Git (pre-commit, commit-msg) pelo package.json, rodando lint e testes antes de cada commit.",
+    "kind": "library", "pricing": "open-source", "license": "MIT", "platforms": ["cli"], "languages": ["javascript"],
+    "tags": ["git", "hooks", "node"], "url": "https://typicode.github.io/husky", "repo": "typicode/husky", "npm": "husky",
+    "featured": false, "alternatives": ["lefthook", "pre-commit"]
+  },
+  {
+    "slug": "lefthook", "name": "Lefthook", "category": "git", "subcategory": "Hooks e commits",
+    "tagline": "Gerenciador de hooks de Git rápido, em binário único.",
+    "description": "Gerenciador de hooks em Go com execução em paralelo e configuração em YAML, independente da linguagem do projeto.",
+    "kind": "cli", "pricing": "open-source", "license": "MIT", "platforms": ["cli"], "languages": ["go"],
+    "tags": ["git", "hooks"], "url": "https://github.com/evilmartians/lefthook", "repo": "evilmartians/lefthook", "npm": "lefthook",
+    "featured": false, "alternatives": ["husky", "pre-commit"]
+  },
+  {
+    "slug": "lint-staged", "name": "lint-staged", "category": "git", "subcategory": "Hooks e commits",
+    "tagline": "Roda linters só nos arquivos que entraram no commit.",
+    "description": "Executa linters e formatadores apenas nos arquivos em staging, mantendo o hook de pre-commit rápido mesmo em projetos grandes.",
+    "kind": "library", "pricing": "open-source", "license": "MIT", "platforms": ["cli"], "languages": ["javascript"],
+    "tags": ["git", "lint", "node"], "url": "https://github.com/lint-staged/lint-staged", "repo": "lint-staged/lint-staged", "npm": "lint-staged",
+    "featured": false, "alternatives": ["husky"]
+  },
+  {
+    "slug": "commitlint", "name": "commitlint", "category": "git", "subcategory": "Hooks e commits",
+    "tagline": "Verifica se as mensagens de commit seguem um padrão.",
+    "description": "Valida mensagens de commit contra regras configuráveis, como o Conventional Commits, normalmente num hook commit-msg.",
+    "kind": "cli", "pricing": "open-source", "license": "MIT", "platforms": ["cli"], "languages": ["javascript"],
+    "tags": ["git", "commits", "node"], "url": "https://commitlint.js.org", "repo": "conventional-changelog/commitlint", "npm": "@commitlint/cli",
+    "featured": false, "alternatives": ["commitizen"]
+  },
+  {
+    "slug": "commitizen", "name": "Commitizen", "category": "git", "subcategory": "Hooks e commits",
+    "tagline": "Assistente interativo para escrever commits no padrão.",
+    "description": "CLI que guia a escrita da mensagem de commit por perguntas, produzindo mensagens consistentes no formato Conventional Commits.",
+    "kind": "cli", "pricing": "open-source", "license": "MIT", "platforms": ["cli"], "languages": ["javascript"],
+    "tags": ["git", "commits", "node"], "url": "https://commitizen-tools.github.io/commitizen", "repo": "commitizen/cz-cli", "npm": "commitizen",
+    "featured": false, "alternatives": ["commitlint"]
+  },
+  {
+    "slug": "semantic-release", "name": "semantic-release", "category": "git", "subcategory": "Releases",
+    "tagline": "Automatiza versão, changelog e publicação a partir dos commits.",
+    "description": "Decide a próxima versão semântica a partir das mensagens de commit, gera o changelog e publica o pacote automaticamente no CI.",
+    "kind": "cli", "pricing": "open-source", "license": "MIT", "platforms": ["cli", "cloud"], "languages": ["javascript"],
+    "tags": ["release", "ci", "node"], "url": "https://semantic-release.gitbook.io", "repo": "semantic-release/semantic-release", "npm": "semantic-release",
+    "featured": false, "alternatives": ["changesets", "release-please"]
+  },
+  {
+    "slug": "changesets", "name": "Changesets", "category": "git", "subcategory": "Releases",
+    "tagline": "Versionamento e changelog para monorepos, com arquivos de mudança.",
+    "description": "Cada PR traz um arquivo descrevendo a mudança; a ferramenta calcula as versões e gera os changelogs, com bom suporte a monorepos.",
+    "kind": "cli", "pricing": "open-source", "license": "MIT", "platforms": ["cli"], "languages": ["javascript"],
+    "tags": ["release", "monorepo", "node"], "url": "https://github.com/changesets/changesets", "repo": "changesets/changesets", "npm": "@changesets/cli",
+    "featured": false, "alternatives": ["semantic-release", "release-please"]
+  },
+  {
+    "slug": "release-please", "name": "release-please", "category": "git", "subcategory": "Releases",
+    "tagline": "Mantém um PR de release atualizado a partir dos commits.",
+    "description": "Mantido pelo Google, abre e atualiza um pull request de release com versão e changelog calculados dos commits; ao mesclar, cria a release.",
+    "kind": "cli", "pricing": "open-source", "license": "Apache-2.0", "platforms": ["cli", "cloud"], "languages": ["javascript"],
+    "tags": ["release", "ci", "github"], "url": "https://github.com/googleapis/release-please", "repo": "googleapis/release-please", "npm": "release-please",
+    "featured": false, "alternatives": ["semantic-release", "changesets"]
+  },
+  {
+    "slug": "git-cliff", "name": "git-cliff", "category": "git", "subcategory": "Releases",
+    "tagline": "Gerador de changelog personalizável a partir do histórico Git.",
+    "description": "Gera changelogs a partir do histórico e de Conventional Commits, com modelos totalmente configuráveis, em um binário único.",
+    "kind": "cli", "pricing": "open-source", "license": "MIT OR Apache-2.0", "platforms": ["cli"], "languages": ["rust"],
+    "tags": ["release", "changelog"], "url": "https://git-cliff.org", "repo": "orhun/git-cliff",
+    "featured": false, "alternatives": ["semantic-release"]
+  },
+  {
+    "slug": "jujutsu", "name": "Jujutsu", "category": "git", "subcategory": "Alternativas ao Git",
+    "tagline": "Sistema de versionamento compatível com Git, com modelo mais simples.",
+    "description": "VCS que usa repositórios Git como armazenamento, mas com um modelo de trabalho diferente: sem staging, com histórico facilmente reescrito e conflitos de primeira classe.",
+    "kind": "cli", "pricing": "open-source", "license": "Apache-2.0", "platforms": ["cli"], "languages": ["rust"],
+    "tags": ["vcs", "git"], "url": "https://docs.jj-vcs.dev", "repo": "jj-vcs/jj",
+    "featured": false, "alternatives": ["git", "mercurial"]
+  },
+  {
+    "slug": "mercurial", "name": "Mercurial", "category": "git", "subcategory": "Alternativas ao Git",
+    "tagline": "Sistema de controle de versão distribuído, alternativo ao Git.",
+    "description": "VCS distribuído conhecido por comandos consistentes e boa escalabilidade, usado em grandes bases de código.",
+    "kind": "cli", "pricing": "open-source", "license": "GPL-2.0", "platforms": ["cli", "desktop"], "languages": ["python"],
+    "tags": ["vcs"], "url": "https://www.mercurial-scm.org",
+    "featured": false, "alternatives": ["git", "jujutsu"]
+  },
+  {
+    "slug": "forgejo", "name": "Forgejo", "category": "git", "subcategory": "Hospedagem",
+    "tagline": "Forge Git auto-hospedável, mantido pela comunidade.",
+    "description": "Plataforma Git leve e auto-hospedável, derivada do Gitea e governada por uma organização sem fins lucrativos, com issues, PRs e Actions.",
+    "kind": "service", "pricing": "open-source", "license": "GPL-3.0", "platforms": ["web", "cloud"], "languages": ["go"],
+    "tags": ["forge", "self-hosted"], "url": "https://forgejo.org",
+    "featured": false, "alternatives": ["gitea", "gitlab"]
+  },
+  {
+    "slug": "codeberg", "name": "Codeberg", "category": "git", "subcategory": "Hospedagem",
+    "tagline": "Hospedagem Git gratuita e sem fins lucrativos para open source.",
+    "description": "Plataforma de hospedagem de código mantida por uma associação sem fins lucrativos, baseada no Forgejo, voltada a projetos de software livre.",
+    "kind": "service", "pricing": "free", "license": "GPL-3.0", "platforms": ["web", "cloud"], "languages": [],
+    "tags": ["forge", "open-source"], "url": "https://codeberg.org",
+    "featured": false, "alternatives": ["github", "gitlab"]
+  },
+  {
+    "slug": "azure-devops", "name": "Azure DevOps", "category": "git", "subcategory": "Hospedagem",
+    "tagline": "Repositórios, pipelines e gestão de trabalho da Microsoft.",
+    "description": "Suíte da Microsoft com repositórios Git, pipelines de CI/CD, quadros de trabalho e gestão de testes, muito usada em empresas.",
+    "kind": "service", "pricing": "freemium", "license": "Proprietary", "platforms": ["web", "cloud"], "languages": [],
+    "tags": ["devops", "ci", "microsoft"], "url": "https://azure.microsoft.com/products/devops",
+    "featured": false, "alternatives": ["gitlab", "github"]
+  },
+  {
+    "slug": "gh-dash", "name": "gh-dash", "category": "git", "subcategory": "Ferramentas",
+    "tagline": "Painel de PRs e issues do GitHub no terminal.",
+    "description": "Extensão do GitHub CLI que mostra pull requests e issues em seções configuráveis por filtros, direto no terminal.",
+    "kind": "cli", "pricing": "open-source", "license": "MIT", "platforms": ["cli"], "languages": ["go"],
+    "tags": ["github", "tui"], "url": "https://www.gh-dash.dev", "repo": "dlvhdr/gh-dash",
+    "featured": false, "alternatives": ["github-cli"]
+  },
+  {
+    "slug": "renovate", "name": "Renovate", "category": "git", "subcategory": "Automação",
+    "tagline": "Atualiza dependências automaticamente via pull requests.",
+    "description": "Bot que detecta dependências desatualizadas em dezenas de gerenciadores de pacotes e abre PRs de atualização, com agrupamento e agendamento configuráveis.",
+    "kind": "service", "pricing": "open-source", "license": "AGPL-3.0", "platforms": ["cloud", "cli"], "languages": ["typescript"],
+    "tags": ["dependencies", "automation"], "url": "https://docs.renovatebot.com", "repo": "renovatebot/renovate", "npm": "renovate",
+    "featured": false, "alternatives": ["dependabot"]
+  },
+  {
+    "slug": "dependabot", "name": "Dependabot", "category": "git", "subcategory": "Automação",
+    "tagline": "Atualizações e alertas de dependências nativos do GitHub.",
+    "description": "Recurso do GitHub que alerta sobre dependências vulneráveis e abre pull requests de atualização, ativado por um arquivo de configuração.",
+    "kind": "service", "pricing": "free", "license": "Proprietary", "platforms": ["cloud"], "languages": [],
+    "tags": ["dependencies", "security", "github"], "url": "https://docs.github.com/code-security/dependabot",
+    "featured": false, "alternatives": ["renovate"]
+  },
+  {
+    "slug": "gitleaks", "name": "Gitleaks", "category": "git", "subcategory": "Segurança",
+    "tagline": "Detecta segredos vazados no código e no histórico Git.",
+    "description": "Varre repositórios e commits em busca de chaves de API, senhas e tokens, podendo rodar em hooks e no CI.",
+    "kind": "cli", "pricing": "open-source", "license": "MIT", "platforms": ["cli"], "languages": ["go"],
+    "tags": ["security", "secrets"], "url": "https://gitleaks.io", "repo": "gitleaks/gitleaks",
+    "featured": false, "alternatives": ["trufflehog"]
+  },
+  {
+    "slug": "trufflehog", "name": "TruffleHog", "category": "git", "subcategory": "Segurança",
+    "tagline": "Encontra e verifica segredos vazados em repositórios e outras fontes.",
+    "description": "Procura credenciais em repositórios, buckets e outras fontes e tenta verificar se ainda estão ativas, reduzindo falsos positivos.",
+    "kind": "cli", "pricing": "open-source", "license": "AGPL-3.0", "platforms": ["cli"], "languages": ["go"],
+    "tags": ["security", "secrets"], "url": "https://trufflesecurity.com/trufflehog", "repo": "trufflesecurity/trufflehog",
+    "featured": false, "alternatives": ["gitleaks"]
+  },
+  {
+    "slug": "sourcehut", "name": "SourceHut", "category": "git", "subcategory": "Hospedagem",
+    "tagline": "Forja de software minimalista, rápida e sem JavaScript obrigatório.",
+    "description": "Plataforma de hospedagem com repositórios Git e Mercurial, listas de e-mail para patches e CI, com interface leve e paga por assinatura.",
+    "kind": "service", "pricing": "paid", "license": "AGPL-3.0", "platforms": ["web", "cloud"], "languages": [],
+    "tags": ["forge", "minimal"], "url": "https://sourcehut.org",
+    "featured": false, "alternatives": ["codeberg", "gitlab"]
+  },
+  {
+    "slug": "gerrit", "name": "Gerrit", "category": "git", "subcategory": "Hospedagem",
+    "tagline": "Revisão de código rigorosa sobre Git, usada em grandes projetos.",
+    "description": "Servidor de revisão de código para Git, em que cada mudança é revisada e aprovada individualmente antes de entrar, usado por projetos como o Android.",
+    "kind": "service", "pricing": "open-source", "license": "Apache-2.0", "platforms": ["web", "cloud"], "languages": ["java"],
+    "tags": ["review", "self-hosted"], "url": "https://www.gerritcodereview.com",
+    "featured": false, "alternatives": ["gitlab", "gitea"]
   }
 ]

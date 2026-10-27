@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { pt } from "@/messages/pt-BR";
+import { useI18n } from "@/components/I18nProvider";
 import type { FacetKey } from "@/lib/search";
 
 export type FacetGroup = {
@@ -13,6 +13,7 @@ export type FacetGroup = {
 const VISIBLE = 8; // cabe as 8 categorias e os 8 tipos sem "ver todos"
 
 function Group({ group, onToggle }: { group: FacetGroup; onToggle: (key: FacetKey, value: string) => void }) {
+  const { t } = useI18n();
   const [expanded, setExpanded] = useState(false);
   // Opções marcadas nunca ficam escondidas atrás do "ver todos".
   const shown = expanded ? group.options : group.options.filter((o, i) => i < VISIBLE || o.checked);
@@ -45,7 +46,7 @@ function Group({ group, onToggle }: { group: FacetGroup; onToggle: (key: FacetKe
           onClick={() => setExpanded(!expanded)}
           className="-mx-2 mt-1 h-11 rounded-md px-2 text-sm text-fg-muted transition-colors duration-150 hover:text-fg lg:h-9"
         >
-          {expanded ? pt.catalog.showLess : pt.catalog.showAll(group.options.length)}
+          {expanded ? t.catalog.showLess : t.catalog.showAll(group.options.length)}
         </button>
       )}
     </fieldset>
@@ -56,13 +57,14 @@ function Group({ group, onToggle }: { group: FacetGroup; onToggle: (key: FacetKe
 export function Facets({
   main, advanced, onToggle,
 }: { main: FacetGroup[]; advanced: FacetGroup[]; onToggle: (key: FacetKey, value: string) => void }) {
+  const { t } = useI18n();
   const advancedActive = advanced.some((g) => g.options.some((o) => o.checked));
   return (
     <div className="flex flex-col gap-6">
       {main.map((g) => <Group key={g.key} group={g} onToggle={onToggle} />)}
       <details open={advancedActive || undefined} className="border-t border-line pt-2 [&[open]>summary>svg]:rotate-180">
         <summary className="flex h-11 cursor-pointer list-none items-center justify-between rounded-md text-sm font-medium [&::-webkit-details-marker]:hidden">
-          {pt.catalog.moreFilters}
+          {t.catalog.moreFilters}
           <svg aria-hidden viewBox="0 0 16 16" className="size-4 text-fg-subtle transition-transform duration-150" fill="none" stroke="currentColor" strokeWidth="1.5">
             <path d="m4 6 4 4 4-4" />
           </svg>

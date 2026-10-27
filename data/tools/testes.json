@@ -62,5 +62,237 @@
     "kind": "service", "pricing": "freemium", "license": "LGPL-3.0", "platforms": ["web", "cloud"], "languages": [],
     "tags": ["qualidade"], "url": "https://www.sonarsource.com", "repo": "SonarSource/sonarqube",
     "featured": false, "alternatives": []
+  },
+  {
+    "slug": "testing-library", "name": "Testing Library", "category": "testes", "subcategory": "Testes unitários",
+    "tagline": "Testa componentes como o usuário os usa, não pelos detalhes internos.",
+    "description": "Família de bibliotecas que consulta a interface por papéis e textos acessíveis, incentivando testes que refletem o uso real.",
+    "kind": "library", "pricing": "open-source", "license": "MIT", "platforms": ["web"], "languages": ["javascript", "typescript"],
+    "tags": ["unit", "react", "dom"], "url": "https://testing-library.com", "repo": "testing-library/react-testing-library", "npm": "@testing-library/react",
+    "featured": false, "alternatives": []
+  },
+  {
+    "slug": "mocha", "name": "Mocha", "category": "testes", "subcategory": "Testes unitários",
+    "tagline": "Framework de testes flexível para Node.js e navegadores.",
+    "description": "Framework de testes que deixa você escolher a biblioteca de asserções e de mocks, com saída configurável.",
+    "kind": "library", "pricing": "open-source", "license": "MIT", "platforms": ["cli"], "languages": ["javascript"],
+    "tags": ["unit", "node"], "url": "https://mochajs.org", "repo": "mochajs/mocha", "npm": "mocha",
+    "featured": false, "alternatives": ["jest", "vitest"]
+  },
+  {
+    "slug": "selenium", "name": "Selenium", "category": "testes", "subcategory": "End-to-end",
+    "tagline": "Automação de navegadores veterana, em várias linguagens.",
+    "description": "Conjunto de ferramentas para automatizar navegadores, com suporte a Java, Python, C#, JavaScript e outras, e um enorme ecossistema.",
+    "kind": "library", "pricing": "open-source", "license": "Apache-2.0", "platforms": ["cli"], "languages": ["java", "python", "javascript"],
+    "tags": ["e2e", "browser", "automation"], "url": "https://www.selenium.dev", "repo": "SeleniumHQ/selenium",
+    "featured": false, "alternatives": ["playwright", "cypress"]
+  },
+  {
+    "slug": "puppeteer", "name": "Puppeteer", "category": "testes", "subcategory": "End-to-end",
+    "tagline": "Controla o Chrome por código: capturas, PDFs e automação.",
+    "description": "Biblioteca Node que controla o Chrome e o Firefox por protocolo, usada para automação, geração de PDFs e capturas de tela.",
+    "kind": "library", "pricing": "open-source", "license": "Apache-2.0", "platforms": ["cli"], "languages": ["javascript", "typescript"],
+    "tags": ["browser", "automation", "scraping"], "url": "https://pptr.dev", "repo": "puppeteer/puppeteer", "npm": "puppeteer",
+    "featured": false, "alternatives": ["playwright"]
+  },
+  {
+    "slug": "k6", "name": "k6", "category": "testes", "subcategory": "Desempenho",
+    "tagline": "Testes de carga escritos em JavaScript, com binário em Go.",
+    "description": "Ferramenta de testes de carga e desempenho em que os cenários são scripts JavaScript, com métricas detalhadas e integração com o Grafana.",
+    "kind": "cli", "pricing": "open-source", "license": "AGPL-3.0", "platforms": ["cli", "cloud"], "languages": ["javascript", "go"],
+    "tags": ["load-testing", "performance"], "url": "https://k6.io", "repo": "grafana/k6",
+    "featured": false, "alternatives": ["locust"]
+  },
+  {
+    "slug": "pytest", "name": "pytest", "category": "testes", "subcategory": "Testes unitários",
+    "tagline": "O framework de testes padrão de fato em Python.",
+    "description": "Framework de testes com sintaxe simples (asserts comuns), fixtures poderosas e um grande ecossistema de plugins.",
+    "kind": "library", "pricing": "open-source", "license": "MIT", "platforms": ["cli"], "languages": ["python"],
+    "tags": ["unit", "python"], "url": "https://docs.pytest.org", "repo": "pytest-dev/pytest",
+    "featured": false, "alternatives": []
+  },
+  {
+    "slug": "junit", "name": "JUnit", "category": "testes", "subcategory": "Testes unitários",
+    "tagline": "O framework de testes padrão para Java e a JVM.",
+    "description": "Framework de testes de unidade para Java e Kotlin, com anotações, testes parametrizados e extensões, base de quase toda a stack JVM.",
+    "kind": "library", "pricing": "open-source", "license": "EPL-2.0", "platforms": ["cli"], "languages": ["java", "kotlin"],
+    "tags": ["unit", "java"], "url": "https://junit.org", "repo": "junit-team/junit5",
+    "featured": false, "alternatives": []
+  },
+  {
+    "slug": "msw", "name": "Mock Service Worker", "category": "testes", "subcategory": "Mocks e dados",
+    "tagline": "Mocka APIs interceptando requisições de rede de verdade.",
+    "description": "Biblioteca que intercepta requisições no nível de rede (navegador e Node) para simular APIs em testes e no desenvolvimento, sem alterar o código da aplicação.",
+    "kind": "library", "pricing": "open-source", "license": "MIT", "platforms": ["web", "cli"], "languages": ["typescript"],
+    "tags": ["mock", "api", "testing"], "url": "https://mswjs.io", "repo": "mswjs/msw", "npm": "msw",
+    "featured": false, "alternatives": []
+  },
+  {
+    "slug": "faker", "name": "Faker", "category": "testes", "subcategory": "Mocks e dados",
+    "tagline": "Gera dados falsos realistas: nomes, endereços, textos e mais.",
+    "description": "Biblioteca que gera dados fictícios em dezenas de idiomas, útil para testes, protótipos e para popular bancos de desenvolvimento.",
+    "kind": "library", "pricing": "open-source", "license": "MIT", "platforms": ["cli", "web"], "languages": ["typescript", "javascript"],
+    "tags": ["fake-data", "testing"], "url": "https://fakerjs.dev", "repo": "faker-js/faker", "npm": "@faker-js/faker",
+    "featured": false, "alternatives": []
+  },
+  {
+    "slug": "stylelint", "name": "Stylelint", "category": "testes", "subcategory": "Lint e formatação",
+    "tagline": "Linter moderno para CSS, SCSS e afins.",
+    "description": "Linter que encontra erros e impõe convenções em CSS, SCSS e outras sintaxes, com mais de cem regras e plugins.",
+    "kind": "cli", "pricing": "open-source", "license": "MIT", "platforms": ["cli"], "languages": ["css"],
+    "tags": ["lint", "css"], "url": "https://stylelint.io", "repo": "stylelint/stylelint", "npm": "stylelint",
+    "featured": false, "alternatives": []
+  },
+  {
+    "slug": "oxlint", "name": "Oxlint", "category": "testes", "subcategory": "Lint e formatação",
+    "tagline": "Linter de JavaScript e TypeScript dezenas de vezes mais rápido que o ESLint.",
+    "description": "Linter em Rust do projeto Oxc, com centenas de regras compatíveis com o ESLint e velocidade muito superior.",
+    "kind": "cli", "pricing": "open-source", "license": "MIT", "platforms": ["cli"], "languages": ["javascript", "typescript"],
+    "tags": ["lint", "rust", "fast"], "url": "https://oxc.rs", "repo": "oxc-project/oxc", "npm": "oxlint",
+    "featured": false, "alternatives": ["eslint", "biome"]
+  },
+  {
+    "slug": "ruff", "name": "Ruff", "category": "testes", "subcategory": "Lint e formatação",
+    "tagline": "Linter e formatador de Python extremamente rápido, em Rust.",
+    "description": "Ferramenta única que substitui Flake8, isort, Black e outras, escrita em Rust e muito mais rápida que as alternativas.",
+    "kind": "cli", "pricing": "open-source", "license": "MIT", "platforms": ["cli"], "languages": ["python"],
+    "tags": ["lint", "format", "python"], "url": "https://docs.astral.sh/ruff", "repo": "astral-sh/ruff",
+    "featured": false, "alternatives": []
+  },
+  {
+    "slug": "mypy", "name": "mypy", "category": "testes", "subcategory": "Análise estática",
+    "tagline": "Verificador de tipos estático para Python.",
+    "description": "Verifica as anotações de tipo do Python sem executar o código, apontando erros antes da execução.",
+    "kind": "cli", "pricing": "open-source", "license": "MIT", "platforms": ["cli"], "languages": ["python"],
+    "tags": ["types", "python", "static"], "url": "https://mypy-lang.org", "repo": "python/mypy",
+    "featured": false, "alternatives": ["pyright"]
+  },
+  {
+    "slug": "pyright", "name": "Pyright", "category": "testes", "subcategory": "Análise estática",
+    "tagline": "Verificador de tipos rápido para Python, da Microsoft.",
+    "description": "Verificador de tipos estático para Python, rápido e rigoroso, que é a base do Pylance no VS Code.",
+    "kind": "cli", "pricing": "open-source", "license": "MIT", "platforms": ["cli"], "languages": ["python"],
+    "tags": ["types", "python", "static"], "url": "https://microsoft.github.io/pyright", "repo": "microsoft/pyright", "npm": "pyright",
+    "featured": false, "alternatives": ["mypy"]
+  },
+  {
+    "slug": "golangci-lint", "name": "golangci-lint", "category": "testes", "subcategory": "Lint e formatação",
+    "tagline": "Executa dezenas de linters de Go em paralelo, com cache.",
+    "description": "Agregador de linters para Go que roda dezenas de verificações em paralelo, com cache e configuração única.",
+    "kind": "cli", "pricing": "open-source", "license": "GPL-3.0", "platforms": ["cli"], "languages": ["go"],
+    "tags": ["lint", "go"], "url": "https://golangci-lint.run", "repo": "golangci/golangci-lint",
+    "featured": false, "alternatives": []
+  },
+  {
+    "slug": "shellcheck", "name": "ShellCheck", "category": "testes", "subcategory": "Análise estática",
+    "tagline": "Encontra bugs e armadilhas em scripts de shell.",
+    "description": "Analisador estático para scripts sh/bash que aponta erros comuns, problemas de aspas e comportamentos inesperados.",
+    "kind": "cli", "pricing": "open-source", "license": "GPL-3.0", "platforms": ["cli"], "languages": [],
+    "tags": ["shell", "bash", "lint"], "url": "https://www.shellcheck.net", "repo": "koalaman/shellcheck",
+    "featured": false, "alternatives": []
+  },
+  {
+    "slug": "hadolint", "name": "Hadolint", "category": "testes", "subcategory": "Análise estática",
+    "tagline": "Linter de Dockerfiles que aplica boas práticas.",
+    "description": "Analisa Dockerfiles em busca de más práticas e problemas, e valida os comandos de shell embutidos com o ShellCheck.",
+    "kind": "cli", "pricing": "open-source", "license": "GPL-3.0", "platforms": ["cli"], "languages": [],
+    "tags": ["docker", "lint"], "url": "https://github.com/hadolint/hadolint", "repo": "hadolint/hadolint",
+    "featured": false, "alternatives": []
+  },
+  {
+    "slug": "semgrep", "name": "Semgrep", "category": "testes", "subcategory": "Segurança",
+    "tagline": "Análise estática de segurança com regras que parecem o código.",
+    "description": "Ferramenta de análise estática que busca vulnerabilidades e padrões com regras escritas quase como o próprio código, em dezenas de linguagens.",
+    "kind": "cli", "pricing": "open-source", "license": "LGPL-2.1", "platforms": ["cli", "cloud"], "languages": [],
+    "tags": ["sast", "security", "static"], "url": "https://semgrep.dev", "repo": "semgrep/semgrep",
+    "featured": false, "alternatives": ["sonarqube"]
+  },
+  {
+    "slug": "snyk", "name": "Snyk", "category": "testes", "subcategory": "Segurança",
+    "tagline": "Detecta vulnerabilidades em dependências, código e containers.",
+    "description": "Plataforma de segurança para desenvolvedores que analisa dependências, código, containers e infraestrutura como código, com correções sugeridas.",
+    "kind": "service", "pricing": "freemium", "license": "Proprietary", "platforms": ["cloud", "cli"], "languages": [],
+    "tags": ["security", "dependencies", "sca"], "url": "https://snyk.io",
+    "featured": false, "alternatives": ["dependabot", "trivy"]
+  },
+  {
+    "slug": "trivy", "name": "Trivy", "category": "testes", "subcategory": "Segurança",
+    "tagline": "Scanner de vulnerabilidades para containers, dependências e IaC.",
+    "description": "Scanner simples e rápido que procura vulnerabilidades, configurações inseguras e segredos em imagens, repositórios e manifestos.",
+    "kind": "cli", "pricing": "open-source", "license": "Apache-2.0", "platforms": ["cli"], "languages": ["go"],
+    "tags": ["security", "containers", "scanner"], "url": "https://trivy.dev", "repo": "aquasecurity/trivy",
+    "featured": false, "alternatives": ["snyk"]
+  },
+  {
+    "slug": "codecov", "name": "Codecov", "category": "testes", "subcategory": "Cobertura",
+    "tagline": "Relatórios de cobertura de testes nos pull requests.",
+    "description": "Serviço que recebe a cobertura de testes do CI e a mostra em comentários de PR e painéis, apontando o que ficou sem teste.",
+    "kind": "service", "pricing": "freemium", "license": "Proprietary", "platforms": ["cloud"], "languages": [],
+    "tags": ["coverage", "ci"], "url": "https://about.codecov.io",
+    "featured": false, "alternatives": []
+  },
+  {
+    "slug": "knip", "name": "Knip", "category": "testes", "subcategory": "Análise estática",
+    "tagline": "Encontra arquivos, exports e dependências não usados.",
+    "description": "Analisa projetos JavaScript e TypeScript para apontar arquivos, exportações e dependências que ninguém usa, ajudando a limpar código morto.",
+    "kind": "cli", "pricing": "open-source", "license": "ISC", "platforms": ["cli"], "languages": ["typescript", "javascript"],
+    "tags": ["dead-code", "dependencies", "lint"], "url": "https://knip.dev", "repo": "webpro-nl/knip", "npm": "knip",
+    "featured": false, "alternatives": []
+  },
+  {
+    "slug": "lighthouse", "name": "Lighthouse", "category": "testes", "subcategory": "Desempenho",
+    "tagline": "Audita desempenho, acessibilidade, SEO e boas práticas de uma página.",
+    "description": "Ferramenta do Google, integrada ao Chrome, que mede desempenho, acessibilidade, SEO e boas práticas e sugere melhorias.",
+    "kind": "cli", "pricing": "open-source", "license": "Apache-2.0", "platforms": ["cli", "web"], "languages": ["javascript"],
+    "tags": ["performance", "seo", "a11y"], "url": "https://developer.chrome.com/docs/lighthouse", "repo": "GoogleChrome/lighthouse", "npm": "lighthouse",
+    "featured": false, "alternatives": []
+  },
+  {
+    "slug": "axe-core", "name": "axe-core", "category": "testes", "subcategory": "Acessibilidade",
+    "tagline": "Motor de testes de acessibilidade automatizados (WCAG).",
+    "description": "Biblioteca que encontra problemas de acessibilidade em páginas, integrada a Playwright, Cypress, Jest e extensões de navegador.",
+    "kind": "library", "pricing": "open-source", "license": "MPL-2.0", "platforms": ["web", "cli"], "languages": ["javascript"],
+    "tags": ["a11y", "wcag", "testing"], "url": "https://www.deque.com/axe", "repo": "dequelabs/axe-core", "npm": "axe-core",
+    "featured": false, "alternatives": []
+  },
+  {
+    "slug": "locust", "name": "Locust", "category": "testes", "subcategory": "Desempenho",
+    "tagline": "Testes de carga em Python, com cenários escritos em código.",
+    "description": "Ferramenta de testes de carga em que o comportamento dos usuários é descrito em Python, com interface web e execução distribuída.",
+    "kind": "library", "pricing": "open-source", "license": "MIT", "platforms": ["cli", "web"], "languages": ["python"],
+    "tags": ["load-testing", "python"], "url": "https://locust.io", "repo": "locustio/locust",
+    "featured": false, "alternatives": ["k6"]
+  },
+  {
+    "slug": "testcontainers", "name": "Testcontainers", "category": "testes", "subcategory": "Testes unitários",
+    "tagline": "Sobe bancos e serviços reais em containers descartáveis nos testes.",
+    "description": "Bibliotecas que iniciam containers Docker (bancos, filas, etc.) durante os testes de integração e os descartam ao final.",
+    "kind": "library", "pricing": "open-source", "license": "MIT", "platforms": ["cli"], "languages": ["java", "typescript", "python", "go"],
+    "tags": ["integration", "docker", "testing"], "url": "https://testcontainers.com", "repo": "testcontainers/testcontainers-node", "npm": "testcontainers",
+    "featured": false, "alternatives": []
+  },
+  {
+    "slug": "stryker", "name": "Stryker", "category": "testes", "subcategory": "Testes unitários",
+    "tagline": "Testes de mutação: mede se seus testes realmente pegam bugs.",
+    "description": "Introduz pequenas mudanças no código e verifica se os testes falham, revelando testes fracos que passam mesmo com o código quebrado.",
+    "kind": "cli", "pricing": "open-source", "license": "Apache-2.0", "platforms": ["cli"], "languages": ["javascript", "typescript"],
+    "tags": ["mutation", "testing"], "url": "https://stryker-mutator.io", "repo": "stryker-mutator/stryker-js", "npm": "@stryker-mutator/core",
+    "featured": false, "alternatives": []
+  },
+  {
+    "slug": "dprint", "name": "dprint", "category": "testes", "subcategory": "Lint e formatação",
+    "tagline": "Formatador de código rápido, extensível por plugins WebAssembly.",
+    "description": "Formatador em Rust com plugins para várias linguagens, configurável e muito mais rápido que o Prettier.",
+    "kind": "cli", "pricing": "open-source", "license": "MIT", "platforms": ["cli"], "languages": ["rust"],
+    "tags": ["format", "fast"], "url": "https://dprint.dev", "repo": "dprint/dprint",
+    "featured": false, "alternatives": ["prettier", "biome"]
+  },
+  {
+    "slug": "chromatic", "name": "Chromatic", "category": "testes", "subcategory": "Testes visuais",
+    "tagline": "Testes visuais e revisão de UI a partir do Storybook.",
+    "description": "Serviço dos criadores do Storybook que captura imagens dos componentes a cada commit e destaca diferenças visuais para revisão.",
+    "kind": "service", "pricing": "freemium", "license": "Proprietary", "platforms": ["cloud"], "languages": [],
+    "tags": ["visual", "storybook", "ci"], "url": "https://www.chromatic.com",
+    "featured": false, "alternatives": []
   }
 ]

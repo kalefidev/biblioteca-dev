@@ -8,12 +8,20 @@ import type { Metrics } from '../lib/schema.ts'
 const token = process.env.GITHUB_TOKEN
 if (!token) console.warn('! GITHUB_TOKEN ausente: limite de 60 requisições/h do GitHub.')
 
+const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms))
+
 const get = async <T>(url: string, auth = false, quiet404 = false): Promise<T | null> => {
   try {
-    const res = await fetch(url, {
-      signal: AbortSignal.timeout(15000),
-      headers: { accept: 'application/json', 'user-agent': 'biblioteca-dev-enrich', ...(auth && token ? { authorization: `Bearer ${token}` } : {}) },
-    })
+    let res: Response
+    // 429 (limite de taxa, comum na API de downloads do npm): espera e tenta de novo.
+    for (let attempt = 1; ; attempt++) {
+      res = await fetch(url, {
+        signal: AbortSignal.timeout(15000),
+        headers: { accept: 'application/json', 'user-agent': 'biblioteca-dev-enrich', ...(auth && token ? { authorization: `Bearer ${token}` } : {}) },
+      })
+      if (res.status !== 429 || attempt === 4) break
+      await sleep(attempt * 3000)
+    }
     if (!res.ok) {
       if (!(quiet404 && res.status === 404)) console.warn(`! ${res.status} ${url}`)
       return null

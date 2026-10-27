@@ -62,5 +62,237 @@
     "kind": "app", "pricing": "freemium", "license": "Apache-2.0", "platforms": ["desktop"], "languages": ["sql"],
     "tags": ["gui", "sql"], "url": "https://dbeaver.io", "repo": "dbeaver/dbeaver",
     "featured": false, "alternatives": []
+  },
+  {
+    "slug": "mysql", "name": "MySQL", "category": "dados", "subcategory": "Relacionais",
+    "tagline": "Banco relacional popular, base de grande parte da web.",
+    "description": "Banco de dados relacional open source da Oracle, muito usado em aplicações web e na pilha LAMP, com replicação e boa documentação.",
+    "kind": "database", "pricing": "open-source", "license": "GPL-2.0", "platforms": ["cloud", "cli"], "languages": ["sql"],
+    "tags": ["sql", "relational"], "url": "https://www.mysql.com", "repo": "mysql/mysql-server",
+    "featured": false, "alternatives": ["postgresql", "mariadb"]
+  },
+  {
+    "slug": "mariadb", "name": "MariaDB", "category": "dados", "subcategory": "Relacionais",
+    "tagline": "Fork comunitário do MySQL, compatível e totalmente open source.",
+    "description": "Banco relacional criado pelos autores originais do MySQL, com compatibilidade ampla, motores de armazenamento extras e governança aberta.",
+    "kind": "database", "pricing": "open-source", "license": "GPL-2.0", "platforms": ["cloud", "cli"], "languages": ["sql"],
+    "tags": ["sql", "relational"], "url": "https://mariadb.org", "repo": "MariaDB/server",
+    "featured": false, "alternatives": ["mysql", "postgresql"]
+  },
+  {
+    "slug": "clickhouse", "name": "ClickHouse", "category": "dados", "subcategory": "Analítico",
+    "tagline": "Banco colunar ultrarrápido para análises em grande volume.",
+    "description": "Banco de dados colunar para consultas analíticas (OLAP) sobre bilhões de linhas em tempo real, usado em métricas, logs e eventos.",
+    "kind": "database", "pricing": "open-source", "license": "Apache-2.0", "platforms": ["cloud", "cli"], "languages": ["sql"],
+    "tags": ["olap", "analytics", "columnar"], "url": "https://clickhouse.com", "repo": "ClickHouse/ClickHouse",
+    "featured": false, "alternatives": ["duckdb"]
+  },
+  {
+    "slug": "duckdb", "name": "DuckDB", "category": "dados", "subcategory": "Analítico",
+    "tagline": "SQLite para análises: banco analítico embutido e muito rápido.",
+    "description": "Banco analítico embutido que roda dentro do processo e consulta direto arquivos CSV, Parquet e JSON com SQL.",
+    "kind": "database", "pricing": "open-source", "license": "MIT", "platforms": ["cli", "desktop"], "languages": ["sql"],
+    "tags": ["olap", "analytics", "embedded"], "url": "https://duckdb.org", "repo": "duckdb/duckdb",
+    "featured": false, "alternatives": ["sqlite", "clickhouse"]
+  },
+  {
+    "slug": "opensearch", "name": "OpenSearch", "category": "dados", "subcategory": "Busca",
+    "tagline": "Busca e análise distribuídas, derivado do Elasticsearch.",
+    "description": "Motor de busca e análise distribuído, com licença Apache, usado para busca em texto completo, logs e observabilidade.",
+    "kind": "database", "pricing": "open-source", "license": "Apache-2.0", "platforms": ["cloud"], "languages": ["java"],
+    "tags": ["search", "logs"], "url": "https://opensearch.org", "repo": "opensearch-project/OpenSearch",
+    "featured": false, "alternatives": ["meilisearch", "typesense"]
+  },
+  {
+    "slug": "meilisearch", "name": "Meilisearch", "category": "dados", "subcategory": "Busca",
+    "tagline": "Busca rápida e tolerante a erros de digitação, fácil de usar.",
+    "description": "Motor de busca open source com resultados instantâneos, tolerância a erros de digitação e configuração mínima.",
+    "kind": "database", "pricing": "open-source", "license": "MIT", "platforms": ["cloud"], "languages": ["rust"],
+    "tags": ["search", "typo-tolerant"], "url": "https://www.meilisearch.com", "repo": "meilisearch/meilisearch",
+    "featured": false, "alternatives": ["typesense", "opensearch"]
+  },
+  {
+    "slug": "typesense", "name": "Typesense", "category": "dados", "subcategory": "Busca",
+    "tagline": "Motor de busca rápido, em memória, com busca por vetores.",
+    "description": "Motor de busca open source em C++ que guarda o índice em memória, com tolerância a erros de digitação, facetas e busca vetorial.",
+    "kind": "database", "pricing": "open-source", "license": "GPL-3.0", "platforms": ["cloud"], "languages": [],
+    "tags": ["search", "typo-tolerant"], "url": "https://typesense.org", "repo": "typesense/typesense",
+    "featured": false, "alternatives": ["meilisearch", "opensearch"]
+  },
+  {
+    "slug": "neo4j", "name": "Neo4j", "category": "dados", "subcategory": "Grafos",
+    "tagline": "Banco de dados de grafos com a linguagem de consulta Cypher.",
+    "description": "Banco de grafos que armazena nós e relações como cidadãos de primeira classe, ideal para dados altamente conectados.",
+    "kind": "database", "pricing": "open-source", "license": "GPL-3.0", "platforms": ["cloud", "cli"], "languages": ["java"],
+    "tags": ["graph", "cypher"], "url": "https://neo4j.com", "repo": "neo4j/neo4j",
+    "featured": false, "alternatives": []
+  },
+  {
+    "slug": "cassandra", "name": "Apache Cassandra", "category": "dados", "subcategory": "Colunar",
+    "tagline": "Banco distribuído com alta disponibilidade e escrita em escala.",
+    "description": "Banco NoSQL de colunas largas, sem ponto único de falha, projetado para altíssimo volume de escritas e distribuição geográfica.",
+    "kind": "database", "pricing": "open-source", "license": "Apache-2.0", "platforms": ["cloud"], "languages": ["java"],
+    "tags": ["nosql", "distributed", "wide-column"], "url": "https://cassandra.apache.org", "repo": "apache/cassandra",
+    "featured": false, "alternatives": ["mongodb"]
+  },
+  {
+    "slug": "dynamodb", "name": "Amazon DynamoDB", "category": "dados", "subcategory": "Plataformas",
+    "tagline": "Banco NoSQL serverless da AWS, de latência estável em qualquer escala.",
+    "description": "Banco chave-valor e de documentos totalmente gerenciado, com escala automática e cobrança por uso, integrado ao restante da AWS.",
+    "kind": "service", "pricing": "paid", "license": "Proprietary", "platforms": ["cloud"], "languages": [],
+    "tags": ["nosql", "aws", "serverless"], "url": "https://aws.amazon.com/dynamodb",
+    "featured": false, "alternatives": ["mongodb"]
+  },
+  {
+    "slug": "firebase", "name": "Firebase", "category": "dados", "subcategory": "Plataformas",
+    "tagline": "Plataforma de backend do Google para apps web e móveis.",
+    "description": "Conjunto de serviços gerenciados do Google com banco em tempo real (Firestore), autenticação, hospedagem, funções e notificações.",
+    "kind": "service", "pricing": "freemium", "license": "Proprietary", "platforms": ["cloud", "web", "mobile"], "languages": ["javascript"],
+    "tags": ["baas", "google", "realtime"], "url": "https://firebase.google.com",
+    "featured": false, "alternatives": ["supabase"]
+  },
+  {
+    "slug": "neon", "name": "Neon", "category": "dados", "subcategory": "Plataformas",
+    "tagline": "Postgres serverless com branches de banco de dados.",
+    "description": "Postgres gerenciado com armazenamento e computação separados, escala até zero e branches instantâneos do banco para desenvolvimento e testes.",
+    "kind": "service", "pricing": "freemium", "license": "Apache-2.0", "platforms": ["cloud"], "languages": ["sql"],
+    "tags": ["postgres", "serverless", "branching"], "url": "https://neon.com", "repo": "neondatabase/neon",
+    "featured": false, "alternatives": ["supabase", "postgresql"]
+  },
+  {
+    "slug": "turso", "name": "Turso", "category": "dados", "subcategory": "Plataformas",
+    "tagline": "SQLite distribuído na borda, baseado no libSQL.",
+    "description": "Banco de dados baseado no libSQL (fork do SQLite) com réplicas próximas aos usuários, bom para apps na borda e um banco por usuário.",
+    "kind": "service", "pricing": "freemium", "license": "MIT", "platforms": ["cloud"], "languages": ["sql"],
+    "tags": ["sqlite", "edge", "libsql"], "url": "https://turso.tech", "repo": "tursodatabase/libsql",
+    "featured": false, "alternatives": ["sqlite", "neon"]
+  },
+  {
+    "slug": "minio", "name": "MinIO", "category": "dados", "subcategory": "Armazenamento de objetos",
+    "tagline": "Armazenamento de objetos compatível com S3, auto-hospedável.",
+    "description": "Servidor de armazenamento de objetos de alto desempenho com API compatível com o Amazon S3, para rodar em infraestrutura própria.",
+    "kind": "service", "pricing": "open-source", "license": "AGPL-3.0", "platforms": ["cloud"], "languages": ["go"],
+    "tags": ["storage", "s3", "self-hosted"], "url": "https://www.min.io", "repo": "minio/minio",
+    "featured": false, "alternatives": []
+  },
+  {
+    "slug": "qdrant", "name": "Qdrant", "category": "dados", "subcategory": "Vetoriais",
+    "tagline": "Banco de vetores em Rust para busca por similaridade.",
+    "description": "Banco de dados vetorial para busca por similaridade em embeddings, com filtros por metadados, usado em RAG e recomendações.",
+    "kind": "database", "pricing": "open-source", "license": "Apache-2.0", "platforms": ["cloud"], "languages": ["rust"],
+    "tags": ["vector", "ai", "search"], "url": "https://qdrant.tech", "repo": "qdrant/qdrant",
+    "featured": false, "alternatives": ["chroma", "pgvector"]
+  },
+  {
+    "slug": "pgvector", "name": "pgvector", "category": "dados", "subcategory": "Vetoriais",
+    "tagline": "Busca vetorial dentro do PostgreSQL.",
+    "description": "Extensão do PostgreSQL que armazena embeddings e faz busca por similaridade com índices, junto aos demais dados relacionais.",
+    "kind": "database", "pricing": "open-source", "license": "PostgreSQL", "platforms": ["cloud"], "languages": ["sql"],
+    "tags": ["vector", "postgres", "ai"], "url": "https://github.com/pgvector/pgvector", "repo": "pgvector/pgvector",
+    "featured": false, "alternatives": ["qdrant", "chroma"]
+  },
+  {
+    "slug": "chroma", "name": "Chroma", "category": "dados", "subcategory": "Vetoriais",
+    "tagline": "Banco de embeddings simples, feito para apps com IA.",
+    "description": "Banco de vetores open source com API simples em Python e JavaScript, pensado para prototipar e construir aplicações com LLMs.",
+    "kind": "database", "pricing": "open-source", "license": "Apache-2.0", "platforms": ["cloud", "cli"], "languages": ["python"],
+    "tags": ["vector", "ai", "embeddings"], "url": "https://www.trychroma.com", "repo": "chroma-core/chroma", "npm": "chromadb",
+    "featured": false, "alternatives": ["qdrant", "pgvector"]
+  },
+  {
+    "slug": "kysely", "name": "Kysely", "category": "dados", "subcategory": "ORMs",
+    "tagline": "Construtor de queries SQL com tipos fortes em TypeScript.",
+    "description": "Query builder tipado para TypeScript que verifica as consultas contra o seu schema, sem esconder o SQL por baixo.",
+    "kind": "library", "pricing": "open-source", "license": "MIT", "platforms": ["cloud", "web"], "languages": ["typescript"],
+    "tags": ["sql", "query-builder", "ts"], "url": "https://kysely.dev", "repo": "kysely-org/kysely", "npm": "kysely",
+    "featured": false, "alternatives": ["drizzle-orm", "prisma"]
+  },
+  {
+    "slug": "typeorm", "name": "TypeORM", "category": "dados", "subcategory": "ORMs",
+    "tagline": "ORM com decoradores para TypeScript e JavaScript.",
+    "description": "ORM que mapeia classes e decoradores para tabelas, com suporte a vários bancos, migrações e os padrões Active Record e Data Mapper.",
+    "kind": "library", "pricing": "open-source", "license": "MIT", "platforms": ["cloud"], "languages": ["typescript"],
+    "tags": ["orm", "ts", "decorators"], "url": "https://typeorm.io", "repo": "typeorm/typeorm", "npm": "typeorm",
+    "featured": false, "alternatives": ["prisma", "drizzle-orm"]
+  },
+  {
+    "slug": "sqlalchemy", "name": "SQLAlchemy", "category": "dados", "subcategory": "ORMs",
+    "tagline": "O ORM e kit de ferramentas SQL padrão do Python.",
+    "description": "Biblioteca com um ORM poderoso e uma camada SQL de baixo nível, muito flexível, base de muitos projetos Python fora do Django.",
+    "kind": "library", "pricing": "open-source", "license": "MIT", "platforms": ["cloud"], "languages": ["python"],
+    "tags": ["orm", "python", "sql"], "url": "https://www.sqlalchemy.org", "repo": "sqlalchemy/sqlalchemy",
+    "featured": false, "alternatives": ["django"]
+  },
+  {
+    "slug": "flyway", "name": "Flyway", "category": "dados", "subcategory": "Migrações",
+    "tagline": "Migrações de banco de dados versionadas, em SQL simples.",
+    "description": "Ferramenta de migração que aplica scripts SQL versionados na ordem certa, registrando o estado do banco, com versão comunitária gratuita.",
+    "kind": "cli", "pricing": "open-source", "license": "Apache-2.0", "platforms": ["cli"], "languages": ["java"],
+    "tags": ["migrations", "sql", "java"], "url": "https://flywaydb.org", "repo": "flyway/flyway",
+    "featured": false, "alternatives": ["alembic"]
+  },
+  {
+    "slug": "alembic", "name": "Alembic", "category": "dados", "subcategory": "Migrações",
+    "tagline": "Migrações de banco para projetos com SQLAlchemy.",
+    "description": "Ferramenta de migração do autor do SQLAlchemy, que gera e aplica migrações versionadas e pode detectar mudanças nos modelos.",
+    "kind": "cli", "pricing": "open-source", "license": "MIT", "platforms": ["cli"], "languages": ["python"],
+    "tags": ["migrations", "python", "sqlalchemy"], "url": "https://alembic.sqlalchemy.org", "repo": "sqlalchemy/alembic",
+    "featured": false, "alternatives": ["flyway"]
+  },
+  {
+    "slug": "pgadmin", "name": "pgAdmin", "category": "dados", "subcategory": "Clientes",
+    "tagline": "Cliente gráfico oficial da comunidade para PostgreSQL.",
+    "description": "Ferramenta gratuita de administração do PostgreSQL, com editor SQL, navegador de objetos, planos de execução e monitoramento.",
+    "kind": "app", "pricing": "open-source", "license": "PostgreSQL", "platforms": ["desktop", "web"], "languages": ["sql"],
+    "tags": ["gui", "postgres"], "url": "https://www.pgadmin.org", "repo": "pgadmin-org/pgadmin4",
+    "featured": false, "alternatives": ["dbeaver"]
+  },
+  {
+    "slug": "tableplus", "name": "TablePlus", "category": "dados", "subcategory": "Clientes",
+    "tagline": "Cliente de bancos de dados nativo, rápido e com visual limpo.",
+    "description": "Cliente gráfico nativo para vários bancos relacionais e Redis, com edição de dados em planilha, filtros e abas.",
+    "kind": "app", "pricing": "freemium", "license": "Proprietary", "platforms": ["desktop"], "languages": ["sql"],
+    "tags": ["gui", "sql"], "url": "https://tableplus.com",
+    "featured": false, "alternatives": ["dbeaver", "pgadmin"]
+  },
+  {
+    "slug": "metabase", "name": "Metabase", "category": "dados", "subcategory": "BI e dados",
+    "tagline": "BI open source: perguntas e dashboards sem escrever SQL.",
+    "description": "Ferramenta de business intelligence em que qualquer pessoa explora dados do banco, cria gráficos e dashboards, com editor SQL opcional.",
+    "kind": "app", "pricing": "open-source", "license": "AGPL-3.0", "platforms": ["web", "cloud"], "languages": [],
+    "tags": ["bi", "dashboards", "analytics"], "url": "https://www.metabase.com", "repo": "metabase/metabase",
+    "featured": false, "alternatives": ["grafana"]
+  },
+  {
+    "slug": "dbt", "name": "dbt", "category": "dados", "subcategory": "BI e dados",
+    "tagline": "Transformações de dados em SQL com testes e documentação.",
+    "description": "Ferramenta que transforma dados no próprio data warehouse usando SQL versionado, com testes, documentação e dependências entre modelos.",
+    "kind": "cli", "pricing": "open-source", "license": "Apache-2.0", "platforms": ["cli", "cloud"], "languages": ["sql", "python"],
+    "tags": ["analytics", "transformation", "sql"], "url": "https://www.getdbt.com", "repo": "dbt-labs/dbt-core",
+    "featured": false, "alternatives": []
+  },
+  {
+    "slug": "valkey", "name": "Valkey", "category": "dados", "subcategory": "Cache e chave-valor",
+    "tagline": "Fork open source do Redis, mantido pela Linux Foundation.",
+    "description": "Armazenamento de estruturas de dados em memória, compatível com o Redis, criado após a mudança de licença do Redis e mantido pela comunidade.",
+    "kind": "database", "pricing": "open-source", "license": "BSD-3-Clause", "platforms": ["cloud"], "languages": [],
+    "tags": ["cache", "kv", "redis"], "url": "https://valkey.io", "repo": "valkey-io/valkey",
+    "featured": false, "alternatives": ["redis"]
+  },
+  {
+    "slug": "memcached", "name": "Memcached", "category": "dados", "subcategory": "Cache e chave-valor",
+    "tagline": "Cache de memória simples e muito rápido.",
+    "description": "Sistema de cache distribuído em memória, focado em simplicidade e velocidade para chaves e valores simples.",
+    "kind": "database", "pricing": "open-source", "license": "BSD-3-Clause", "platforms": ["cloud"], "languages": [],
+    "tags": ["cache", "kv"], "url": "https://memcached.org", "repo": "memcached/memcached",
+    "featured": false, "alternatives": ["redis", "valkey"]
+  },
+  {
+    "slug": "couchdb", "name": "Apache CouchDB", "category": "dados", "subcategory": "Documentos",
+    "tagline": "Banco de documentos com API HTTP e sincronização multimestre.",
+    "description": "Banco de documentos JSON acessível por HTTP, com replicação entre instâncias e suporte a sincronização offline-first.",
+    "kind": "database", "pricing": "open-source", "license": "Apache-2.0", "platforms": ["cloud"], "languages": [],
+    "tags": ["nosql", "documents", "sync"], "url": "https://couchdb.apache.org", "repo": "apache/couchdb",
+    "featured": false, "alternatives": ["mongodb"]
   }
 ]

@@ -62,5 +62,245 @@
     "kind": "app", "pricing": "free", "license": "Proprietary", "platforms": ["desktop"], "languages": ["swift", "objective-c"],
     "tags": ["ide", "mobile"], "url": "https://developer.apple.com/xcode",
     "featured": false, "alternatives": []
+  },
+  {
+    "slug": "visual-studio", "name": "Visual Studio", "category": "editores", "subcategory": "IDEs",
+    "tagline": "IDE completa da Microsoft para .NET e C++ no Windows.",
+    "description": "IDE da Microsoft com depurador, profiler e ferramentas para .NET, C++ e desenvolvimento de jogos. A edição Community é gratuita para uso individual e pequenas equipes.",
+    "kind": "app", "pricing": "freemium", "license": "Proprietary", "platforms": ["desktop"], "languages": ["csharp", "cpp"],
+    "tags": ["ide", "dotnet", "windows"], "url": "https://visualstudio.microsoft.com",
+    "featured": false, "alternatives": ["jetbrains-ides", "vs-code"]
+  },
+  {
+    "slug": "android-studio", "name": "Android Studio", "category": "editores", "subcategory": "IDEs",
+    "tagline": "IDE oficial do Google para apps Android.",
+    "description": "IDE gratuita baseada no IntelliJ, com emuladores, editor de layout e ferramentas de análise de desempenho para Android.",
+    "kind": "app", "pricing": "free", "license": "Proprietary", "platforms": ["desktop"], "languages": ["java", "kotlin"],
+    "tags": ["ide", "mobile", "android"], "url": "https://developer.android.com/studio",
+    "featured": false, "alternatives": ["jetbrains-ides", "xcode"]
+  },
+  {
+    "slug": "eclipse", "name": "Eclipse IDE", "category": "editores", "subcategory": "IDEs",
+    "tagline": "IDE open source clássica para Java, extensível por plugins.",
+    "description": "IDE modular e gratuita, muito usada em Java e em ambientes corporativos, com um grande acervo de plugins.",
+    "kind": "app", "pricing": "open-source", "license": "EPL-2.0", "platforms": ["desktop"], "languages": ["java"],
+    "tags": ["ide", "java"], "url": "https://eclipseide.org", "repo": "eclipse-platform/eclipse.platform",
+    "featured": false, "alternatives": ["jetbrains-ides", "netbeans"]
+  },
+  {
+    "slug": "netbeans", "name": "Apache NetBeans", "category": "editores", "subcategory": "IDEs",
+    "tagline": "IDE gratuita da Apache para Java e outras linguagens.",
+    "description": "IDE open source mantida pela Apache, com suporte a Java, PHP, JavaScript e Maven integrado.",
+    "kind": "app", "pricing": "open-source", "license": "Apache-2.0", "platforms": ["desktop"], "languages": ["java"],
+    "tags": ["ide", "java"], "url": "https://netbeans.apache.org", "repo": "apache/netbeans",
+    "featured": false, "alternatives": ["eclipse", "jetbrains-ides"]
+  },
+  {
+    "slug": "emacs", "name": "GNU Emacs", "category": "editores", "subcategory": "Editores",
+    "tagline": "Editor extensível em Lisp que vira quase um sistema operacional.",
+    "description": "Editor de texto programável em Emacs Lisp, com ecossistema enorme de pacotes (Org mode, Magit, LSP) e mais de quatro décadas de história.",
+    "kind": "app", "pricing": "open-source", "license": "GPL-3.0", "platforms": ["desktop", "cli"], "languages": [],
+    "tags": ["editor", "lisp"], "url": "https://www.gnu.org/software/emacs",
+    "featured": false, "alternatives": ["neovim", "vim"]
+  },
+  {
+    "slug": "vim", "name": "Vim", "category": "editores", "subcategory": "Terminal",
+    "tagline": "O editor modal clássico, presente em quase todo servidor.",
+    "description": "Editor de texto modal altamente configurável, instalado por padrão em muitos sistemas Unix. Base de toda a família Vim.",
+    "kind": "app", "pricing": "open-source", "license": "Vim", "platforms": ["cli", "desktop"], "languages": [],
+    "tags": ["editor", "vim", "modal"], "url": "https://www.vim.org", "repo": "vim/vim",
+    "featured": false, "alternatives": ["neovim", "helix"]
+  },
+  {
+    "slug": "nano", "name": "GNU nano", "category": "editores", "subcategory": "Terminal",
+    "tagline": "Editor de terminal simples, sem curva de aprendizado.",
+    "description": "Editor de texto de terminal pequeno e fácil, com os atalhos listados na própria tela. Vem instalado em muitas distribuições Linux.",
+    "kind": "cli", "pricing": "open-source", "license": "GPL-3.0", "platforms": ["cli"], "languages": [],
+    "tags": ["editor", "cli"], "url": "https://www.nano-editor.org",
+    "featured": false, "alternatives": ["vim", "micro"]
+  },
+  {
+    "slug": "kakoune", "name": "Kakoune", "category": "editores", "subcategory": "Terminal",
+    "tagline": "Editor modal em que a seleção vem antes da ação.",
+    "description": "Editor modal de terminal com filosofia de seleção primeiro, multicursor nativo e integração com ferramentas externas via shell.",
+    "kind": "cli", "pricing": "open-source", "license": "Unlicense", "platforms": ["cli"], "languages": [],
+    "tags": ["editor", "modal"], "url": "https://kakoune.org", "repo": "mawww/kakoune",
+    "featured": false, "alternatives": ["helix", "neovim"]
+  },
+  {
+    "slug": "micro", "name": "micro", "category": "editores", "subcategory": "Terminal",
+    "tagline": "Editor de terminal moderno com atalhos comuns (Ctrl+S, Ctrl+C).",
+    "description": "Editor de terminal em Go, binário único, com atalhos familiares, mouse, multicursor e suporte a plugins.",
+    "kind": "cli", "pricing": "open-source", "license": "MIT", "platforms": ["cli"], "languages": [],
+    "tags": ["editor", "cli"], "url": "https://micro-editor.github.io", "repo": "zyedidia/micro",
+    "featured": false, "alternatives": ["nano", "vim"]
+  },
+  {
+    "slug": "lapce", "name": "Lapce", "category": "editores", "subcategory": "Editores",
+    "tagline": "Editor nativo em Rust, leve e com LSP embutido.",
+    "description": "Editor de código open source escrito em Rust, com renderização por GPU, edição modal opcional e suporte a plugins em WASI.",
+    "kind": "app", "pricing": "open-source", "license": "Apache-2.0", "platforms": ["desktop"], "languages": ["rust"],
+    "tags": ["editor", "rust"], "url": "https://lap.dev/lapce", "repo": "lapce/lapce",
+    "featured": false, "alternatives": ["zed", "vs-code"]
+  },
+  {
+    "slug": "vscodium", "name": "VSCodium", "category": "editores", "subcategory": "Editores",
+    "tagline": "VS Code compilado sem a telemetria e a marca da Microsoft.",
+    "description": "Distribuição comunitária do VS Code construída a partir do código-fonte aberto, sem telemetria nem binários proprietários da Microsoft.",
+    "kind": "app", "pricing": "open-source", "license": "MIT", "platforms": ["desktop"], "languages": [],
+    "tags": ["editor", "vscode"], "url": "https://vscodium.com", "repo": "VSCodium/vscodium",
+    "featured": false, "alternatives": ["vs-code", "cursor"]
+  },
+  {
+    "slug": "notepad-plus-plus", "name": "Notepad++", "category": "editores", "subcategory": "Editores",
+    "tagline": "Editor leve para Windows, com abas e destaque de sintaxe.",
+    "description": "Editor de texto gratuito e leve para Windows, com abas, macros, busca avançada e suporte a dezenas de linguagens.",
+    "kind": "app", "pricing": "open-source", "license": "GPL-3.0", "platforms": ["desktop"], "languages": [],
+    "tags": ["editor", "windows"], "url": "https://notepad-plus-plus.org", "repo": "notepad-plus-plus/notepad-plus-plus",
+    "featured": false, "alternatives": ["sublime-text", "vs-code"]
+  },
+  {
+    "slug": "doom-emacs", "name": "Doom Emacs", "category": "editores", "subcategory": "Editores",
+    "tagline": "Configuração pronta de Emacs com atalhos no estilo Vim.",
+    "description": "Framework de configuração do Emacs, focado em velocidade e com modo Evil (estilo Vim) por padrão, pronto para usar em minutos.",
+    "kind": "app", "pricing": "open-source", "license": "MIT", "platforms": ["desktop", "cli"], "languages": [],
+    "tags": ["editor", "lisp", "vim"], "url": "https://github.com/doomemacs/doomemacs", "repo": "doomemacs/doomemacs",
+    "featured": false, "alternatives": ["emacs", "lazyvim"]
+  },
+  {
+    "slug": "lazyvim", "name": "LazyVim", "category": "editores", "subcategory": "Terminal",
+    "tagline": "Distribuição pronta de Neovim, configurável em Lua.",
+    "description": "Configuração completa de Neovim sobre o gerenciador lazy.nvim, com LSP, busca, Git e tema já integrados e fácil de estender.",
+    "kind": "app", "pricing": "open-source", "license": "Apache-2.0", "platforms": ["cli"], "languages": ["lua"],
+    "tags": ["editor", "vim", "lua"], "url": "https://www.lazyvim.org", "repo": "LazyVim/LazyVim",
+    "featured": false, "alternatives": ["neovim", "helix"]
+  },
+  {
+    "slug": "alacritty", "name": "Alacritty", "category": "editores", "subcategory": "Terminal",
+    "tagline": "Emulador de terminal minimalista, acelerado por GPU.",
+    "description": "Emulador de terminal focado em desempenho e simplicidade, configurado por arquivo, sem abas nem divisões (use com tmux).",
+    "kind": "app", "pricing": "open-source", "license": "Apache-2.0", "platforms": ["desktop"], "languages": ["rust"],
+    "tags": ["terminal", "gpu"], "url": "https://alacritty.org", "repo": "alacritty/alacritty",
+    "featured": false, "alternatives": ["kitty", "wezterm"]
+  },
+  {
+    "slug": "kitty", "name": "kitty", "category": "editores", "subcategory": "Terminal",
+    "tagline": "Terminal rápido com GPU, abas, divisões e imagens.",
+    "description": "Emulador de terminal com renderização por GPU, abas, divisões, protocolo gráfico para imagens e scripts em Python.",
+    "kind": "app", "pricing": "open-source", "license": "GPL-3.0", "platforms": ["desktop"], "languages": ["python"],
+    "tags": ["terminal", "gpu"], "url": "https://sw.kovidgoyal.net/kitty", "repo": "kovidgoyal/kitty",
+    "featured": false, "alternatives": ["alacritty", "wezterm"]
+  },
+  {
+    "slug": "wezterm", "name": "WezTerm", "category": "editores", "subcategory": "Terminal",
+    "tagline": "Terminal multiplataforma configurável em Lua.",
+    "description": "Emulador de terminal com GPU, multiplexador embutido (abas, painéis, sessões remotas) e configuração programável em Lua.",
+    "kind": "app", "pricing": "open-source", "license": "MIT", "platforms": ["desktop"], "languages": ["rust", "lua"],
+    "tags": ["terminal", "gpu"], "url": "https://wezterm.org", "repo": "wezterm/wezterm",
+    "featured": false, "alternatives": ["kitty", "alacritty"]
+  },
+  {
+    "slug": "ghostty", "name": "Ghostty", "category": "editores", "subcategory": "Terminal",
+    "tagline": "Terminal rápido e nativo, com interface própria por plataforma.",
+    "description": "Emulador de terminal com renderização por GPU e interface nativa em macOS e Linux, equilibrando recursos e desempenho.",
+    "kind": "app", "pricing": "open-source", "license": "MIT", "platforms": ["desktop"], "languages": [],
+    "tags": ["terminal", "gpu"], "url": "https://ghostty.org", "repo": "ghostty-org/ghostty",
+    "featured": false, "alternatives": ["kitty", "alacritty"]
+  },
+  {
+    "slug": "tmux", "name": "tmux", "category": "editores", "subcategory": "Terminal",
+    "tagline": "Multiplexador de terminal: sessões, janelas e painéis persistentes.",
+    "description": "Permite dividir o terminal em painéis, manter sessões vivas após desconectar e retomá-las depois, muito usado em servidores via SSH.",
+    "kind": "cli", "pricing": "open-source", "license": "ISC", "platforms": ["cli"], "languages": [],
+    "tags": ["terminal", "multiplexer"], "url": "https://github.com/tmux/tmux/wiki", "repo": "tmux/tmux",
+    "featured": false, "alternatives": ["zellij"]
+  },
+  {
+    "slug": "zellij", "name": "Zellij", "category": "editores", "subcategory": "Terminal",
+    "tagline": "Multiplexador de terminal moderno, com dicas na tela.",
+    "description": "Multiplexador em Rust com layouts, painéis flutuantes, plugins em WebAssembly e barra de ajuda que mostra os atalhos.",
+    "kind": "cli", "pricing": "open-source", "license": "MIT", "platforms": ["cli"], "languages": ["rust"],
+    "tags": ["terminal", "multiplexer"], "url": "https://zellij.dev", "repo": "zellij-org/zellij",
+    "featured": false, "alternatives": ["tmux"]
+  },
+  {
+    "slug": "windows-terminal", "name": "Windows Terminal", "category": "editores", "subcategory": "Terminal",
+    "tagline": "Terminal moderno da Microsoft com abas para PowerShell, CMD e WSL.",
+    "description": "Terminal gratuito para Windows com abas, painéis, renderização por GPU e perfis para PowerShell, CMD e distribuições WSL.",
+    "kind": "app", "pricing": "open-source", "license": "MIT", "platforms": ["desktop"], "languages": [],
+    "tags": ["terminal", "windows"], "url": "https://learn.microsoft.com/windows/terminal", "repo": "microsoft/terminal",
+    "featured": false, "alternatives": ["wezterm", "alacritty"]
+  },
+  {
+    "slug": "iterm2", "name": "iTerm2", "category": "editores", "subcategory": "Terminal",
+    "tagline": "Terminal poderoso para macOS, com divisões e busca.",
+    "description": "Substituto do Terminal do macOS com divisões, perfis, busca, histórico de colagem e integração com o shell.",
+    "kind": "app", "pricing": "open-source", "license": "GPL-2.0", "platforms": ["desktop"], "languages": ["objective-c"],
+    "tags": ["terminal", "macos"], "url": "https://iterm2.com", "repo": "gnachman/iTerm2",
+    "featured": false, "alternatives": ["ghostty", "warp"]
+  },
+  {
+    "slug": "fish", "name": "fish", "category": "editores", "subcategory": "Shells",
+    "tagline": "Shell com autosugestões e cores prontos para usar.",
+    "description": "Shell interativo com autosugestões, destaque de sintaxe e completions de fábrica, sem precisar de plugins para ser confortável.",
+    "kind": "cli", "pricing": "open-source", "license": "GPL-2.0", "platforms": ["cli"], "languages": [],
+    "tags": ["shell", "cli"], "url": "https://fishshell.com", "repo": "fish-shell/fish-shell",
+    "featured": false, "alternatives": ["nushell", "oh-my-zsh"]
+  },
+  {
+    "slug": "starship", "name": "Starship", "category": "editores", "subcategory": "Shells",
+    "tagline": "Prompt de terminal rápido que serve para qualquer shell.",
+    "description": "Prompt configurável e rápido, em Rust, que mostra branch Git, versão de linguagens e status de comandos em bash, zsh, fish, PowerShell e outros.",
+    "kind": "cli", "pricing": "open-source", "license": "ISC", "platforms": ["cli"], "languages": ["rust"],
+    "tags": ["shell", "prompt"], "url": "https://starship.rs", "repo": "starship/starship",
+    "featured": false, "alternatives": ["oh-my-zsh"]
+  },
+  {
+    "slug": "oh-my-zsh", "name": "Oh My Zsh", "category": "editores", "subcategory": "Shells",
+    "tagline": "Framework de configuração do Zsh, com plugins e temas.",
+    "description": "Gerenciador de configuração do Zsh com centenas de plugins e temas, popular para dar um shell produtivo em poucos minutos.",
+    "kind": "cli", "pricing": "open-source", "license": "MIT", "platforms": ["cli"], "languages": [],
+    "tags": ["shell", "zsh"], "url": "https://ohmyz.sh", "repo": "ohmyzsh/ohmyzsh",
+    "featured": false, "alternatives": ["fish", "starship"]
+  },
+  {
+    "slug": "nushell", "name": "Nushell", "category": "editores", "subcategory": "Shells",
+    "tagline": "Shell que trata a saída dos comandos como tabelas de dados.",
+    "description": "Shell moderno em Rust em que comandos devolvem dados estruturados (tabelas, JSON), facilitando filtrar e transformar resultados.",
+    "kind": "cli", "pricing": "open-source", "license": "MIT", "platforms": ["cli"], "languages": ["rust"],
+    "tags": ["shell", "data"], "url": "https://www.nushell.sh", "repo": "nushell/nushell",
+    "featured": false, "alternatives": ["fish"]
+  },
+  {
+    "slug": "code-server", "name": "code-server", "category": "editores", "subcategory": "Editores na nuvem",
+    "tagline": "VS Code no navegador, hospedado na sua própria máquina.",
+    "description": "Roda o VS Code em um servidor e o expõe no navegador, permitindo programar de qualquer dispositivo com o ambiente e a máquina que você controla.",
+    "kind": "app", "pricing": "open-source", "license": "MIT", "platforms": ["web", "cloud"], "languages": [],
+    "tags": ["editor", "self-hosted", "vscode"], "url": "https://github.com/coder/code-server", "repo": "coder/code-server",
+    "featured": false, "alternatives": ["github-codespaces", "vs-code"]
+  },
+  {
+    "slug": "github-codespaces", "name": "GitHub Codespaces", "category": "editores", "subcategory": "Editores na nuvem",
+    "tagline": "Ambientes de desenvolvimento na nuvem, direto do repositório.",
+    "description": "Ambientes de desenvolvimento hospedados pelo GitHub, abertos no navegador ou no VS Code, configurados por devcontainer e prontos em segundos.",
+    "kind": "service", "pricing": "freemium", "license": "Proprietary", "platforms": ["web", "cloud"], "languages": [],
+    "tags": ["editor", "cloud", "github"], "url": "https://github.com/features/codespaces",
+    "featured": false, "alternatives": ["code-server", "stackblitz"]
+  },
+  {
+    "slug": "stackblitz", "name": "StackBlitz", "category": "editores", "subcategory": "Editores na nuvem",
+    "tagline": "Ambiente Node.js que roda dentro do navegador (WebContainers).",
+    "description": "Editor online que executa Node.js no próprio navegador, útil para protótipos, exemplos e reproduções de bugs compartilháveis por link.",
+    "kind": "service", "pricing": "freemium", "license": "Proprietary", "platforms": ["web", "cloud"], "languages": ["javascript", "typescript"],
+    "tags": ["editor", "cloud", "node"], "url": "https://stackblitz.com",
+    "featured": false, "alternatives": ["github-codespaces", "code-server"]
+  },
+  {
+    "slug": "neovide", "name": "Neovide", "category": "editores", "subcategory": "Editores",
+    "tagline": "Interface gráfica para o Neovim, com animações e renderização por GPU.",
+    "description": "Cliente gráfico para o Neovim escrito em Rust, com renderização por GPU, animações de cursor e rolagem suave, mantendo toda a sua configuração.",
+    "kind": "app", "pricing": "open-source", "license": "MIT", "platforms": ["desktop"], "languages": ["rust"],
+    "tags": ["editor", "vim", "gui"], "url": "https://neovide.dev", "repo": "neovide/neovide",
+    "featured": false, "alternatives": ["neovim", "lazyvim"]
   }
 ]

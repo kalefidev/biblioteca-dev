@@ -1,6 +1,7 @@
 // Valida o catálogo. Roda antes do build (prebuild); sai com código 1 se algo estiver errado.
 import { z } from 'zod'
-import { categories, guidance, toolFiles, metrics } from '../lib/catalog.ts'
+import { categories, toolFiles, metrics, overlayEn } from '../lib/catalog.ts'
+import { guidance, guidanceEn } from '../lib/guidance.ts'
 import { categorySchema, guidanceSchema, metricsSchema, toolSchema } from '../lib/schema.ts'
 
 const errors: string[] = []
@@ -44,6 +45,25 @@ for (const [slug, g] of Object.entries(guidance)) {
   if (!slugs.has(slug)) fail(`data/guidance.json: slug "${slug}" não existe no catálogo`)
   const r = guidanceSchema.safeParse(g)
   if (!r.success) fail(`data/guidance.json[${slug}]: ${z.prettifyError(r.error)}`)
+}
+
+// Tradução en (data/i18n/en.json): cobre todo texto curado dos JSON-base (pt-BR) e não tem chave sobrando.
+const covers = (what: string, need: Iterable<string>, have: Record<string, unknown>) => {
+  const needed = new Set(need)
+  for (const k of needed) if (!(k in have)) fail(`data/i18n/${what === 'guidance' ? 'en-guidance' : 'en'}.json ${what}: falta "${k}"`)
+  for (const k of Object.keys(have)) if (!needed.has(k)) fail(`data/i18n/${what === 'guidance' ? 'en-guidance' : 'en'}.json ${what}: "${k}" não existe nos dados-base`)
+}
+covers('categories', catIds, overlayEn.categories)
+covers('subcategories', tools.map((t) => t.subcategory), overlayEn.subcategories)
+covers('tools', slugs.keys(), overlayEn.tools)
+covers('guidance', slugs.keys(), guidanceEn)
+for (const [slug, o] of Object.entries(overlayEn.tools)) {
+  const r = toolSchema.pick({ tagline: true, description: true }).safeParse(o)
+  if (!r.success) fail(`data/i18n/en.json tools[${slug}]: ${z.prettifyError(r.error)}`)
+}
+for (const [slug, g] of Object.entries(guidanceEn)) {
+  const r = guidanceSchema.safeParse(g)
+  if (!r.success) fail(`data/i18n/en-guidance.json[${slug}]: ${z.prettifyError(r.error)}`)
 }
 
 if (errors.length) {

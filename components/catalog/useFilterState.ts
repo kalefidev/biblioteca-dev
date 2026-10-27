@@ -2,12 +2,13 @@
 
 import { useMemo } from "react";
 import { usePathname, useSearchParams } from "next/navigation";
+import { publicPath } from "@/lib/i18n";
 import { parseState, serializeState, type CatalogState, type FacetKey } from "@/lib/search";
 
 /** Estado de busca/filtros na URL (`?q=&cat=&price=…`), compartilhado pelo catálogo e pelo modo Explorar. */
 export function useFilterState() {
   const params = useSearchParams();
-  const pathname = usePathname();
+  const pathname = publicPath(usePathname());
   const state = useMemo(() => parseState(params), [params]);
 
   // Lê a URL na hora de gravar, assim digitação rápida nunca usa um estado velho.

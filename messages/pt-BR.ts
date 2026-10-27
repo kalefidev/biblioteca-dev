@@ -1,5 +1,5 @@
-// Todas as strings de UI ficam aqui (base para i18n na etapa 8). Conteúdo do catálogo fica em data/.
-export const pt = {
+// Strings de UI em pt-BR (idioma-fonte do tipo `Messages`; messages/en.ts tem que ter o mesmo formato). Conteúdo do catálogo fica em data/.
+export const ptBR = {
   site: {
     name: 'Biblioteca de ferramentas',
     description: 'Catálogo de ferramentas, bibliotecas e serviços para desenvolvedores.',
@@ -11,6 +11,11 @@ export const pt = {
     main: 'Navegação principal',
     catalog: 'Catálogo',
     stack: 'Stack',
+  },
+  locale: {
+    label: 'Idioma',
+    switchTo: (name: string) => `Mudar para ${name}`,
+    name: { en: 'English', 'pt-BR': 'Português' } as Record<string, string>,
   },
   theme: {
     toggle: 'Alternar tema',
@@ -236,6 +241,9 @@ export const pt = {
   language: {
     javascript: 'JavaScript', typescript: 'TypeScript', python: 'Python', sql: 'SQL', css: 'CSS',
     lua: 'Lua', java: 'Java', swift: 'Swift', 'objective-c': 'Objective-C',
+    go: 'Go', rust: 'Rust', ruby: 'Ruby', php: 'PHP', kotlin: 'Kotlin', csharp: 'C#', cpp: 'C++', elixir: 'Elixir',
   } as Record<string, string>,
   platform: { web: 'Web', desktop: 'Desktop', mobile: 'Mobile', cli: 'CLI', cloud: 'Nuvem' },
-} as const
+}
+
+export type Messages = typeof ptBR
