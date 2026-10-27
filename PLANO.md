@@ -20,8 +20,8 @@ O contexto some no `/clear`, então este arquivo é a fonte da verdade.
 
 ### Checklist
 - [x] 0. Fundação (Next.js + tokens + git)
-- [ ] 1. Dados (schema, validação, enriquecimento por API)
-- [ ] 2. Design system e shell do site
+- [x] 1. Dados (schema, validação, enriquecimento por API)
+- [x] 2. Design system e shell do site
 - [ ] 3. Catálogo: busca, filtros e páginas de categoria
 - [ ] 4. Página da ferramenta, comparar e "Minha stack"
 - [ ] 5. Modo Explorar 3D
@@ -159,3 +159,29 @@ O contexto some no `/clear`, então este arquivo é a fonte da verdade.
 - Home (`/`) é só placeholder com link para `/explore`.
 - StrictMode do React continua ligado (Next); os rótulos 3D usam projeção DOM, não `<Html>` do drei (esse quebra no React 19).
 - Arquivos de template removidos. `artifacts/` e `.playwright-mcp/` estão no `.gitignore`.
+
+### Etapa 1 (feita)
+- **Dados:** `data/categories.json` (8 categorias, com cor) + `data/tools/<categoria>.json` (64 ferramentas, schema completo) + `data/metrics.json` (gerado). Carregados por `lib/catalog.ts` (imports estáticos com `with { type: 'json' }`; ao criar categoria nova, adicionar o import lá). `lib/data.ts` virou só um adaptador do catálogo para as posições 3D do `/explore` (lógica da cena intacta).
+- **Schema (`lib/schema.ts`, zod 4):** valores de enum são chaves ASCII em inglês (`kind: library|framework|cli|service|app|language|runtime|database`, `pricing: free|open-source|freemium|paid`, `platforms: web|desktop|mobile|cli|cloud`); rótulos em `messages/pt-BR.ts`. **Desvio:** acrescentei `runtime` e `database` ao `kind` do plano (Node/Bun e PostgreSQL/Redis não cabiam em nenhum outro). `repo` é sempre `dono/nome` do GitHub; `subcategory` é texto livre por enquanto.
+- **`tagline`** = frase curta (≤90 car.); **`description`** = 1-2 frases. `languages` = linguagens com que se usa a ferramenta (vazio se agnóstica). `featured` marcado em 10 itens.
+- **Scripts** (Node 24 roda `.ts` direto, sem tsx; `package.json` ganhou `"type": "module"` e tsconfig `allowImportingTsExtensions`):
+  - `npm run validate` (roda em `prebuild`): schema, slug único, categoria = arquivo, `alternatives` existem e não apontam para si, `metrics.json` coerente. Testado com dados quebrados de propósito.
+  - `npm run enrich`: GitHub (estrelas, `pushed_at` como `lastCommit`, licença) + npm (versão, downloads/semana) → `metrics.json`. Mantém o valor anterior se a chamada falhar. Lê `GITHUB_TOKEN` do ambiente ou de `.env.local` (não existe ainda; rodei com `GITHUB_TOKEN=$(gh auth token)`). Avisa se a licença curada divergir da do GitHub. Resultado: **46/46 repositórios** com métricas; 42 com versão (git, django, postgresql, mongodb não têm release no GitHub nem pacote npm → `version: null`); 23 com downloads npm.
+  - `npm run check-urls` (manual, usa rede): as **64 URLs respondem** (2xx/3xx). Corrigi `terraform.io` → `developer.hashicorp.com/terraform` (redirecionava) e `vitejs.dev` → `vite.dev`.
+- **Descrições:** reescritas de memória e conferidas só por licença (cruzada com o GitHub) e pela URL estar viva; **não** foram comparadas com o texto oficial de cada site. Incertos: licença do **Warp** e do **Cursor** (marcados Proprietary), licença do **GraphQL** (uso a do `graphql-js`).
+- **i18n:** `messages/pt-BR.ts` guarda todas as strings de UI (site, home, explore, rótulos dos enums); `ExploreApp`, home, layout e `/explore` já usam. Metadata também sai de lá.
+- **Verificação:** `validate`, `tsc --noEmit` e `npm run build` ok; `/explore` igual ao da etapa 0 (64 de 64, 8 clusters), console sem erros; screenshots em `artifacts/etapa1-explore-{desktop,mobile}.png`. Sobreposição de rótulos (IA × Testes) e corte em mobile continuam, ficam para a etapa 5.
+
+### Etapa 2 (feita)
+- **Referências abertas:** só 2 das 4 pedidas (ui.unlumen.com e 21st.dev; screenshots em `artifacts/ref-*.png`). Padrões aproveitados: título display grande com tracking apertado e muito respiro, header mínimo com atalho de busca, borda hairline em vez de sombra, um acento só. Não abri refero/magicui.
+- **Tokens (`app/globals.css`):** neutros quentes (claro `#f4f3ef`/`#fbfaf7`, escuro `#131312`/`#1a1a18`), 1 acento "brasa" (`#b93a16` claro, `#ee7a54` escuro) + `accent-soft`. Tailwind mapeia por `@theme inline` (`bg-surface`, `text-fg-muted`, `border-line`, `text-accent`…), então componentes **não usam `dark:`**. Escala tipográfica 12/14/16/20/28/40/72 com line-height que encolhe; foco visível global; `prefers-reduced-motion` neutraliza transições.
+- **Tema:** `data-theme` em `<html>`, script inline em `app/layout.tsx` (aplica o salvo no `localStorage`, senão segue o sistema) e `ThemeToggle` sem estado (ícone escolhido por CSS). Testado: alterna, grava e persiste após recarregar.
+- **Desvio de fontes:** além de Geist (UI) e Geist Mono (metadados), entrou **Instrument Serif só para títulos display** (home/h1/h2 de destaque). Foi escolha de design para dar voz ao site; remover é trocar `font-display`.
+- **Rotas:** home movida para o grupo `app/(site)/` (com Header/Footer); `/explore` ficou **fora** do grupo porque é tela cheia. Nova `/design` (galeria de cores, tipografia, badge, card, skeleton, estado vazio; `noindex`): **remover/bloquear na etapa 7**. Strings soltas só nessa página interna (exceção consciente à regra de i18n).
+- **Componentes:** `components/site/{Header,Footer,ThemeToggle,ToolCard}.tsx`, `components/ui/{Badge,Skeleton,EmptyState}.tsx`. Strings novas em `messages/pt-BR.ts`. `ToolCard`: monograma na cor da categoria + 3 metadados (tipo, preço, estrelas); link esticado sobre o card; prop `showFeatured` (a home esconde o selo, senão todo card seria "Destaque").
+- **Logos:** **não usei `simple-icons`** (monograma em vez disso): exigiria mapear 64 slugs à mão e a lib removeu marcas (ex.: Microsoft). Reavaliar se o monograma incomodar.
+- **Header sem busca e sem "Catálogo":** o plano previa busca no header, mas ela só faz sentido com o catálogo; entram na **etapa 3** (com `Cmd/Ctrl+K`). **Cards ainda apontam para o site oficial** (`target=_blank`); na etapa 4 passam a `/t/[slug]`.
+- **shadcn:** não instalado nesta etapa (nada do shell precisa de Radix). Entra na etapa 3 (Command, Sheet, Select, Checkbox).
+- **Home provisória:** hero + 9 destaques (o 10º some para fechar 3 linhas; aparece no catálogo). Home final (busca, categorias) é da etapa 3.
+- **Contraste (calculado):** corpo/muted ≥ 6:1; `fg-subtle` ajustado para ≥ 4,5:1 inclusive sobre `surface-2`; botão e acento ≥ 5:1 nos dois temas. Alvos do header ≥ 44px.
+- **Verificação:** `tsc --noEmit`, `eslint` e `npm run build` ok (4 rotas estáticas); sem erros de console em `/`, `/design` e `/explore`; sem scroll horizontal em 390px. Screenshots em `artifacts/etapa2-*.png`: home desktop claro/escuro, home mobile escuro, `/design` escuro, `/explore`. **Não tirei** mobile no tema claro nem `/design` no claro (os tokens são os mesmos, mas fica sem screenshot).

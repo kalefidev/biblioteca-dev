@@ -1,0 +1,66 @@
+[
+  {
+    "slug": "postgresql", "name": "PostgreSQL", "category": "dados", "subcategory": "Relacionais",
+    "tagline": "Banco relacional robusto e extensível.",
+    "description": "Banco de dados relacional open source conhecido pela conformidade com SQL, transações confiáveis e extensões como PostGIS e pgvector.",
+    "kind": "database", "pricing": "open-source", "license": "PostgreSQL", "platforms": ["cloud"], "languages": ["sql"],
+    "tags": ["sql"], "url": "https://www.postgresql.org", "repo": "postgres/postgres",
+    "featured": true, "alternatives": ["sqlite", "mongodb"]
+  },
+  {
+    "slug": "supabase", "name": "Supabase", "category": "dados", "subcategory": "Plataformas",
+    "tagline": "Postgres + auth + storage + realtime.",
+    "description": "Plataforma de backend aberta construída sobre Postgres, com autenticação, armazenamento de arquivos, funções e realtime.",
+    "kind": "service", "pricing": "freemium", "license": "Apache-2.0", "platforms": ["web", "cloud"], "languages": ["typescript", "sql"],
+    "tags": ["baas", "postgres"], "url": "https://supabase.com", "repo": "supabase/supabase", "npm": "@supabase/supabase-js",
+    "featured": false, "alternatives": []
+  },
+  {
+    "slug": "sqlite", "name": "SQLite", "category": "dados", "subcategory": "Relacionais",
+    "tagline": "Banco embutido em um único arquivo.",
+    "description": "Motor SQL embutido, sem servidor, que guarda tudo em um único arquivo. Está em navegadores, celulares e incontáveis aplicações.",
+    "kind": "database", "pricing": "open-source", "license": "Public Domain", "platforms": ["cli", "desktop", "mobile"], "languages": ["sql"],
+    "tags": ["sql", "embutido"], "url": "https://sqlite.org",
+    "featured": false, "alternatives": ["postgresql"]
+  },
+  {
+    "slug": "redis", "name": "Redis", "category": "dados", "subcategory": "Cache e chave-valor",
+    "tagline": "Cache e estruturas de dados em memória.",
+    "description": "Armazenamento de estruturas de dados em memória, usado como cache, fila e banco chave-valor. Persistência opcional em disco.",
+    "kind": "database", "pricing": "open-source", "license": "RSALv2/SSPLv1/AGPLv3", "platforms": ["cloud"], "languages": [],
+    "tags": ["cache", "kv"], "url": "https://redis.io", "repo": "redis/redis",
+    "featured": false, "alternatives": []
+  },
+  {
+    "slug": "mongodb", "name": "MongoDB", "category": "dados", "subcategory": "Documentos",
+    "tagline": "Banco de documentos JSON.",
+    "description": "Banco NoSQL orientado a documentos JSON (BSON), com esquema flexível. Disponível auto-hospedado ou como serviço (Atlas).",
+    "kind": "database", "pricing": "freemium", "license": "SSPL-1.0", "platforms": ["cloud"], "languages": [],
+    "tags": ["nosql"], "url": "https://www.mongodb.com", "repo": "mongodb/mongo",
+    "featured": false, "alternatives": ["postgresql"]
+  },
+  {
+    "slug": "prisma", "name": "Prisma", "category": "dados", "subcategory": "ORMs",
+    "tagline": "ORM TypeScript com schema declarativo.",
+    "description": "ORM para Node.js e TypeScript com schema declarativo, migrações e cliente totalmente tipado.",
+    "kind": "library", "pricing": "open-source", "license": "Apache-2.0", "platforms": ["cli", "cloud"], "languages": ["typescript"],
+    "tags": ["orm", "ts"], "url": "https://www.prisma.io", "repo": "prisma/prisma", "npm": "prisma",
+    "featured": false, "alternatives": ["drizzle-orm"]
+  },
+  {
+    "slug": "drizzle-orm", "name": "Drizzle ORM", "category": "dados", "subcategory": "ORMs",
+    "tagline": "ORM TypeScript leve, próximo do SQL.",
+    "description": "ORM TypeScript fino, com schema escrito em código e queries que espelham o SQL. Sem etapa de geração de cliente.",
+    "kind": "library", "pricing": "open-source", "license": "Apache-2.0", "platforms": ["cloud"], "languages": ["typescript"],
+    "tags": ["orm", "ts"], "url": "https://orm.drizzle.team", "repo": "drizzle-team/drizzle-orm", "npm": "drizzle-orm",
+    "featured": false, "alternatives": ["prisma"]
+  },
+  {
+    "slug": "dbeaver", "name": "DBeaver", "category": "dados", "subcategory": "Clientes",
+    "tagline": "Cliente universal de bancos de dados.",
+    "description": "Cliente gráfico que conecta a dezenas de bancos via JDBC, com editor SQL, navegador de dados e diagramas ER. Edição Community gratuita.",
+    "kind": "app", "pricing": "freemium", "license": "Apache-2.0", "platforms": ["desktop"], "languages": ["sql"],
+    "tags": ["gui", "sql"], "url": "https://dbeaver.io", "repo": "dbeaver/dbeaver",
+    "featured": false, "alternatives": []
+  }
+]

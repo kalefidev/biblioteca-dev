@@ -1,0 +1,10 @@
+[
+  { "id": "editores", "label": "Editores & IDEs", "color": "#8fb4ff" },
+  { "id": "git", "label": "Controle de versão", "color": "#9ad9c0" },
+  { "id": "frontend", "label": "Frontend", "color": "#f2b880" },
+  { "id": "backend", "label": "Backend & APIs", "color": "#c9a7f0" },
+  { "id": "dados", "label": "Bancos de dados", "color": "#e99aa6" },
+  { "id": "devops", "label": "DevOps & Cloud", "color": "#8ed0e6" },
+  { "id": "testes", "label": "Testes & Qualidade", "color": "#d6d27a" },
+  { "id": "ia", "label": "IA & Produtividade", "color": "#b5b9c7" }
+]

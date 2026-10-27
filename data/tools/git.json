@@ -1,0 +1,66 @@
+[
+  {
+    "slug": "git", "name": "Git", "category": "git", "subcategory": "Versionamento",
+    "tagline": "Sistema de versionamento distribuído, a base de tudo.",
+    "description": "Sistema de controle de versão distribuído criado por Linus Torvalds. É a base de GitHub, GitLab e da maior parte do desenvolvimento moderno.",
+    "kind": "cli", "pricing": "open-source", "license": "GPL-2.0", "platforms": ["cli"], "languages": [],
+    "tags": ["vcs", "cli"], "url": "https://git-scm.com", "repo": "git/git",
+    "featured": true, "alternatives": []
+  },
+  {
+    "slug": "github", "name": "GitHub", "category": "git", "subcategory": "Hospedagem",
+    "tagline": "Hospedagem de repositórios, PRs, Actions e Copilot.",
+    "description": "Plataforma de hospedagem de código com pull requests, issues, CI/CD (Actions) e o assistente Copilot. A maior comunidade open source do mundo.",
+    "kind": "service", "pricing": "freemium", "license": "Proprietary", "platforms": ["web", "cloud"], "languages": [],
+    "tags": ["hospedagem", "ci"], "url": "https://github.com",
+    "featured": true, "alternatives": ["gitlab", "bitbucket", "gitea"]
+  },
+  {
+    "slug": "gitlab", "name": "GitLab", "category": "git", "subcategory": "Hospedagem",
+    "tagline": "Plataforma DevOps completa, pode ser self-hosted.",
+    "description": "Plataforma que une repositórios, CI/CD, segurança e gestão de projetos. Pode ser usada na nuvem ou instalada no seu próprio servidor.",
+    "kind": "service", "pricing": "freemium", "license": "MIT", "platforms": ["web", "cloud"], "languages": [],
+    "tags": ["hospedagem", "ci"], "url": "https://gitlab.com",
+    "featured": false, "alternatives": ["github", "bitbucket", "gitea"]
+  },
+  {
+    "slug": "bitbucket", "name": "Bitbucket", "category": "git", "subcategory": "Hospedagem",
+    "tagline": "Repositórios com integração nativa ao Jira.",
+    "description": "Hospedagem de repositórios Git da Atlassian, com Pipelines para CI/CD e integração direta com Jira e Confluence.",
+    "kind": "service", "pricing": "freemium", "license": "Proprietary", "platforms": ["web", "cloud"], "languages": [],
+    "tags": ["hospedagem"], "url": "https://bitbucket.org",
+    "featured": false, "alternatives": ["github", "gitlab"]
+  },
+  {
+    "slug": "lazygit", "name": "lazygit", "category": "git", "subcategory": "Ferramentas",
+    "tagline": "Interface de terminal para Git que poupa comandos.",
+    "description": "Interface de terminal (TUI) para Git: staging por trechos, rebase interativo e resolução de conflitos com poucas teclas.",
+    "kind": "cli", "pricing": "open-source", "license": "MIT", "platforms": ["cli"], "languages": [],
+    "tags": ["tui", "git"], "url": "https://github.com/jesseduffield/lazygit", "repo": "jesseduffield/lazygit",
+    "featured": false, "alternatives": []
+  },
+  {
+    "slug": "github-cli", "name": "GitHub CLI", "category": "git", "subcategory": "Ferramentas",
+    "tagline": "Crie PRs e issues direto do terminal com gh.",
+    "description": "Cliente oficial de linha de comando do GitHub (comando gh): abre e revisa pull requests, gerencia issues, releases e roda a API.",
+    "kind": "cli", "pricing": "open-source", "license": "MIT", "platforms": ["cli"], "languages": [],
+    "tags": ["cli", "github"], "url": "https://cli.github.com", "repo": "cli/cli",
+    "featured": false, "alternatives": []
+  },
+  {
+    "slug": "gitea", "name": "Gitea", "category": "git", "subcategory": "Hospedagem",
+    "tagline": "Forge Git leve e auto-hospedável.",
+    "description": "Serviço Git auto-hospedado, escrito em Go, leve o bastante para rodar num servidor pequeno. Inclui issues, PRs e CI (Actions).",
+    "kind": "service", "pricing": "open-source", "license": "MIT", "platforms": ["web"], "languages": [],
+    "tags": ["self-hosted", "hospedagem"], "url": "https://about.gitea.com", "repo": "go-gitea/gitea",
+    "featured": false, "alternatives": ["github", "gitlab"]
+  },
+  {
+    "slug": "pre-commit", "name": "pre-commit", "category": "git", "subcategory": "Ferramentas",
+    "tagline": "Hooks de Git para várias linguagens, gerenciados por config.",
+    "description": "Framework que gerencia hooks de Git por um arquivo de configuração, rodando linters e formatadores antes de cada commit.",
+    "kind": "cli", "pricing": "open-source", "license": "MIT", "platforms": ["cli"], "languages": ["python"],
+    "tags": ["hooks", "qualidade"], "url": "https://pre-commit.com", "repo": "pre-commit/pre-commit",
+    "featured": false, "alternatives": []
+  }
+]

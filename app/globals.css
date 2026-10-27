@@ -1,26 +1,99 @@
 @import "tailwindcss";
 
+/*
+  Tokens. Neutros quentes (nada de #000/#fff), um acento só ("brasa") e variações dele.
+  Elevação: borda hairline para estrutura; sombra só para o que flutua (menus, dialogs).
+  Tema: data-theme="light|dark" em <html> (script em app/layout.tsx; sem preferência salva, segue o sistema).
+*/
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  color-scheme: light;
+  --bg: #f4f3ef;
+  --surface: #fbfaf7;
+  --surface-2: #ecebe5;
+  --line: #dedcd4;
+  --line-strong: #c9c6bc;
+  --fg: #1c1b18;
+  --fg-muted: #5f5c53;
+  --fg-subtle: #6b685f;
+  --accent: #b93a16;
+  --accent-fg: #fbfaf7;
+  --accent-soft: color-mix(in srgb, var(--accent) 12%, var(--bg));
+  --shadow-float: 0 1px 2px rgb(28 27 24 / 0.06), 0 8px 24px rgb(28 27 24 / 0.08);
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #131312;
+  --surface: #1a1a18;
+  --surface-2: #232321;
+  --line: #2d2d2a;
+  --line-strong: #3d3d39;
+  --fg: #ecebe6;
+  --fg-muted: #a3a097;
+  --fg-subtle: #928f86;
+  --accent: #ee7a54;
+  --accent-fg: #131312;
+  --shadow-float: 0 1px 2px rgb(0 0 0 / 0.3), 0 8px 24px rgb(0 0 0 / 0.35);
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-line: var(--line);
+  --color-line-strong: var(--line-strong);
+  --color-fg: var(--fg);
+  --color-fg-muted: var(--fg-muted);
+  --color-fg-subtle: var(--fg-subtle);
+  --color-accent: var(--accent);
+  --color-accent-fg: var(--accent-fg);
+  --color-accent-soft: var(--accent-soft);
+  --shadow-float: var(--shadow-float);
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, monospace;
+  --font-display: var(--font-instrument), ui-serif, Georgia, serif;
+
+  /* Escala tipográfica (razão ~1.4); line-height encolhe conforme o tamanho cresce. */
+  --text-xs: 0.75rem;
+  --text-xs--line-height: 1.5;
+  --text-sm: 0.875rem;
+  --text-sm--line-height: 1.5;
+  --text-base: 1rem;
+  --text-base--line-height: 1.6;
+  --text-lg: 1.25rem;
+  --text-lg--line-height: 1.4;
+  --text-xl: 1.75rem;
+  --text-xl--line-height: 1.2;
+  --text-2xl: 2.5rem;
+  --text-2xl--line-height: 1.1;
+  --text-3xl: 4.5rem;
+  --text-3xl--line-height: 1;
+
+  --breakpoint-xs: 30rem;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-sans);
+}
+
+/* Foco visível único para todo o site. */
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+::selection {
+  background: var(--accent-soft);
+}
+
+/* Movimento reduzido: sem animações/transições (o estado final continua o mesmo). */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }

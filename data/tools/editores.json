@@ -1,0 +1,66 @@
+[
+  {
+    "slug": "vs-code", "name": "VS Code", "category": "editores", "subcategory": "Editores",
+    "tagline": "Editor leve e extensível da Microsoft, padrão de mercado.",
+    "description": "Editor de código gratuito com depurador, terminal e Git integrados. Um ecossistema enorme de extensões cobre praticamente qualquer linguagem e fluxo de trabalho.",
+    "kind": "app", "pricing": "open-source", "license": "MIT", "platforms": ["desktop", "web"], "languages": [],
+    "tags": ["editor", "extensões"], "url": "https://code.visualstudio.com", "repo": "microsoft/vscode",
+    "featured": true, "alternatives": ["cursor", "zed", "jetbrains-ides", "sublime-text"]
+  },
+  {
+    "slug": "cursor", "name": "Cursor", "category": "editores", "subcategory": "Editores",
+    "tagline": "Fork do VS Code com IA integrada ao fluxo de edição.",
+    "description": "Editor baseado no VS Code com chat, edição multiarquivo e agentes de IA no próprio editor. Mantém extensões e atalhos do VS Code.",
+    "kind": "app", "pricing": "freemium", "license": "Proprietary", "platforms": ["desktop"], "languages": [],
+    "tags": ["editor", "ia"], "url": "https://cursor.com",
+    "featured": false, "alternatives": ["vs-code", "zed", "github-copilot"]
+  },
+  {
+    "slug": "neovim", "name": "Neovim", "category": "editores", "subcategory": "Terminal",
+    "tagline": "Vim moderno, configurável em Lua, 100% teclado.",
+    "description": "Fork do Vim com arquitetura renovada, suporte a LSP embutido e configuração em Lua. Roda no terminal e tem um ecossistema vasto de plugins.",
+    "kind": "app", "pricing": "open-source", "license": "Apache-2.0", "platforms": ["cli", "desktop"], "languages": ["lua"],
+    "tags": ["terminal", "vim"], "url": "https://neovim.io", "repo": "neovim/neovim",
+    "featured": false, "alternatives": ["helix", "vs-code"]
+  },
+  {
+    "slug": "jetbrains-ides", "name": "JetBrains IDEs", "category": "editores", "subcategory": "IDEs",
+    "tagline": "IntelliJ, WebStorm, PyCharm: refatoração e análise profundas.",
+    "description": "Família de IDEs por linguagem, com refatoração, inspeções de código e depuração avançadas. Há edições gratuitas (Community) e pagas.",
+    "kind": "app", "pricing": "freemium", "license": "Proprietary", "platforms": ["desktop"], "languages": ["java", "python", "javascript"],
+    "tags": ["ide", "java", "python"], "url": "https://www.jetbrains.com",
+    "featured": false, "alternatives": ["vs-code", "cursor"]
+  },
+  {
+    "slug": "zed", "name": "Zed", "category": "editores", "subcategory": "Editores",
+    "tagline": "Editor em Rust, muito rápido, com edição colaborativa.",
+    "description": "Editor de código de alto desempenho, escrito em Rust, com colaboração em tempo real e recursos de IA integrados.",
+    "kind": "app", "pricing": "open-source", "license": "GPL-3.0", "platforms": ["desktop"], "languages": [],
+    "tags": ["editor", "rust"], "url": "https://zed.dev", "repo": "zed-industries/zed",
+    "featured": false, "alternatives": ["vs-code", "cursor", "sublime-text"]
+  },
+  {
+    "slug": "sublime-text", "name": "Sublime Text", "category": "editores", "subcategory": "Editores",
+    "tagline": "Editor veloz, ótimo para arquivos enormes.",
+    "description": "Editor leve e rápido, com seleção múltipla e busca poderosa. Licença paga com período de avaliação sem limite.",
+    "kind": "app", "pricing": "paid", "license": "Proprietary", "platforms": ["desktop"], "languages": [],
+    "tags": ["editor"], "url": "https://www.sublimetext.com",
+    "featured": false, "alternatives": ["vs-code", "zed"]
+  },
+  {
+    "slug": "helix", "name": "Helix", "category": "editores", "subcategory": "Terminal",
+    "tagline": "Editor modal pós-Vim com LSP e tree-sitter embutidos.",
+    "description": "Editor modal de terminal em que a seleção vem antes da ação. LSP, tree-sitter e multicursor funcionam sem plugins.",
+    "kind": "app", "pricing": "open-source", "license": "MPL-2.0", "platforms": ["cli"], "languages": [],
+    "tags": ["terminal", "modal"], "url": "https://helix-editor.com", "repo": "helix-editor/helix",
+    "featured": false, "alternatives": ["neovim"]
+  },
+  {
+    "slug": "xcode", "name": "Xcode", "category": "editores", "subcategory": "IDEs",
+    "tagline": "IDE oficial da Apple para iOS e macOS.",
+    "description": "IDE da Apple para criar apps para iOS, macOS, watchOS e visionOS, com simuladores, Interface Builder e Instruments. Só roda em macOS.",
+    "kind": "app", "pricing": "free", "license": "Proprietary", "platforms": ["desktop"], "languages": ["swift", "objective-c"],
+    "tags": ["ide", "mobile"], "url": "https://developer.apple.com/xcode",
+    "featured": false, "alternatives": []
+  }
+]

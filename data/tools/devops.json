@@ -1,0 +1,66 @@
+[
+  {
+    "slug": "docker", "name": "Docker", "category": "devops", "subcategory": "Containers",
+    "tagline": "Containers para empacotar e rodar qualquer app.",
+    "description": "Plataforma para empacotar aplicações e dependências em containers portáteis. O Docker Desktop é pago para empresas grandes.",
+    "kind": "app", "pricing": "freemium", "license": "Apache-2.0", "platforms": ["cli", "desktop"], "languages": [],
+    "tags": ["container"], "url": "https://www.docker.com", "repo": "moby/moby",
+    "featured": true, "alternatives": []
+  },
+  {
+    "slug": "kubernetes", "name": "Kubernetes", "category": "devops", "subcategory": "Containers",
+    "tagline": "Orquestração de containers em escala.",
+    "description": "Sistema open source para implantar, escalar e gerenciar aplicações em containers em clusters de máquinas.",
+    "kind": "service", "pricing": "open-source", "license": "Apache-2.0", "platforms": ["cloud", "cli"], "languages": [],
+    "tags": ["orquestração"], "url": "https://kubernetes.io", "repo": "kubernetes/kubernetes",
+    "featured": false, "alternatives": []
+  },
+  {
+    "slug": "vercel", "name": "Vercel", "category": "devops", "subcategory": "Hospedagem",
+    "tagline": "Deploy de frontends e funções com previews.",
+    "description": "Plataforma de hospedagem para frontends e funções serverless, com deploy a cada push e URLs de preview. Criadora do Next.js.",
+    "kind": "service", "pricing": "freemium", "license": "Proprietary", "platforms": ["web", "cloud"], "languages": [],
+    "tags": ["hospedagem"], "url": "https://vercel.com",
+    "featured": false, "alternatives": ["cloudflare", "aws"]
+  },
+  {
+    "slug": "cloudflare", "name": "Cloudflare", "category": "devops", "subcategory": "Hospedagem",
+    "tagline": "CDN, Workers, DNS e segurança de borda.",
+    "description": "Rede global com CDN, DNS, proteção contra ataques e plataforma de execução na borda (Workers, Pages, R2, D1).",
+    "kind": "service", "pricing": "freemium", "license": "Proprietary", "platforms": ["web", "cloud"], "languages": [],
+    "tags": ["edge", "cdn"], "url": "https://www.cloudflare.com",
+    "featured": false, "alternatives": ["vercel", "aws"]
+  },
+  {
+    "slug": "terraform", "name": "Terraform", "category": "devops", "subcategory": "Infraestrutura",
+    "tagline": "Infraestrutura como código multi-cloud.",
+    "description": "Ferramenta da HashiCorp para descrever infraestrutura em arquivos declarativos e aplicá-la em vários provedores de nuvem. Licença BUSL desde 2023.",
+    "kind": "cli", "pricing": "free", "license": "BUSL-1.1", "platforms": ["cli"], "languages": [],
+    "tags": ["iac"], "url": "https://developer.hashicorp.com/terraform", "repo": "hashicorp/terraform",
+    "featured": false, "alternatives": []
+  },
+  {
+    "slug": "github-actions", "name": "GitHub Actions", "category": "devops", "subcategory": "CI/CD",
+    "tagline": "CI/CD dentro do repositório.",
+    "description": "Automação de build, testes e deploy definida em arquivos YAML no próprio repositório. Gratuito para repositórios públicos.",
+    "kind": "service", "pricing": "freemium", "license": "Proprietary", "platforms": ["web", "cloud"], "languages": [],
+    "tags": ["ci", "cd"], "url": "https://github.com/features/actions",
+    "featured": false, "alternatives": []
+  },
+  {
+    "slug": "aws", "name": "AWS", "category": "devops", "subcategory": "Nuvem",
+    "tagline": "Maior catálogo de serviços de nuvem.",
+    "description": "Amazon Web Services: centenas de serviços de computação, armazenamento, bancos e redes, cobrados por uso, com camada gratuita limitada.",
+    "kind": "service", "pricing": "freemium", "license": "Proprietary", "platforms": ["cloud", "web"], "languages": [],
+    "tags": ["cloud"], "url": "https://aws.amazon.com",
+    "featured": false, "alternatives": ["vercel", "cloudflare"]
+  },
+  {
+    "slug": "grafana", "name": "Grafana", "category": "devops", "subcategory": "Observabilidade",
+    "tagline": "Dashboards e observabilidade de métricas.",
+    "description": "Plataforma de dashboards e alertas que consulta Prometheus, Loki e dezenas de outras fontes. Pode ser auto-hospedada ou usada na Grafana Cloud.",
+    "kind": "app", "pricing": "open-source", "license": "AGPL-3.0", "platforms": ["web", "cloud"], "languages": [],
+    "tags": ["monitoramento"], "url": "https://grafana.com", "repo": "grafana/grafana",
+    "featured": false, "alternatives": []
+  }
+]

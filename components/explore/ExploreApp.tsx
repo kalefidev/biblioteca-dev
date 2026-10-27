@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react'
 import Scene, { type Sel } from './Scene'
 import { allTools, categories, catById, matches, type Tool } from '@/lib/data'
+import { pt } from '@/messages/pt-BR'
 import './explore.css'
 
 export default function ExploreApp() {
@@ -29,13 +30,13 @@ export default function ExploreApp() {
       <Scene sel={sel} query={query} onTool={pickTool} onCat={pickCat} />
 
       <header className="hud top">
-        <h1>Biblioteca de ferramentas</h1>
-        <p>{hits} de {allTools.length} ferramentas · arraste para girar, role para aproximar</p>
+        <h1>{pt.site.name}</h1>
+        <p>{pt.explore.count(hits, allTools.length)}</p>
         <input
           type="search"
           value={query}
-          placeholder="Buscar ferramenta, tag ou uso…"
-          aria-label="Buscar ferramentas"
+          placeholder={pt.explore.searchPlaceholder}
+          aria-label={pt.explore.searchLabel}
           onChange={(e) => setQuery(e.target.value)}
           onKeyDown={(e) => {
             if (e.key !== 'Enter') return
@@ -45,8 +46,8 @@ export default function ExploreApp() {
         />
       </header>
 
-      <nav className="hud bottom" aria-label="Categorias">
-        <button className={!sel.cat ? 'chip on' : 'chip'} onClick={home}>Visão geral</button>
+      <nav className="hud bottom" aria-label={pt.explore.categoriesLabel}>
+        <button className={!sel.cat ? 'chip on' : 'chip'} onClick={home}>{pt.explore.overview}</button>
         {categories.map((c) => (
           <button
             key={c.id}
@@ -61,12 +62,12 @@ export default function ExploreApp() {
 
       {t && cat && (
         <aside className="hud panel" style={{ ['--c' as string]: cat.color }} key={t.name}>
-          <button className="x" onClick={back} aria-label="Fechar">×</button>
+          <button className="x" onClick={back} aria-label={pt.explore.close}>×</button>
           <span className="kicker">{cat.label}</span>
           <h2>{t.name}</h2>
           <p>{t.desc}</p>
           <ul>{t.tags.map((g) => <li key={g}>{g}</li>)}</ul>
-          <a href={t.url} target="_blank" rel="noreferrer">Abrir site ↗</a>
+          <a href={t.url} target="_blank" rel="noreferrer">{pt.explore.openSite}</a>
         </aside>
       )}
     </div>

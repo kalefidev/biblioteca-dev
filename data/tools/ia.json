@@ -1,0 +1,66 @@
+[
+  {
+    "slug": "claude-code", "name": "Claude Code", "category": "ia", "subcategory": "Agentes de código",
+    "tagline": "Agente de código no terminal e na IDE.",
+    "description": "Agente de programação da Anthropic que lê o projeto, edita arquivos e roda comandos a partir do terminal, com extensões para IDEs.",
+    "kind": "cli", "pricing": "paid", "license": "Proprietary", "platforms": ["cli", "desktop", "web"], "languages": [],
+    "tags": ["agente", "cli"], "url": "https://claude.com/claude-code", "repo": "anthropics/claude-code", "npm": "@anthropic-ai/claude-code",
+    "featured": true, "alternatives": ["github-copilot", "cursor"]
+  },
+  {
+    "slug": "github-copilot", "name": "GitHub Copilot", "category": "ia", "subcategory": "Agentes de código",
+    "tagline": "Autocompletar e chat de código no editor.",
+    "description": "Assistente de código da GitHub/Microsoft com sugestões em linha, chat e modo agente dentro de VS Code, JetBrains e outros editores.",
+    "kind": "service", "pricing": "freemium", "license": "Proprietary", "platforms": ["desktop", "web"], "languages": [],
+    "tags": ["ia", "editor"], "url": "https://github.com/features/copilot",
+    "featured": false, "alternatives": ["claude-code", "cursor"]
+  },
+  {
+    "slug": "postman", "name": "Postman", "category": "ia", "subcategory": "APIs",
+    "tagline": "Testar, documentar e automatizar APIs.",
+    "description": "Plataforma para projetar, testar e documentar APIs, com coleções compartilháveis e automação de testes.",
+    "kind": "app", "pricing": "freemium", "license": "Proprietary", "platforms": ["desktop", "web"], "languages": [],
+    "tags": ["api", "teste"], "url": "https://www.postman.com",
+    "featured": false, "alternatives": ["insomnia"]
+  },
+  {
+    "slug": "insomnia", "name": "Insomnia", "category": "ia", "subcategory": "APIs",
+    "tagline": "Cliente de API open source e enxuto.",
+    "description": "Cliente de API para REST, GraphQL e gRPC, com interface enxuta, variáveis de ambiente e armazenamento local.",
+    "kind": "app", "pricing": "open-source", "license": "Apache-2.0", "platforms": ["desktop"], "languages": [],
+    "tags": ["api"], "url": "https://insomnia.rest", "repo": "Kong/insomnia",
+    "featured": false, "alternatives": ["postman"]
+  },
+  {
+    "slug": "raycast", "name": "Raycast", "category": "ia", "subcategory": "Produtividade",
+    "tagline": "Launcher com comandos, snippets e extensões.",
+    "description": "Lançador de comandos para macOS com busca, snippets, gerenciador de janelas e uma loja de extensões feitas pela comunidade.",
+    "kind": "app", "pricing": "freemium", "license": "Proprietary", "platforms": ["desktop"], "languages": [],
+    "tags": ["macos", "produtividade"], "url": "https://www.raycast.com",
+    "featured": false, "alternatives": []
+  },
+  {
+    "slug": "warp", "name": "Warp", "category": "ia", "subcategory": "Produtividade",
+    "tagline": "Terminal moderno com blocos e IA.",
+    "description": "Terminal que agrupa a saída de cada comando em blocos e traz assistência de IA, histórico melhor e edição de texto moderna.",
+    "kind": "app", "pricing": "freemium", "license": "Proprietary", "platforms": ["desktop"], "languages": [],
+    "tags": ["terminal"], "url": "https://www.warp.dev",
+    "featured": false, "alternatives": []
+  },
+  {
+    "slug": "figma", "name": "Figma", "category": "ia", "subcategory": "Design",
+    "tagline": "Design colaborativo e handoff para devs.",
+    "description": "Ferramenta de design de interfaces no navegador, com colaboração em tempo real e modo de desenvolvimento para inspecionar medidas e código.",
+    "kind": "app", "pricing": "freemium", "license": "Proprietary", "platforms": ["web", "desktop"], "languages": [],
+    "tags": ["design"], "url": "https://www.figma.com",
+    "featured": false, "alternatives": []
+  },
+  {
+    "slug": "obsidian", "name": "Obsidian", "category": "ia", "subcategory": "Produtividade",
+    "tagline": "Notas em Markdown com links entre ideias.",
+    "description": "App de notas que guarda tudo em arquivos Markdown locais, com links entre notas, grafo de conexões e plugins. Gratuito para uso pessoal.",
+    "kind": "app", "pricing": "free", "license": "Proprietary", "platforms": ["desktop", "mobile"], "languages": [],
+    "tags": ["notas"], "url": "https://obsidian.md",
+    "featured": false, "alternatives": []
+  }
+]

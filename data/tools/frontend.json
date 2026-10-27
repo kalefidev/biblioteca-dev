@@ -1,0 +1,66 @@
+[
+  {
+    "slug": "react", "name": "React", "category": "frontend", "subcategory": "UI",
+    "tagline": "Biblioteca de UI baseada em componentes.",
+    "description": "Biblioteca para construir interfaces a partir de componentes declarativos. É a base de frameworks como Next.js e de grande parte da web moderna.",
+    "kind": "library", "pricing": "open-source", "license": "MIT", "platforms": ["web"], "languages": ["javascript", "typescript"],
+    "tags": ["ui", "js"], "url": "https://react.dev", "repo": "facebook/react", "npm": "react",
+    "featured": true, "alternatives": ["svelte"]
+  },
+  {
+    "slug": "nextjs", "name": "Next.js", "category": "frontend", "subcategory": "Frameworks",
+    "tagline": "Framework React com SSR, rotas e edge.",
+    "description": "Framework full-stack sobre React, com roteamento por arquivos, renderização no servidor, geração estática e otimizações prontas.",
+    "kind": "framework", "pricing": "open-source", "license": "MIT", "platforms": ["web"], "languages": ["javascript", "typescript"],
+    "tags": ["framework", "react"], "url": "https://nextjs.org", "repo": "vercel/next.js", "npm": "next",
+    "featured": true, "alternatives": ["astro", "svelte"]
+  },
+  {
+    "slug": "vite", "name": "Vite", "category": "frontend", "subcategory": "Build",
+    "tagline": "Bundler e dev server instantâneo.",
+    "description": "Ferramenta de build com servidor de desenvolvimento muito rápido (módulos ES nativos) e empacotamento de produção via Rollup.",
+    "kind": "cli", "pricing": "open-source", "license": "MIT", "platforms": ["cli", "web"], "languages": ["javascript", "typescript"],
+    "tags": ["build", "dev"], "url": "https://vite.dev", "repo": "vitejs/vite", "npm": "vite",
+    "featured": false, "alternatives": []
+  },
+  {
+    "slug": "tailwindcss", "name": "Tailwind CSS", "category": "frontend", "subcategory": "Estilo",
+    "tagline": "CSS utilitário com design tokens.",
+    "description": "Framework CSS baseado em classes utilitárias: você estiliza direto no HTML usando tokens de design, sem escrever CSS à mão.",
+    "kind": "framework", "pricing": "open-source", "license": "MIT", "platforms": ["web"], "languages": ["css"],
+    "tags": ["css"], "url": "https://tailwindcss.com", "repo": "tailwindlabs/tailwindcss", "npm": "tailwindcss",
+    "featured": false, "alternatives": []
+  },
+  {
+    "slug": "svelte", "name": "Svelte", "category": "frontend", "subcategory": "UI",
+    "tagline": "Compilador de UI sem virtual DOM.",
+    "description": "Framework que compila componentes em JavaScript enxuto na hora do build, sem virtual DOM. Reatividade por runes e sintaxe simples.",
+    "kind": "framework", "pricing": "open-source", "license": "MIT", "platforms": ["web"], "languages": ["javascript", "typescript"],
+    "tags": ["ui", "framework"], "url": "https://svelte.dev", "repo": "sveltejs/svelte", "npm": "svelte",
+    "featured": false, "alternatives": ["react"]
+  },
+  {
+    "slug": "astro", "name": "Astro", "category": "frontend", "subcategory": "Frameworks",
+    "tagline": "Sites de conteúdo com zero JS por padrão.",
+    "description": "Framework para sites orientados a conteúdo que envia pouco ou nenhum JavaScript ao navegador. Aceita componentes de React, Svelte e outros.",
+    "kind": "framework", "pricing": "open-source", "license": "MIT", "platforms": ["web"], "languages": ["javascript", "typescript"],
+    "tags": ["ssg", "conteúdo"], "url": "https://astro.build", "repo": "withastro/astro", "npm": "astro",
+    "featured": false, "alternatives": ["nextjs"]
+  },
+  {
+    "slug": "shadcn-ui", "name": "shadcn/ui", "category": "frontend", "subcategory": "Componentes",
+    "tagline": "Componentes copiáveis sobre Radix e Tailwind.",
+    "description": "Coleção de componentes acessíveis que você copia para o seu projeto em vez de instalar como dependência, com Radix e Tailwind por baixo.",
+    "kind": "library", "pricing": "open-source", "license": "MIT", "platforms": ["web"], "languages": ["typescript"],
+    "tags": ["componentes"], "url": "https://ui.shadcn.com", "repo": "shadcn-ui/ui", "npm": "shadcn",
+    "featured": false, "alternatives": []
+  },
+  {
+    "slug": "threejs", "name": "Three.js", "category": "frontend", "subcategory": "Gráficos",
+    "tagline": "Biblioteca de 3D para a web (WebGL/WebGPU).",
+    "description": "Biblioteca JavaScript para cenas 3D no navegador sobre WebGL e WebGPU. Base de projetos como React Three Fiber.",
+    "kind": "library", "pricing": "open-source", "license": "MIT", "platforms": ["web"], "languages": ["javascript", "typescript"],
+    "tags": ["3d", "webgl"], "url": "https://threejs.org", "repo": "mrdoob/three.js", "npm": "three",
+    "featured": false, "alternatives": []
+  }
+]

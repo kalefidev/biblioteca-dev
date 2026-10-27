@@ -1,0 +1,66 @@
+[
+  {
+    "slug": "nodejs", "name": "Node.js", "category": "backend", "subcategory": "Runtimes",
+    "tagline": "Runtime JavaScript no servidor.",
+    "description": "Ambiente de execução JavaScript baseado no motor V8, usado para servidores, ferramentas de build e scripts. Vem com o gerenciador npm.",
+    "kind": "runtime", "pricing": "open-source", "license": "MIT", "platforms": ["cli", "cloud"], "languages": ["javascript", "typescript"],
+    "tags": ["runtime", "js"], "url": "https://nodejs.org", "repo": "nodejs/node",
+    "featured": true, "alternatives": ["bun"]
+  },
+  {
+    "slug": "bun", "name": "Bun", "category": "backend", "subcategory": "Runtimes",
+    "tagline": "Runtime, bundler e gerenciador de pacotes tudo-em-um.",
+    "description": "Runtime JavaScript e TypeScript com bundler, test runner e gerenciador de pacotes embutidos, focado em velocidade.",
+    "kind": "runtime", "pricing": "open-source", "license": "MIT", "platforms": ["cli", "cloud"], "languages": ["javascript", "typescript"],
+    "tags": ["runtime", "js"], "url": "https://bun.sh", "repo": "oven-sh/bun",
+    "featured": false, "alternatives": ["nodejs"]
+  },
+  {
+    "slug": "fastapi", "name": "FastAPI", "category": "backend", "subcategory": "Frameworks",
+    "tagline": "APIs Python rápidas, tipadas e com docs automáticas.",
+    "description": "Framework Python para APIs que usa type hints para validar dados e gerar documentação OpenAPI automaticamente. Suporta async.",
+    "kind": "framework", "pricing": "open-source", "license": "MIT", "platforms": ["cloud"], "languages": ["python"],
+    "tags": ["python", "api"], "url": "https://fastapi.tiangolo.com", "repo": "fastapi/fastapi",
+    "featured": false, "alternatives": ["django"]
+  },
+  {
+    "slug": "django", "name": "Django", "category": "backend", "subcategory": "Frameworks",
+    "tagline": "Framework Python completo, com ORM e admin.",
+    "description": "Framework Python \"baterias incluídas\": ORM, autenticação, painel de administração e migrações vêm prontos.",
+    "kind": "framework", "pricing": "open-source", "license": "BSD-3-Clause", "platforms": ["web", "cloud"], "languages": ["python"],
+    "tags": ["python", "framework"], "url": "https://www.djangoproject.com", "repo": "django/django",
+    "featured": false, "alternatives": ["fastapi"]
+  },
+  {
+    "slug": "express", "name": "Express", "category": "backend", "subcategory": "Frameworks",
+    "tagline": "Framework HTTP minimalista para Node.",
+    "description": "Framework web mínimo e flexível para Node.js, com roteamento e middlewares. Um dos mais usados do ecossistema.",
+    "kind": "framework", "pricing": "open-source", "license": "MIT", "platforms": ["cloud"], "languages": ["javascript", "typescript"],
+    "tags": ["node", "http"], "url": "https://expressjs.com", "repo": "expressjs/express", "npm": "express",
+    "featured": false, "alternatives": ["hono"]
+  },
+  {
+    "slug": "hono", "name": "Hono", "category": "backend", "subcategory": "Frameworks",
+    "tagline": "Framework web ultraleve para edge e Node.",
+    "description": "Framework web pequeno e rápido, baseado nos padrões Web, que roda em Cloudflare Workers, Bun, Deno e Node.",
+    "kind": "framework", "pricing": "open-source", "license": "MIT", "platforms": ["cloud"], "languages": ["typescript"],
+    "tags": ["edge", "ts"], "url": "https://hono.dev", "repo": "honojs/hono", "npm": "hono",
+    "featured": false, "alternatives": ["express"]
+  },
+  {
+    "slug": "trpc", "name": "tRPC", "category": "backend", "subcategory": "APIs",
+    "tagline": "APIs com tipos de ponta a ponta, sem schema.",
+    "description": "Permite chamar funções do servidor a partir do cliente com tipos TypeScript compartilhados, sem gerar schema nem código.",
+    "kind": "library", "pricing": "open-source", "license": "MIT", "platforms": ["web", "cloud"], "languages": ["typescript"],
+    "tags": ["typescript", "api"], "url": "https://trpc.io", "repo": "trpc/trpc", "npm": "@trpc/server",
+    "featured": false, "alternatives": ["graphql"]
+  },
+  {
+    "slug": "graphql", "name": "GraphQL", "category": "backend", "subcategory": "APIs",
+    "tagline": "Linguagem de consulta para APIs flexíveis.",
+    "description": "Linguagem de consulta e especificação para APIs em que o cliente pede exatamente os campos de que precisa. Aqui, a implementação de referência em JavaScript.",
+    "kind": "language", "pricing": "open-source", "license": "MIT", "platforms": ["web", "cloud"], "languages": ["javascript", "typescript"],
+    "tags": ["api", "query"], "url": "https://graphql.org", "repo": "graphql/graphql-js", "npm": "graphql",
+    "featured": false, "alternatives": ["trpc"]
+  }
+]

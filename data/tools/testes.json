@@ -1,0 +1,66 @@
+[
+  {
+    "slug": "vitest", "name": "Vitest", "category": "testes", "subcategory": "Testes unitários",
+    "tagline": "Test runner nativo do Vite, compatível com Jest.",
+    "description": "Framework de testes que reaproveita a configuração do Vite, com API compatível com Jest, TypeScript e modo watch rápido.",
+    "kind": "framework", "pricing": "open-source", "license": "MIT", "platforms": ["cli"], "languages": ["javascript", "typescript"],
+    "tags": ["unit", "ts"], "url": "https://vitest.dev", "repo": "vitest-dev/vitest", "npm": "vitest",
+    "featured": false, "alternatives": ["jest"]
+  },
+  {
+    "slug": "jest", "name": "Jest", "category": "testes", "subcategory": "Testes unitários",
+    "tagline": "Framework de testes JavaScript consagrado.",
+    "description": "Framework de testes com mocks, snapshots e cobertura embutidos. Muito usado em projetos React e Node.",
+    "kind": "framework", "pricing": "open-source", "license": "MIT", "platforms": ["cli"], "languages": ["javascript", "typescript"],
+    "tags": ["unit", "js"], "url": "https://jestjs.io", "repo": "jestjs/jest", "npm": "jest",
+    "featured": false, "alternatives": ["vitest"]
+  },
+  {
+    "slug": "playwright", "name": "Playwright", "category": "testes", "subcategory": "End-to-end",
+    "tagline": "Testes end-to-end em vários navegadores.",
+    "description": "Automação de navegador para testes E2E em Chromium, Firefox e WebKit, com esperas automáticas, traces e gravação de testes.",
+    "kind": "framework", "pricing": "open-source", "license": "Apache-2.0", "platforms": ["cli"], "languages": ["typescript", "javascript", "python"],
+    "tags": ["e2e"], "url": "https://playwright.dev", "repo": "microsoft/playwright", "npm": "@playwright/test",
+    "featured": true, "alternatives": ["cypress"]
+  },
+  {
+    "slug": "cypress", "name": "Cypress", "category": "testes", "subcategory": "End-to-end",
+    "tagline": "E2E com UI de depuração interativa.",
+    "description": "Ferramenta de testes E2E que roda no navegador, com interface interativa para ver e depurar cada passo do teste.",
+    "kind": "framework", "pricing": "open-source", "license": "MIT", "platforms": ["cli", "desktop"], "languages": ["javascript", "typescript"],
+    "tags": ["e2e"], "url": "https://www.cypress.io", "repo": "cypress-io/cypress", "npm": "cypress",
+    "featured": false, "alternatives": ["playwright"]
+  },
+  {
+    "slug": "eslint", "name": "ESLint", "category": "testes", "subcategory": "Lint e formatação",
+    "tagline": "Linter de JavaScript e TypeScript.",
+    "description": "Analisador estático que encontra erros e inconsistências em JavaScript e TypeScript, com regras configuráveis e plugins.",
+    "kind": "cli", "pricing": "open-source", "license": "MIT", "platforms": ["cli"], "languages": ["javascript", "typescript"],
+    "tags": ["lint"], "url": "https://eslint.org", "repo": "eslint/eslint", "npm": "eslint",
+    "featured": false, "alternatives": ["biome"]
+  },
+  {
+    "slug": "prettier", "name": "Prettier", "category": "testes", "subcategory": "Lint e formatação",
+    "tagline": "Formatador de código opinativo.",
+    "description": "Formatador de código com poucas opções que reescreve o arquivo num estilo único. Suporta JS, TS, CSS, Markdown e mais.",
+    "kind": "cli", "pricing": "open-source", "license": "MIT", "platforms": ["cli"], "languages": ["javascript", "typescript", "css"],
+    "tags": ["formatação"], "url": "https://prettier.io", "repo": "prettier/prettier", "npm": "prettier",
+    "featured": false, "alternatives": ["biome"]
+  },
+  {
+    "slug": "biome", "name": "Biome", "category": "testes", "subcategory": "Lint e formatação",
+    "tagline": "Linter e formatador em Rust, bem rápido.",
+    "description": "Ferramenta única de lint e formatação, escrita em Rust, que substitui ESLint e Prettier em muitos projetos com ganho grande de velocidade.",
+    "kind": "cli", "pricing": "open-source", "license": "MIT OR Apache-2.0", "platforms": ["cli"], "languages": ["javascript", "typescript", "css"],
+    "tags": ["lint", "rust"], "url": "https://biomejs.dev", "repo": "biomejs/biome", "npm": "@biomejs/biome",
+    "featured": false, "alternatives": ["eslint", "prettier"]
+  },
+  {
+    "slug": "sonarqube", "name": "SonarQube", "category": "testes", "subcategory": "Análise estática",
+    "tagline": "Análise estática de qualidade e segurança.",
+    "description": "Plataforma que analisa o código em busca de bugs, vulnerabilidades e dívida técnica. Edição Community gratuita; edições pagas adicionais.",
+    "kind": "service", "pricing": "freemium", "license": "LGPL-3.0", "platforms": ["web", "cloud"], "languages": [],
+    "tags": ["qualidade"], "url": "https://www.sonarsource.com", "repo": "SonarSource/sonarqube",
+    "featured": false, "alternatives": []
+  }
+]
