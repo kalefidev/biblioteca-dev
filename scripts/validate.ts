@@ -1,7 +1,7 @@
 // Valida o catálogo. Roda antes do build (prebuild); sai com código 1 se algo estiver errado.
 import { z } from 'zod'
-import { categories, toolFiles, metrics } from '../lib/catalog.ts'
-import { categorySchema, metricsSchema, toolSchema } from '../lib/schema.ts'
+import { categories, guidance, toolFiles, metrics } from '../lib/catalog.ts'
+import { categorySchema, guidanceSchema, metricsSchema, toolSchema } from '../lib/schema.ts'
 
 const errors: string[] = []
 const fail = (msg: string) => errors.push(msg)
@@ -37,6 +37,13 @@ for (const [slug, m] of Object.entries(metrics)) {
   if (!slugs.has(slug)) fail(`data/metrics.json: slug "${slug}" não existe no catálogo`)
   const r = metricsSchema.safeParse(m)
   if (!r.success) fail(`data/metrics.json[${slug}]: ${z.prettifyError(r.error)}`)
+}
+
+for (const slug of slugs.keys()) if (!guidance[slug]) fail(`data/guidance.json: falta "${slug}"`)
+for (const [slug, g] of Object.entries(guidance)) {
+  if (!slugs.has(slug)) fail(`data/guidance.json: slug "${slug}" não existe no catálogo`)
+  const r = guidanceSchema.safeParse(g)
+  if (!r.success) fail(`data/guidance.json[${slug}]: ${z.prettifyError(r.error)}`)
 }
 
 if (errors.length) {

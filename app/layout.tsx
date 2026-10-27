@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Instrument_Serif } from "next/font/google";
+import { MotionProvider } from "@/components/MotionProvider";
+import { SITE_URL } from "@/lib/site";
 import { pt } from "@/messages/pt-BR";
 import "./globals.css";
 
@@ -9,8 +11,11 @@ const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"]
 const instrument = Instrument_Serif({ variable: "--font-instrument", subsets: ["latin"], weight: "400" });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
   title: { default: pt.site.name, template: `%s · ${pt.site.name}` },
   description: pt.site.description,
+  openGraph: { type: "website", siteName: pt.site.name, locale: "pt_BR" },
+  twitter: { card: "summary_large_image" },
 };
 
 // Aplica o tema salvo antes da primeira pintura (evita flash). Constante estática, sem dados externos.
@@ -26,7 +31,12 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
       </head>
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        <a href="#conteudo" className="fixed top-2 left-2 z-50 -translate-y-20 rounded-lg bg-accent px-4 py-3 text-sm font-medium text-accent-fg focus:translate-y-0">
+          {pt.site.skip}
+        </a>
+        <MotionProvider>{children}</MotionProvider>
+      </body>
     </html>
   );
 }

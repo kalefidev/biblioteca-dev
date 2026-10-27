@@ -1,0 +1,115 @@
+// Busca fuzzy + filtros por faceta + ordenação. Lógica pura (sem React), roda no navegador.
+import MiniSearch from 'minisearch'
+import { categories, metrics, tools } from './catalog.ts'
+import type { Tool } from './schema.ts'
+
+export const FACET_KEYS = ['cat', 'kind', 'price', 'lic', 'plat', 'lang', 'tag'] as const
+export type FacetKey = (typeof FACET_KEYS)[number]
+export const SORTS = ['relevance', 'popular', 'recent', 'az'] as const
+export type Sort = (typeof SORTS)[number]
+export type View = 'grid' | 'list'
+
+export type CatalogState = { q: string; sel: Record<FacetKey, string[]>; sort: Sort; view: View }
+
+const getters: Record<FacetKey, (t: Tool) => string[]> = {
+  cat: (t) => [t.category],
+  kind: (t) => [t.kind],
+  price: (t) => [t.pricing],
+  lic: (t) => [t.license],
+  plat: (t) => t.platforms,
+  lang: (t) => t.languages,
+  tag: (t) => t.tags,
+}
+
+/** Minúsculas e sem acento, caractere a caractere (mantém o comprimento para o destaque). */
+export const fold = (s: string) => Array.from(s, (c) => c.normalize('NFD')[0].toLowerCase()).join('')
+
+export const queryTerms = (q: string) => fold(q).split(/[^\p{L}\p{N}]+/u).filter(Boolean)
+
+// ---------- URL <-> estado ----------
+export function parseState(params: URLSearchParams): CatalogState {
+  const sort = params.get('sort') as Sort
+  return {
+    q: params.get('q') ?? '',
+    sel: Object.fromEntries(FACET_KEYS.map((k) => [k, params.getAll(k)])) as CatalogState['sel'],
+    sort: SORTS.includes(sort) ? sort : 'relevance',
+    view: params.get('view') === 'list' ? 'list' : 'grid',
+  }
+}
+
+/** Só grava o que difere do padrão, para a URL ficar curta. */
+export function serializeState(s: CatalogState) {
+  const p = new URLSearchParams()
+  if (s.q.trim()) p.set('q', s.q)
+  for (const k of FACET_KEYS) for (const v of s.sel[k]) p.append(k, v)
+  if (s.sort !== 'relevance') p.set('sort', s.sort)
+  if (s.view !== 'grid') p.set('view', s.view)
+  return p.toString()
+}
+
+export const activeFilterCount = (s: CatalogState) => FACET_KEYS.reduce((n, k) => n + s.sel[k].length, 0)
+
+// ---------- índice de busca ----------
+let index: MiniSearch | undefined
+function getIndex() {
+  if (!index) {
+    index = new MiniSearch({
+      idField: 'slug',
+      fields: ['name', 'tags', 'subcategory', 'tagline', 'description'],
+      processTerm: fold,
+    })
+    index.addAll(tools.map((t) => ({ ...t, tags: t.tags.join(' ') })))
+  }
+  return index
+}
+
+/** slug -> relevância. Nome pesa mais que tag, que pesa mais que descrição. */
+export function searchScores(q: string) {
+  const hits = getIndex().search(q, {
+    boost: { name: 5, tags: 3, subcategory: 2 },
+    prefix: true,
+    fuzzy: (term) => (term.length > 3 ? 0.2 : false),
+    combineWith: 'AND',
+  })
+  return new Map(hits.map((h) => [h.id as string, h.score]))
+}
+
+// ---------- consulta ----------
+const stars = (t: Tool) => metrics[t.slug]?.stars ?? -1
+const byName = (a: Tool, b: Tool) => a.name.localeCompare(b.name)
+
+export function runQuery(state: CatalogState, lockedCategory?: string) {
+  const scores = state.q.trim() ? searchScores(state.q) : null
+  const pool = tools.filter((t) => (!lockedCategory || t.category === lockedCategory) && (!scores || scores.has(t.slug)))
+  // OR dentro da faceta, AND entre facetas; `skip` ignora a própria faceta ao contar suas opções.
+  const matches = (t: Tool, skip?: FacetKey) =>
+    FACET_KEYS.every((k) => k === skip || !state.sel[k].length || getters[k](t).some((v) => state.sel[k].includes(v)))
+
+  const sorters: Record<Sort, (a: Tool, b: Tool) => number> = {
+    relevance: scores
+      ? (a, b) => scores.get(b.slug)! - scores.get(a.slug)! || stars(b) - stars(a)
+      : (a, b) => Number(b.featured) - Number(a.featured) || stars(b) - stars(a) || byName(a, b),
+    popular: (a, b) => stars(b) - stars(a) || byName(a, b),
+    recent: (a, b) => (metrics[b.slug]?.lastCommit ?? '').localeCompare(metrics[a.slug]?.lastCommit ?? '') || byName(a, b),
+    az: byName,
+  }
+
+  const counts = {} as Record<FacetKey, Map<string, number>>
+  for (const k of FACET_KEYS) {
+    counts[k] = new Map()
+    for (const t of pool) if (matches(t, k)) for (const v of getters[k](t)) counts[k].set(v, (counts[k].get(v) ?? 0) + 1)
+  }
+  return { results: pool.filter((t) => matches(t)).sort(sorters[state.sort]), counts }
+}
+
+// ---------- opções de cada faceta (fixas; só as contagens mudam) ----------
+function optionsFor(k: FacetKey) {
+  if (k === 'cat') return categories.map((c) => c.id)
+  const total = new Map<string, number>()
+  for (const t of tools) for (const v of getters[k](t)) total.set(v, (total.get(v) ?? 0) + 1)
+  return [...total]
+    .filter(([, n]) => k !== 'tag' || n >= 2) // 67 tags, quase todas únicas: só as que agrupam algo
+    .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
+    .map(([v]) => v)
+}
+export const facetOptions = Object.fromEntries(FACET_KEYS.map((k) => [k, optionsFor(k)])) as Record<FacetKey, string[]>

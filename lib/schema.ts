@@ -22,7 +22,7 @@ export const toolSchema = z.strictObject({
   tags: z.array(z.string()).min(1),
   url: z.url({ protocol: /^https$/ }),
   repo: z.string().regex(/^[\w.-]+\/[\w.-]+$/).optional(), // GitHub: dono/nome
-  npm: z.string().optional(),
+  npm: z.string().regex(/^(@[\w.-]+\/)?[\w.-]+$/).optional(), // pacote npm, com escopo opcional
   featured: z.boolean(),
   alternatives: z.array(slug),
 })
@@ -42,6 +42,10 @@ export const metricsSchema = z.strictObject({
   updatedAt: z.string(),
 })
 
+// Conteúdo editorial por ferramenta (data/guidance.json).
+export const guidanceSchema = z.strictObject({ use: z.string().min(1), avoid: z.string().min(1) })
+
 export type Tool = z.infer<typeof toolSchema>
 export type Category = z.infer<typeof categorySchema>
 export type Metrics = z.infer<typeof metricsSchema>
+export type Guidance = z.infer<typeof guidanceSchema>

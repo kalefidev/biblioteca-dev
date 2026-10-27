@@ -2,8 +2,8 @@
 import { categories as cats, tools as all } from './catalog.ts'
 
 export type V3 = [number, number, number]
-export type Tool = { name: string; desc: string; url: string; tags: string[]; cat: string; pos: V3 }
-export type Category = { id: string; label: string; color: string; pos: V3; tools: Tool[] }
+export type Node3 = { slug: string; name: string; cat: string; pos: V3 }
+export type Cluster = { id: string; label: string; color: string; pos: V3; tools: Node3[] }
 
 // Distribui i de n pontos numa esfera de raio r (espiral de Fibonacci).
 const fib = (i: number, n: number, r: number): V3 => {
@@ -14,19 +14,17 @@ const fib = (i: number, n: number, r: number): V3 => {
 }
 
 export const CLUSTER_R = 3
-export const categories: Category[] = cats.map(({ id, label, color }, i) => {
-  const pos = fib(i, cats.length, 16)
+export const SPREAD_R = 16
+export const clusters: Cluster[] = cats.map(({ id, label, color }, i) => {
+  const pos = fib(i, cats.length, SPREAD_R)
   const list = all.filter((t) => t.category === id)
   return {
     id, label, color, pos,
     tools: list.map((t, j) => {
       const o = fib(j, list.length, CLUSTER_R)
-      return { name: t.name, desc: t.tagline, url: t.url, tags: t.tags, cat: id, pos: [pos[0] + o[0], pos[1] + o[1], pos[2] + o[2]] as V3 }
+      return { slug: t.slug, name: t.name, cat: id, pos: [pos[0] + o[0], pos[1] + o[1], pos[2] + o[2]] as V3 }
     }),
   }
 })
-export const allTools = categories.flatMap((c) => c.tools)
-export const catById = Object.fromEntries(categories.map((c) => [c.id, c]))
-
-export const matches = (t: Tool, q: string) =>
-  !q || `${t.name} ${t.desc} ${t.tags.join(' ')}`.toLowerCase().includes(q.toLowerCase())
+export const nodes = clusters.flatMap((c) => c.tools)
+export const clusterById = Object.fromEntries(clusters.map((c) => [c.id, c]))

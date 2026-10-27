@@ -15,12 +15,13 @@
   --fg: #1c1b18;
   --fg-muted: #5f5c53;
   --fg-subtle: #6b685f;
-  --accent: #b93a16;
+  --accent: #a63111;
   --accent-fg: #fbfaf7;
   --accent-soft: color-mix(in srgb, var(--accent) 12%, var(--bg));
   --shadow-float: 0 1px 2px rgb(28 27 24 / 0.06), 0 8px 24px rgb(28 27 24 / 0.08);
 }
-:root[data-theme="dark"] {
+/* Sem `:root`: um wrapper com data-theme="dark" (ex.: /explore) redeclara os tokens só para ele. */
+[data-theme="dark"] {
   color-scheme: dark;
   --bg: #131312;
   --surface: #1a1a18;
@@ -87,6 +88,58 @@ body {
 
 ::selection {
   background: var(--accent-soft);
+}
+
+/* Press: resposta imediata ao toque (sem transição na ida), em botões e links-botão. */
+button:not(:disabled):active,
+a[class*="bg-accent"]:active {
+  scale: 0.97;
+}
+
+/*
+  <dialog> nativo com entrada e saída em CSS (@starting-style + allow-discrete; sem suporte, abre/fecha seco).
+  Mesma curva do Motion (lib/motion.ts). A gaveta (`data-variant="sheet"`) sobe de baixo.
+*/
+dialog {
+  opacity: 0;
+  translate: 0 8px;
+  scale: 0.98;
+  transition:
+    opacity 0.2s cubic-bezier(0.2, 0.8, 0.2, 1),
+    translate 0.2s cubic-bezier(0.2, 0.8, 0.2, 1),
+    scale 0.2s cubic-bezier(0.2, 0.8, 0.2, 1),
+    overlay 0.2s allow-discrete,
+    display 0.2s allow-discrete;
+}
+dialog[data-variant="sheet"] {
+  translate: 0 100%;
+  scale: 1;
+}
+dialog[open] {
+  opacity: 1;
+  translate: 0 0;
+  scale: 1;
+}
+dialog::backdrop {
+  opacity: 0;
+  transition: opacity 0.2s ease-out, overlay 0.2s allow-discrete, display 0.2s allow-discrete;
+}
+dialog[open]::backdrop {
+  opacity: 1;
+}
+@starting-style {
+  dialog[open] {
+    opacity: 0;
+    translate: 0 8px;
+    scale: 0.98;
+  }
+  dialog[open][data-variant="sheet"] {
+    translate: 0 100%;
+    scale: 1;
+  }
+  dialog[open]::backdrop {
+    opacity: 0;
+  }
 }
 
 /* Movimento reduzido: sem animações/transições (o estado final continua o mesmo). */
