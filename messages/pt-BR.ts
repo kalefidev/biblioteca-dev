@@ -26,6 +26,34 @@ export const ptBR = {
     tagline: 'Curadoria de ferramentas para quem constrói software.',
     data: 'Métricas via GitHub e npm.',
     privacy: 'Privacidade',
+    suggest: 'Sugerir ferramenta',
+  },
+  suggest: {
+    title: 'Sugerir uma ferramenta',
+    lead: 'Conhece algo que deveria estar no catálogo? Mande o nome e o link. Toda sugestão é lida antes de entrar.',
+    name: 'Nome',
+    namePlaceholder: 'Ex.: Valibot',
+    url: 'Site ou repositório',
+    urlPlaceholder: 'https://…',
+    category: 'Área',
+    categoryAny: 'Não sei',
+    note: 'Por que vale a pena? (opcional)',
+    notePlaceholder: 'Para que serve, quem usa, o que tem de diferente…',
+    send: 'Enviar sugestão',
+    sending: 'Enviando…',
+    sent: 'Recebido. Obrigado por ajudar a biblioteca a crescer.',
+    another: 'Sugerir outra',
+    exists: (name: string) => `${name} já está no catálogo.`,
+    seeTool: 'Ver a página',
+    errors: {
+      name: 'Escreva um nome de 2 a 80 caracteres.',
+      url: 'Use um link completo, começando com https://.',
+      note: 'Use no máximo 1000 caracteres.',
+      limited: 'Muitas sugestões da sua rede na última hora. Tente de novo mais tarde.',
+      down: 'Não conseguimos enviar agora. Tente de novo em alguns minutos.',
+    },
+    privacy: 'Guardamos só o que você escreve aqui e um código anônimo da sua rede, usado contra spam.',
+    emptyHint: 'Não achou o que procurava?',
   },
   notFound: {
     title: 'Página não encontrada',
@@ -38,7 +66,14 @@ export const ptBR = {
     sections: [
       {
         h: 'Resumo',
-        p: ['Este site não tem conta, formulário nem anúncios, e não usa cookies. Não coletamos dados pessoais.'],
+        p: ['Este site não tem conta nem anúncios e não usa cookies. O único dado que recebemos é o que você manda pelo formulário de sugestão.'],
+      },
+      {
+        h: 'Formulário de sugestão',
+        p: [
+          'Quando você sugere uma ferramenta, guardamos o nome, o link, a área e o comentário que você escreveu, o idioma da página e um código derivado do seu endereço IP (um hash irreversível, não o IP em si). O código serve só para limitar envios em excesso.',
+          'As sugestões ficam num banco de dados do Supabase (Estados Unidos) e são lidas apenas para decidir o que entra no catálogo. Não pedimos e-mail nem nome.',
+        ],
       },
       {
         h: 'O que fica no seu navegador',

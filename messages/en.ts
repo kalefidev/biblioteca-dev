@@ -28,6 +28,34 @@ export const en: Messages = {
     tagline: 'A curated set of tools for people who build software.',
     data: 'Metrics via GitHub and npm.',
     privacy: 'Privacy',
+    suggest: 'Suggest a tool',
+  },
+  suggest: {
+    title: 'Suggest a tool',
+    lead: 'Know something that belongs in the catalog? Send the name and the link. Every suggestion is read before it goes in.',
+    name: 'Name',
+    namePlaceholder: 'E.g. Valibot',
+    url: 'Website or repository',
+    urlPlaceholder: 'https://…',
+    category: 'Area',
+    categoryAny: 'Not sure',
+    note: 'Why is it worth it? (optional)',
+    notePlaceholder: 'What it does, who uses it, what sets it apart…',
+    send: 'Send suggestion',
+    sending: 'Sending…',
+    sent: 'Got it. Thanks for helping the library grow.',
+    another: 'Suggest another',
+    exists: (name: string) => `${name} is already in the catalog.`,
+    seeTool: 'See its page',
+    errors: {
+      name: 'Enter a name between 2 and 80 characters.',
+      url: 'Use a full link starting with https://.',
+      note: 'Use at most 1000 characters.',
+      limited: 'Too many suggestions from your network in the last hour. Please try again later.',
+      down: 'We could not send it right now. Please try again in a few minutes.',
+    },
+    privacy: 'We keep only what you write here and an anonymous code for your network, used against spam.',
+    emptyHint: 'Didn’t find what you were looking for?',
   },
   notFound: {
     title: 'Page not found',
@@ -40,7 +68,14 @@ export const en: Messages = {
     sections: [
       {
         h: 'Summary',
-        p: ['This site has no accounts, forms or ads, and does not use cookies. We do not collect personal data.'],
+        p: ['This site has no accounts or ads and does not use cookies. The only data we receive is what you send through the suggestion form.'],
+      },
+      {
+        h: 'Suggestion form',
+        p: [
+          'When you suggest a tool, we store the name, link, area and comment you wrote, the page language and a code derived from your IP address (an irreversible hash, not the IP itself). The code is used only to limit excessive submissions.',
+          'Suggestions are kept in a Supabase database (United States) and are read only to decide what goes into the catalog. We do not ask for your email or name.',
+        ],
       },
       {
         h: 'What stays in your browser',

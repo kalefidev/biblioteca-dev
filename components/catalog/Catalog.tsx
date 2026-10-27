@@ -2,6 +2,7 @@
 
 import { m } from "motion/react";
 import { useEffect, useMemo, useRef, useState } from "react";
+import { Link } from "@/components/Link";
 import { useFull } from "@/components/useFull";
 import { ToolCard } from "@/components/site/ToolCard";
 import { Dialog } from "@/components/ui/Dialog";
@@ -47,6 +48,14 @@ export function Catalog({ lockedCategory }: { lockedCategory?: string }) {
   const [more, setMore] = useState({ key, n: PAGE });
   const shown = more.key === key ? more.n : PAGE;
   const visible = results.slice(0, shown);
+
+  // Os cards da primeira pintura substituem os do HTML do servidor: entram parados (animar daria um "piscar" e
+  // atrasaria o LCP, que só conta quando o card fica visível). Depois disso, quem entra anima.
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => {
+    const id = requestAnimationFrame(() => setMounted(true));
+    return () => cancelAnimationFrame(id);
+  }, []);
 
   // Gaveta de filtros (mobile). Fecha se a tela crescer, senão ficaria um modal invisível.
   const [sheet, setSheet] = useState(false);
@@ -172,11 +181,17 @@ export function Catalog({ lockedCategory }: { lockedCategory?: string }) {
               title={t.states.emptyTitle}
               hint={t.states.emptyHint}
               action={
-                hasCriteria && (
-                  <button type="button" onClick={clearAll} className="h-11 rounded-lg bg-accent px-5 font-medium text-accent-fg transition-colors duration-150 hover:bg-[color-mix(in_srgb,var(--accent)_88%,var(--fg))]">
-                    {t.states.emptyAction}
-                  </button>
-                )
+                <div className="flex flex-col items-center gap-4">
+                  {hasCriteria && (
+                    <button type="button" onClick={clearAll} className="h-11 rounded-lg bg-accent px-5 font-medium text-accent-fg transition-colors duration-150 hover:bg-[color-mix(in_srgb,var(--accent)_88%,var(--fg))]">
+                      {t.states.emptyAction}
+                    </button>
+                  )}
+                  <p className="text-sm text-fg-muted">
+                    {t.suggest.emptyHint}{" "}
+                    <Link href="/suggest" className="inline-flex min-h-11 items-center font-medium text-accent underline-offset-4 hover:underline">{t.suggest.title}</Link>
+                  </p>
+                </div>
               }
             />
           ) : (
@@ -187,7 +202,7 @@ export function Catalog({ lockedCategory }: { lockedCategory?: string }) {
                   // Só quem entra anima (quem já estava na tela fica parado); atraso curto e limitado.
                   <m.li
                     key={tool.slug}
-                    initial={{ opacity: 0, y: 8 }}
+                    initial={mounted ? { opacity: 0, y: 8 } : false}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: dur.base, ease, delay: Math.min(idx % PAGE, 8) * 0.025 }}
                     className="flex *:flex-1"

@@ -10,6 +10,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ['/tools'],
     ['/explore'],
     ['/privacy'],
+    ['/suggest'],
     ...categories.map((c): [string] => [`/c/${c.id}`]),
     ...tools.map((t): [string, string?] => [`/t/${t.slug}`, metrics[t.slug]?.updatedAt]),
   ]
