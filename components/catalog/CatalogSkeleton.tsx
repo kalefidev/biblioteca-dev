@@ -16,6 +16,8 @@ export async function CatalogSkeleton({ lockedCategory }: { lockedCategory?: str
       <div className="hidden lg:block" />
       <div>
         <Skeleton className="h-14 rounded-xl" />
+        {/* mesma altura da linha de contagem/ordenação do Catalog: os cards não pulam quando o cliente assume */}
+        <div className="mt-4 h-11" />
         <ul className="mt-6 grid grid-cols-[repeat(auto-fill,minmax(15rem,1fr))] gap-4">
           {first.map((t) => (
             <li key={t.slug} className="flex *:flex-1">

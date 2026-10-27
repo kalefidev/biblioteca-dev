@@ -8,16 +8,17 @@ import { metrics, toolHref } from "@/lib/catalog";
 import { dur, ease } from "@/lib/motion";
 
 /** Mesmas informações do topo da página da ferramenta, em formato de painel flutuante. */
-export function ToolPanel({ slug, onClose }: { slug: string; onClose: () => void }) {
+export function ToolPanel({ slug, onClose, onPick }: { slug: string; onClose: () => void; onPick: (slug: string) => void }) {
   const { t, locale, categories, toolBySlug } = useFull();
   const compact = new Intl.NumberFormat(locale, { notation: "compact", maximumFractionDigits: 1 });
   const tool = toolBySlug.get(slug);
   if (!tool) return null;
   const category = categories.find((c) => c.id === tool.category)!;
   const metric = metrics[slug];
+  const alternatives = tool.alternatives.flatMap((s) => toolBySlug.get(s) ?? []).slice(0, 5);
 
   return (
-    <m.aside
+    <m.aside data-hud
       aria-label={tool.name}
       initial={{ opacity: 0, y: 12 }}
       animate={{ opacity: 1, y: 0 }}
@@ -43,6 +44,25 @@ export function ToolPanel({ slug, onClose }: { slug: string; onClose: () => void
         {metric?.stars != null && <span className="font-mono text-xs text-fg-subtle tabular-nums">★ {compact.format(metric.stars)}</span>}
         {metric?.version && <span className="font-mono text-xs text-fg-subtle">{metric.version}</span>}
       </div>
+      {alternatives.length > 0 && (
+        <div className="mt-5">
+          <p className="text-xs text-fg-subtle">{t.tool.alternatives}</p>
+          <ul className="mt-2 flex flex-wrap gap-1.5">
+            {alternatives.map((a) => (
+              <li key={a.slug}>
+                <button
+                  type="button"
+                  onClick={() => onPick(a.slug)}
+                  className="inline-flex h-9 items-center gap-1.5 rounded-md border border-line px-2.5 text-sm text-fg-muted transition-colors duration-150 hover:border-line-strong hover:bg-surface-2 hover:text-fg"
+                >
+                  <i aria-hidden className="size-1.5 rounded-full" style={{ background: categories.find((c) => c.id === a.category)?.color }} />
+                  {a.name}
+                </button>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
       <div className="mt-6 flex flex-wrap gap-2">
         <Link
           href={toolHref(tool)}

@@ -27,4 +27,5 @@ export const clusters: Cluster[] = cats.map(({ id, color }, i) => {
   }
 })
 export const nodes = clusters.flatMap((c) => c.tools)
+export const nodeBySlug = new Map(nodes.map((n) => [n.slug, n]))
 export const clusterById = Object.fromEntries(clusters.map((c) => [c.id, c]))

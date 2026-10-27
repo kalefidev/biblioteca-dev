@@ -71,7 +71,7 @@ export default function HeroGalaxy() {
     <div
       ref={box}
       aria-hidden
-      className="pointer-events-none absolute inset-y-0 right-0 -z-10 w-3/5transition-opacity duration-1000 [mask-image:radial-gradient(closest-side,black_60%,transparent)] starting:opacity-0"
+      className="pointer-events-none absolute inset-y-0 right-0 -z-10 w-1/2 transition-opacity duration-1000 [mask-image:radial-gradient(closest-side,black_60%,transparent)] starting:opacity-0"
     >
       <Canvas
         camera={{ position: [0, 4, 58], fov: 40 }}

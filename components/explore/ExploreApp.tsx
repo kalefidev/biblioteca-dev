@@ -9,13 +9,11 @@ import { ADVANCED, MAIN, facetGroups } from '@/components/catalog/groups'
 import { useFilterState } from '@/components/catalog/useFilterState'
 import { Dialog } from '@/components/ui/Dialog'
 import { activeFilterCount, runQuery, serializeState } from '@/lib/search'
-import { clusters, nodes } from '@/lib/data'
+import { clusters, nodeBySlug, nodes } from '@/lib/data'
 import { detect3D } from '@/lib/gl'
 import { Fallback2D } from './Fallback2D'
 import Scene, { type Sel } from './Scene'
 import { ToolPanel } from './ToolPanel'
-
-const nodeCat = new Map(nodes.map((n) => [n.slug, n.cat]))
 
 export default function ExploreApp() {
   const i = useFull()
@@ -34,7 +32,7 @@ export default function ExploreApp() {
 
   const home = () => setSel({ cat: null, tool: null })
   const pickCat = (id: string) => setSel({ cat: id, tool: null })
-  const pickTool = (slug: string) => setSel({ cat: nodeCat.get(slug)!, tool: slug })
+  const pickTool = (slug: string) => setSel({ cat: nodeBySlug.get(slug)!.cat, tool: slug })
   const back = () => (sel.tool ? pickCat(sel.cat!) : home())
 
   useEffect(() => {
@@ -53,7 +51,7 @@ export default function ExploreApp() {
         <Scene sel={sel} lit={lit} filtered={filtered} onTool={pickTool} onCat={pickCat} />
       )}
 
-      <header className="fixed top-4 left-4 z-5 w-[min(22rem,calc(100vw-2rem))]">
+      <header data-hud className="fixed top-4 left-4 z-5 w-[min(22rem,calc(100vw-2rem))]">
         <Link href="/" className="inline-flex h-11 items-center text-sm text-fg-muted underline-offset-4 hover:text-fg hover:underline">
           ← {t.explore.back}
         </Link>
@@ -91,7 +89,7 @@ export default function ExploreApp() {
         </p>
       </header>
 
-      <nav
+      <nav data-hud
         aria-label={t.explore.categoriesLabel}
         className="fixed bottom-4 left-1/2 z-5 flex max-w-[calc(100vw-2rem)] -translate-x-1/2 gap-1.5 overflow-x-auto rounded-2xl border border-line bg-surface/85 p-1.5 backdrop-blur [scrollbar-width:none]"
       >
@@ -103,7 +101,7 @@ export default function ExploreApp() {
         ))}
       </nav>
 
-      <AnimatePresence>{sel.tool && <ToolPanel slug={sel.tool} onClose={back} />}</AnimatePresence>
+      <AnimatePresence>{sel.tool && <ToolPanel key={sel.tool} slug={sel.tool} onClose={back} onPick={pickTool} />}</AnimatePresence>
 
       <Dialog open={filters} onClose={() => setFilters(false)} label={t.catalog.filters}>
         <div className="flex max-h-[76dvh] flex-col">

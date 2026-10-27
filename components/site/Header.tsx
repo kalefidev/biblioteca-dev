@@ -18,7 +18,7 @@ export async function Header() {
           <span aria-hidden className="size-2.5 rounded-full bg-accent" />
           <span className="max-sm:sr-only">{t.site.name}</span>
         </Link>
-        <nav aria-label={t.nav.main} className="flex items-center gap-0.5 sm:gap-1">
+        <nav aria-label={t.nav.main} className="flex items-center sm:gap-1">
           {links.map(([href, label]) => (
             <Link
               key={href}

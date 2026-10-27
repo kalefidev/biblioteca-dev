@@ -22,7 +22,7 @@ export default async function Home() {
         <h1 className="max-w-[16ch] font-display text-[clamp(2.75rem,8vw,4.5rem)] leading-none tracking-tight text-balance">
           {t.home.title}
         </h1>
-        <p className="mt-8 max-w-[52ch] text-lg text-fg-muted">{t.home.lead(tools.length, categories.length)}</p>
+        <p className="mt-8 max-w-[42ch] text-lg text-fg-muted">{t.home.lead(tools.length, categories.length)}</p>
 
         {/* GET simples para /tools?q=…: funciona até sem JavaScript. */}
         <form action={href("/tools")} role="search" className="mt-10 flex max-w-xl flex-col gap-3 sm:flex-row">
