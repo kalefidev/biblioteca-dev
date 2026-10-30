@@ -59,6 +59,7 @@ function getIndex(locale: Locale) {
       idField: 'slug',
       fields: ['name', 'tags', 'subcategory', 'tagline', 'description'],
       processTerm: fold,
+      storeFields: ['name'],
     })
     index.addAll(full(locale).tools.map((t) => ({ ...t, tags: t.tags.join(' ') })))
     indexes.set(locale, index)
@@ -66,15 +67,16 @@ function getIndex(locale: Locale) {
   return index
 }
 
-/** slug -> relevância. Nome pesa mais que tag, que pesa mais que descrição. */
+/** slug -> relevância. Nome pesa mais que tag, que pesa mais que descrição; nome idêntico à busca vem primeiro, depois nome que começa com ela. */
 export function searchScores(q: string, locale: Locale) {
+  const exact = fold(q.trim())
   const hits = getIndex(locale).search(q, {
     boost: { name: 5, tags: 3, subcategory: 2 },
     prefix: true,
     fuzzy: (term) => (term.length > 3 ? 0.2 : false),
     combineWith: 'AND',
   })
-  return new Map(hits.map((h) => [h.id as string, h.score]))
+  return new Map(hits.map((h) => [h.id as string, h.score * (fold(h.name) === exact ? 100 : fold(h.name).startsWith(exact) ? 10 : 1)]))
 }
 
 // ---------- consulta ----------

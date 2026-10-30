@@ -17,7 +17,7 @@ function Switch({ qs }: { qs: string }) {
       href={href}
       hrefLang={target}
       lang={target}
-      aria-label={t.locale.switchTo(name)}
+      aria-label={`${target.slice(0, 2).toUpperCase()}: ${t.locale.switchTo(name)}`}
       title={name}
       className="grid h-11 min-w-11 place-items-center rounded-lg px-1 font-mono sm:px-2 text-xs text-fg-muted uppercase transition-colors duration-150 hover:bg-surface-2 hover:text-fg"
     >

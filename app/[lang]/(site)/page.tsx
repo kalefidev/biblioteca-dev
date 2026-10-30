@@ -1,5 +1,5 @@
 import { Link } from "@/components/Link";
-import { HeroGalaxyLoader } from "@/components/home/HeroGalaxyLoader";
+import type { CSSProperties } from "react";
 import { ToolCard } from "@/components/site/ToolCard";
 import { cardMeta } from "@/lib/catalog";
 import { alternates } from "@/lib/i18n";
@@ -17,7 +17,14 @@ export default async function Home() {
   return (
     <>
       <section className="relative isolate pt-20 pb-20 sm:pt-32">
-        <HeroGalaxyLoader />
+        {/* Prévia estática da vila do Explorar (sem JS, não pesa no LCP); dia/noite segue o tema. Só ≥ 1024px, onde não cobre o título.
+            <img> de propósito: o next/image redimensionaria o pixel art (10 KB) e borraria os pixels. */}
+        <div aria-hidden className="pointer-events-none absolute top-20 right-0 -z-10 hidden w-96 overflow-hidden rounded-2xl border border-line lg:block xl:w-144">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/pixel/village.png" alt="" width={384} height={224} loading="lazy" className="pixel w-full [[data-theme=dark]_&]:hidden" />
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/pixel/village-night.png" alt="" width={384} height={224} loading="lazy" className="pixel hidden w-full [[data-theme=dark]_&]:block" />
+        </div>
         <p className="mb-6 font-mono text-xs tracking-wide text-accent uppercase">{t.home.eyebrow}</p>
         <h1 className="max-w-[16ch] font-display text-[clamp(2.75rem,8vw,4.5rem)] leading-none tracking-tight text-balance">
           {t.home.title}
@@ -32,7 +39,7 @@ export default async function Home() {
             aria-label={t.home.searchLabel}
             placeholder={t.home.searchPlaceholder}
             autoComplete="off"
-            className="h-14 min-w-0 flex-1 rounded-xl border border-line bg-surface px-5 text-base transition-colors duration-150 placeholder:text-fg-subtle hover:border-line-strong focus-visible:border-accent focus-visible:outline-none"
+            className="h-14 min-w-0 shrink-0 rounded-xl sm:flex-1 border border-line bg-surface px-5 text-base transition-colors duration-150 placeholder:text-fg-subtle hover:border-line-strong focus-visible:border-accent focus-visible:outline-none"
           />
           <button
             type="submit"
@@ -51,12 +58,11 @@ export default async function Home() {
             <li key={c.id}>
               <Link
                 href={`/c/${c.id}`}
-                className="group flex min-h-24 flex-col justify-between gap-4 rounded-xl border border-line bg-surface p-4 transition-colors duration-150 hover:border-line-strong hover:bg-surface-2"
+                className="bld-host group flex min-h-24 flex-col justify-between gap-3 rounded-xl border border-line bg-surface p-4 transition-colors duration-150 hover:border-line-strong hover:bg-surface-2"
               >
-                <span className="flex items-center gap-2.5 font-medium tracking-tight">
-                  <span aria-hidden className="size-2.5 shrink-0 rounded-full" style={{ background: c.color }} />
-                  {c.label}
-                </span>
+                {/* Ícone = o prédio da área na vila do Explorar (porta abre no hover). */}
+                <span aria-hidden className="bld" style={{ "--s": 1, "--b": `url(/pixel/b-${c.id}.png)` } as CSSProperties} />
+                <span className="font-medium tracking-tight">{c.label}</span>
                 <span className="font-mono text-xs text-fg-subtle">{t.catalog.results(tools.filter((x) => x.category === c.id).length)}</span>
               </Link>
             </li>
@@ -79,15 +85,20 @@ export default async function Home() {
         </Link>
       </section>
 
-      <section aria-labelledby="explorar" className="mt-24 mb-24 rounded-2xl border border-line bg-surface px-6 py-12 sm:px-12">
-        <h2 id="explorar" className="max-w-[20ch] font-display text-2xl tracking-tight text-balance">{t.home.exploreTitle}</h2>
-        <p className="mt-4 max-w-[52ch] text-fg-muted">{t.home.exploreLead}</p>
-        <Link
-          href="/explore"
-          className="mt-8 inline-flex h-12 items-center rounded-lg border border-line-strong px-6 font-medium transition-colors duration-150 hover:bg-surface-2 active:scale-[0.98]"
-        >
-          {t.home.openExplore}
-        </Link>
+      <section aria-labelledby="explorar" className="mt-24 mb-24 overflow-hidden rounded-2xl border border-line bg-surface">
+        <div aria-hidden className="village h-[calc(var(--u)*2)]">
+          <div className="village-trees" />
+        </div>
+        <div className="px-6 py-12 sm:px-12">
+          <h2 id="explorar" className="max-w-[20ch] font-display text-2xl tracking-tight text-balance">{t.home.exploreTitle}</h2>
+          <p className="mt-4 max-w-[52ch] text-fg-muted">{t.home.exploreLead}</p>
+          <Link
+            href="/explore"
+            className="mt-8 inline-flex h-12 items-center rounded-lg border border-line-strong px-6 font-medium transition-colors duration-150 hover:bg-surface-2 active:scale-[0.98]"
+          >
+            {t.home.openExplore}
+          </Link>
+        </div>
       </section>
     </>
   );

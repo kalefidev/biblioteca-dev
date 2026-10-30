@@ -8,7 +8,7 @@ Catálogo profissional de ferramentas/bibliotecas para devs (2D principal + modo
 - Next.js 16 (App Router). Leia `node_modules/next/dist/docs/` antes de usar APIs do Next; não confie na memória.
 - Dev server na porta **3000**. Depois de mudança visual: Playwright MCP, screenshot em `./artifacts/` (desktop 1440 + mobile 390), descrever o que se vê.
 - Design: regras do vault (`Obsidian Vault/design/regras-visuais`): sem #000/#fff puros, muito espaço, escala tipográfica, 1 acento + variações, grid, títulos com line-height curto.
-- Um único lib de animação de UI (Motion). Three/R3F só no 3D. Sem GSAP.
+- Um único lib de animação de UI (Motion); a "vida" da vila pixel do /explore é CSS (`steps()`). **Nada de three/R3F no projeto** (saíram na etapa 9). Sem GSAP.
 - Nenhuma string de UI solta em componente a partir da etapa 1 (i18n depois).
 - Segredos só em `.env.local` (ignorado pelo git); nunca no cliente.
 - `rm` com caminhos explícitos (globs são bloqueados pelo Claude Code).

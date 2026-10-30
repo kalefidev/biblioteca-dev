@@ -53,6 +53,8 @@
   --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
   --font-mono: var(--font-geist-mono), ui-monospace, monospace;
   --font-display: var(--font-instrument), ui-serif, Georgia, serif;
+  /* Só no /explore (placas, títulos da loja, raridade); a variável vem de lib/pixel-font.ts. */
+  --font-pixel: var(--font-pixelify), ui-monospace, monospace;
 
   /* Escala tipográfica (razão ~1.4); line-height encolhe conforme o tamanho cresce. */
   --text-xs: 0.75rem;
@@ -142,11 +144,194 @@ dialog[open]::backdrop {
   }
 }
 
+/*
+  Pixel (vila do /explore e ícones dos prédios na home). Sprites da Kenney (CC0) em public/pixel/, gerados por
+  scripts/pixel-art.py. Escala sempre inteira (--s) para o pixel não borrar; --u = 1 tile de 16px na escala atual.
+  Dia/noite = tema do site: os sprites têm quadros noturnos (janelas acesas) e o chão tem versão "-night".
+*/
+.pixel {
+  image-rendering: pixelated;
+}
+/* Moldura em degrau: 4 sombras sem blur deixam os cantos recortados, como num sprite. */
+.px-frame {
+  --frame: var(--line-strong);
+  --p: 4px;
+  box-shadow:
+    0 calc(-1 * var(--p)) var(--frame),
+    0 var(--p) var(--frame),
+    calc(-1 * var(--p)) 0 var(--frame),
+    var(--p) 0 var(--frame);
+}
+/* Raridade: 1 acento + variações (sem arco-íris). "unknown" = sem repositório, moldura neutra. */
+[data-rarity] {
+  --rarity-fg: var(--fg-muted);
+}
+[data-rarity="unknown"] {
+  --frame: var(--line);
+}
+[data-rarity="rare"] {
+  --frame: color-mix(in srgb, var(--accent) 40%, var(--line-strong));
+  --rarity-fg: var(--fg);
+}
+[data-rarity="epic"],
+[data-rarity="legendary"] {
+  --frame: var(--accent);
+  --rarity-fg: var(--accent);
+}
+.px-frame[data-rarity="legendary"] {
+  box-shadow:
+    0 calc(-1 * var(--p)) var(--frame),
+    0 var(--p) var(--frame),
+    calc(-1 * var(--p)) 0 var(--frame),
+    var(--p) 0 var(--frame),
+    0 calc(-2 * var(--p)) var(--accent-soft),
+    0 calc(2 * var(--p)) var(--accent-soft),
+    calc(-2 * var(--p)) 0 var(--accent-soft),
+    calc(2 * var(--p)) 0 var(--accent-soft);
+}
+
+.village {
+  --s: 2;
+  --cols: 2;
+  --rows: 4;
+  --u: calc(16px * var(--s));
+  --pad: calc(var(--u) / 4); /* rua de terra em volta da grade; estreita no celular para caber em 375px */
+  --grass: url(/pixel/grass.png);
+  --dirt: url(/pixel/dirt.png);
+  --trees: url(/pixel/trees.png);
+  background: var(--grass) 0 0 / calc(var(--u) * 3);
+  image-rendering: pixelated;
+}
+[data-theme="dark"] .village {
+  --grass: url(/pixel/grass-night.png);
+  --dirt: url(/pixel/dirt-night.png);
+  --trees: url(/pixel/trees-night.png);
+}
+@media (width >= 48rem) {
+  .village { --s: 3; --pad: calc(var(--u) / 2); }
+}
+@media (width >= 64rem) {
+  .village { --s: 2; --cols: 4; --rows: 2; }
+}
+@media (width >= 80rem) {
+  .village { --s: 3; }
+}
+.village-trees {
+  height: var(--u);
+  background: var(--trees) 0 0 / calc(var(--u) * 8) var(--u) repeat-x;
+}
+/* Ruas = o chão de terra do grid aparecendo nos vãos entre os lotes. */
+.village-grid {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(var(--cols), calc(var(--u) * 5));
+  grid-auto-rows: calc(var(--u) * 5);
+  gap: var(--u);
+  width: max-content;
+  margin-inline: auto;
+  padding: var(--pad);
+  background: var(--dirt) 0 0 / var(--u);
+}
+.lot {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  padding-top: calc(var(--u) / 2);
+  background: var(--grass) 0 0 / calc(var(--u) * 3);
+}
+.bld {
+  --f: calc(var(--night, 0) + var(--open, 0));
+  flex-shrink: 0;
+  width: calc(64px * var(--s));
+  height: calc(48px * var(--s));
+  background: var(--b) calc(var(--f) * -64px * var(--s)) 0 / calc(256px * var(--s)) 100% no-repeat;
+  image-rendering: pixelated;
+}
+[data-theme="dark"] .bld {
+  --night: 2;
+}
+:is(.lot, .bld-host):is(:hover, :focus-visible) .bld {
+  --open: 1;
+}
+.sign {
+  --frame: #3f2631;
+  --p: calc(1px * var(--s));
+  margin-top: auto;
+  margin-bottom: calc(var(--u) / 3);
+  max-width: calc(100% - var(--u) / 2);
+  padding: calc(1px * var(--s)) calc(3px * var(--s));
+  background: #763b36;
+  color: #fbeedb;
+  text-align: center;
+  line-height: 1.15;
+}
+/* Sem resultados: prédio apagado; a placa fica cinza mas com o texto legível (contraste ≥ 4,5:1). */
+.lot[data-empty] .bld {
+  opacity: 0.45;
+  filter: grayscale(1);
+}
+.lot[data-empty] .sign {
+  background: #57514e;
+}
+.smoke {
+  position: absolute;
+  left: calc(61px * var(--s));
+  top: calc(5px * var(--s));
+  width: calc(2px * var(--s));
+  height: calc(2px * var(--s));
+  background: #e4e1d9;
+  opacity: 0;
+  animation: smoke 2.4s steps(6) infinite;
+  animation-delay: calc(var(--i) * -0.7s);
+  pointer-events: none;
+}
+[data-theme="dark"] .smoke {
+  background: #8a8794;
+}
+@keyframes smoke {
+  0% { opacity: 0.9; translate: 0 0; }
+  100% { opacity: 0; translate: calc(3px * var(--s)) calc(-12px * var(--s)); }
+}
+/* Moradores andando nas ruas entre as linhas de lotes (rosto de frente, então não precisam virar). */
+.npc {
+  position: absolute;
+  left: 0;
+  top: calc(var(--pad) + var(--u) * 5);
+  width: var(--u);
+  height: var(--u);
+  background: url(/pixel/npcs.png) 0 0 / calc(var(--u) * 2) var(--u);
+  image-rendering: pixelated;
+  animation: walk 40s steps(90) infinite alternate, bob 0.5s steps(1) infinite;
+  pointer-events: none;
+}
+.npc + .npc {
+  top: calc(var(--pad) + var(--u) * (6 * var(--rows) - 7));
+  background-position-x: calc(-1 * var(--u));
+  animation-duration: 52s, 0.5s;
+  animation-delay: -21s, 0s;
+}
+[data-theme="dark"] .npc {
+  filter: brightness(0.6) saturate(0.8);
+}
+@keyframes walk {
+  to { translate: calc(var(--u) * (6 * var(--cols) - 2) + var(--pad) * 2) 0; }
+}
+@keyframes bob {
+  50% { transform: translateY(calc(-1px * var(--s))); }
+}
+
 /* Movimento reduzido: sem animações/transições (o estado final continua o mesmo). */
 @media (prefers-reduced-motion: reduce) {
   *, ::before, ::after {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
+  }
+  .npc,
+  .smoke {
+    animation: none !important;
   }
 }
