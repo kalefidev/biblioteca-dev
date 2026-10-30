@@ -1,5 +1,6 @@
 import { alternates } from "@/lib/i18n";
 import { getI18n } from "@/lib/i18n-server";
+import { CONTACT_EMAIL } from "@/lib/site";
 
 export async function generateMetadata() {
   const { locale, t } = await getI18n();
@@ -18,6 +19,13 @@ export default async function PrivacyPage() {
           {s.p.map((text) => <p key={text} className="mt-3 text-fg-muted">{text}</p>)}
         </section>
       ))}
+      <section className="mt-10">
+        <h2 className="font-medium tracking-tight">{t.privacy.contact.h}</h2>
+        <p className="mt-3 text-fg-muted">
+          {t.privacy.contact.p}{" "}
+          <a href={`mailto:${CONTACT_EMAIL}`} className="text-accent underline underline-offset-4">{CONTACT_EMAIL}</a>.
+        </p>
+      </section>
     </article>
   );
 }

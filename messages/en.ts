@@ -64,11 +64,12 @@ export const en: Messages = {
   },
   privacy: {
     title: 'Privacy and cookies',
-    updated: 'Updated on October 27, 2026.',
+    updated: 'Updated on October 30, 2026.',
+    contact: { h: 'Contact', p: 'To ask us to delete a suggestion you sent, or for any question about your data, write to' },
     sections: [
       {
         h: 'Summary',
-        p: ['This site has no accounts or ads and does not use cookies. The only data we receive is what you send through the suggestion form.'],
+        p: ['This site has no accounts or ads and does not use cookies. We count visits anonymously and receive what you send through the suggestion form.'],
       },
       {
         h: 'Suggestion form',
@@ -86,7 +87,7 @@ export const en: Messages = {
       },
       {
         h: 'Usage statistics',
-        p: ['We do not use analytics today. If we start measuring visits, it will be with a cookie-free tool, and this page will be updated before that happens.'],
+        p: ['We count visits with Vercel Web Analytics, which uses no cookies and does not store your IP address. It records the page viewed, the referring page, the country, and the device and browser type; visits from the same person are grouped by a code that changes every day. This data cannot identify you.'],
       },
       {
         h: 'Hosting and external links',

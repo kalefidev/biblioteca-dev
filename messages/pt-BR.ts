@@ -62,11 +62,12 @@ export const ptBR = {
   },
   privacy: {
     title: 'Privacidade e cookies',
-    updated: 'Atualizada em 27 de outubro de 2026.',
+    updated: 'Atualizada em 30 de outubro de 2026.',
+    contact: { h: 'Contato', p: 'Para pedir a exclusão de uma sugestão que você enviou ou tirar dúvidas sobre seus dados, escreva para' },
     sections: [
       {
         h: 'Resumo',
-        p: ['Este site não tem conta nem anúncios e não usa cookies. O único dado que recebemos é o que você manda pelo formulário de sugestão.'],
+        p: ['Este site não tem conta nem anúncios e não usa cookies. Contamos visitas de forma anônima e recebemos o que você manda pelo formulário de sugestão.'],
       },
       {
         h: 'Formulário de sugestão',
@@ -84,7 +85,7 @@ export const ptBR = {
       },
       {
         h: 'Estatísticas de uso',
-        p: ['Hoje não usamos analytics. Se passarmos a medir visitas, será com uma ferramenta sem cookies, e esta página será atualizada antes disso.'],
+        p: ['Contamos visitas com o Vercel Web Analytics, que não usa cookies nem guarda seu endereço IP. Ele registra a página vista, a página de origem, o país e o tipo de aparelho e navegador; visitas da mesma pessoa são agrupadas por um código que muda todo dia. Não dá para identificar você por esses dados.'],
       },
       {
         h: 'Hospedagem e links externos',

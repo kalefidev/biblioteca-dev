@@ -1,3 +1,6 @@
+// Contato público do responsável pelos dados (página /privacy).
+export const CONTACT_EMAIL = 'kaiquecalefi.dev@gmail.com'
+
 // URL pública do site (canonical, sitemap, OpenGraph). Defina SITE_URL no ambiente de build;
 // na Vercel, cai no domínio de produção do projeto; em dev, localhost.
 const vercel = process.env.VERCEL_PROJECT_PRODUCTION_URL

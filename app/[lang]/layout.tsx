@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/next";
 import { Geist, Geist_Mono, Instrument_Serif } from "next/font/google";
 import { notFound } from "next/navigation";
 import { I18nProvider } from "@/components/I18nProvider";
@@ -50,6 +51,8 @@ export default async function RootLayout({ children, params }: LayoutProps<"/[la
         <I18nProvider locale={lang}>
           <MotionProvider>{children}</MotionProvider>
         </I18nProvider>
+        {/* Vercel Web Analytics: sem cookies, mesmo domínio (a CSP continua 'self'). */}
+        <Analytics />
       </body>
     </html>
   );
