@@ -1,1731 +1,1731 @@
 {
   "aider": {
-    "stars": 49828,
+    "stars": 49906,
     "version": "v0.86.0",
     "lastCommit": "2026-05-22T14:02:20Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:22:18.430Z"
+    "updatedAt": "2026-11-02T16:10:18.688Z"
   },
   "alacritty": {
-    "stars": 66085,
+    "stars": 66106,
     "version": "v0.17.0",
-    "lastCommit": "2026-10-26T22:32:23Z",
+    "lastCommit": "2026-11-02T05:42:37Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:20:41.529Z"
+    "updatedAt": "2026-11-02T16:08:34.025Z"
   },
   "alembic": {
-    "stars": 4459,
+    "stars": 4465,
     "version": "rel_1_20_1",
     "lastCommit": "2026-10-30T14:10:03Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:21:45.654Z"
+    "updatedAt": "2026-11-02T16:09:45.017Z"
   },
   "alpinejs": {
-    "stars": 32003,
+    "stars": 32001,
     "version": "3.17.5",
     "lastCommit": "2026-10-25T01:48:14Z",
-    "weeklyDownloads": 884341,
-    "updatedAt": "2026-10-30T18:20:56.230Z"
+    "weeklyDownloads": 882603,
+    "updatedAt": "2026-11-02T16:08:49.765Z"
   },
   "angular": {
-    "stars": 101082,
+    "stars": 101096,
     "version": "22.2.4",
-    "lastCommit": "2026-10-30T13:22:33Z",
-    "weeklyDownloads": 8291693,
-    "updatedAt": "2026-10-30T18:20:54.416Z"
+    "lastCommit": "2026-11-02T12:05:36Z",
+    "weeklyDownloads": 8318587,
+    "updatedAt": "2026-11-02T16:08:47.989Z"
   },
   "ansible": {
-    "stars": 71158,
+    "stars": 71198,
     "version": "v2.21.5",
-    "lastCommit": "2026-10-30T16:41:38Z",
+    "lastCommit": "2026-11-02T16:07:55Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:21:50.072Z"
+    "updatedAt": "2026-11-02T16:09:49.680Z"
   },
   "apollo-server": {
-    "stars": 13957,
+    "stars": 13959,
     "version": "5.5.1",
-    "lastCommit": "2026-10-30T10:30:05Z",
-    "weeklyDownloads": 4070128,
-    "updatedAt": "2026-10-30T18:21:31.729Z"
+    "lastCommit": "2026-11-01T12:36:56Z",
+    "weeklyDownloads": 4016476,
+    "updatedAt": "2026-11-02T16:09:31.751Z"
   },
   "argo-cd": {
-    "stars": 24502,
+    "stars": 24515,
     "version": "v3.5.6",
-    "lastCommit": "2026-10-30T17:21:11Z",
+    "lastCommit": "2026-11-02T14:32:15Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:21:49.807Z"
+    "updatedAt": "2026-11-02T16:09:49.396Z"
   },
   "aspnet-core": {
-    "stars": 38496,
+    "stars": 38499,
     "version": "v10.0.13",
-    "lastCommit": "2026-10-30T18:05:11Z",
+    "lastCommit": "2026-11-02T15:58:26Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:21:20.379Z"
+    "updatedAt": "2026-11-02T16:09:23.108Z"
   },
   "astro": {
-    "stars": 63613,
-    "version": "7.4.4",
-    "lastCommit": "2026-10-30T18:08:09Z",
-    "weeklyDownloads": 10765753,
-    "updatedAt": "2026-10-30T18:20:53.200Z"
+    "stars": 63670,
+    "version": "7.4.5",
+    "lastCommit": "2026-11-02T15:57:21Z",
+    "weeklyDownloads": 10746270,
+    "updatedAt": "2026-11-02T16:08:46.586Z"
   },
   "authjs": {
     "stars": 28376,
     "version": "4.24.15",
     "lastCommit": "2026-07-22T19:42:19Z",
-    "weeklyDownloads": 9215234,
-    "updatedAt": "2026-10-30T18:21:22.344Z"
+    "weeklyDownloads": 9057792,
+    "updatedAt": "2026-11-02T16:09:25.032Z"
   },
   "axe-core": {
-    "stars": 7732,
+    "stars": 7740,
     "version": "4.14.0",
-    "lastCommit": "2026-10-29T17:41:49Z",
-    "weeklyDownloads": 108215031,
-    "updatedAt": "2026-10-30T18:22:13.853Z"
+    "lastCommit": "2026-11-02T13:37:40Z",
+    "weeklyDownloads": 107980113,
+    "updatedAt": "2026-11-02T16:10:13.873Z"
   },
   "axum": {
-    "stars": 27660,
+    "stars": 27683,
     "version": "axum-v0.8.9",
-    "lastCommit": "2026-10-30T03:30:06Z",
+    "lastCommit": "2026-11-01T22:08:20Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:21:20.908Z"
+    "updatedAt": "2026-11-02T16:09:23.665Z"
   },
   "bat": {
-    "stars": 60980,
+    "stars": 61024,
     "version": "v0.26.1",
-    "lastCommit": "2026-10-29T19:45:31Z",
+    "lastCommit": "2026-11-02T13:03:59Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:22:29.734Z"
+    "updatedAt": "2026-11-02T16:10:30.151Z"
   },
   "biome": {
-    "stars": 26026,
+    "stars": 26036,
     "version": "2.6.4",
-    "lastCommit": "2026-10-30T18:11:11Z",
-    "weeklyDownloads": 25168498,
-    "updatedAt": "2026-10-30T18:21:56.058Z"
+    "lastCommit": "2026-11-02T07:43:43Z",
+    "weeklyDownloads": 25297829,
+    "updatedAt": "2026-11-02T16:09:55.798Z"
   },
   "bitwarden": {
-    "stars": 14107,
-    "version": "desktop-v2026.10.2",
-    "lastCommit": "2026-10-30T18:20:52Z",
+    "stars": 14130,
+    "version": "browser-v2026.10.2",
+    "lastCommit": "2026-11-02T16:09:08Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:22:28.582Z"
+    "updatedAt": "2026-11-02T16:10:28.806Z"
   },
   "bootstrap": {
-    "stars": 174968,
+    "stars": 174967,
     "version": "5.3.8",
-    "lastCommit": "2026-10-30T09:29:25Z",
-    "weeklyDownloads": 7980243,
-    "updatedAt": "2026-10-30T18:20:59.802Z"
+    "lastCommit": "2026-11-02T08:12:35Z",
+    "weeklyDownloads": 8253219,
+    "updatedAt": "2026-11-02T16:08:53.349Z"
   },
   "bruno": {
-    "stars": 47952,
+    "stars": 47988,
     "version": "v4.3.0",
-    "lastCommit": "2026-10-30T14:12:34Z",
+    "lastCommit": "2026-11-02T13:30:05Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:22:30.250Z"
+    "updatedAt": "2026-11-02T16:10:30.734Z"
   },
   "bullmq": {
-    "stars": 9562,
-    "version": "6.5.2",
-    "lastCommit": "2026-10-30T16:25:21Z",
-    "weeklyDownloads": 13183574,
-    "updatedAt": "2026-10-30T18:21:23.846Z"
+    "stars": 9567,
+    "version": "6.5.3",
+    "lastCommit": "2026-11-02T06:00:10Z",
+    "weeklyDownloads": 13162756,
+    "updatedAt": "2026-11-02T16:09:26.636Z"
   },
   "bun": {
-    "stars": 96468,
+    "stars": 96513,
     "version": "bun-v1.4.4",
-    "lastCommit": "2026-10-30T18:15:12Z",
+    "lastCommit": "2026-11-02T15:56:40Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:21:10.976Z"
+    "updatedAt": "2026-11-02T16:09:13.307Z"
   },
   "caddy": {
-    "stars": 78568,
+    "stars": 78653,
     "version": "v2.11.7",
-    "lastCommit": "2026-10-30T06:23:26Z",
+    "lastCommit": "2026-11-02T10:48:05Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:21:49.068Z"
+    "updatedAt": "2026-11-02T16:09:48.681Z"
   },
   "cassandra": {
-    "stars": 10129,
+    "stars": 10132,
     "version": null,
-    "lastCommit": "2026-10-30T12:59:30Z",
+    "lastCommit": "2026-11-02T12:58:59Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:21:42.661Z"
+    "updatedAt": "2026-11-02T16:09:42.158Z"
   },
   "chakra-ui": {
-    "stars": 40707,
+    "stars": 40711,
     "version": "3.37.0",
-    "lastCommit": "2026-10-29T21:35:03Z",
-    "weeklyDownloads": 2196027,
-    "updatedAt": "2026-10-30T18:20:59.553Z"
+    "lastCommit": "2026-11-02T15:29:59Z",
+    "weeklyDownloads": 2150586,
+    "updatedAt": "2026-11-02T16:08:53.128Z"
   },
   "changesets": {
-    "stars": 12547,
+    "stars": 12553,
     "version": "3.0.3",
-    "lastCommit": "2026-10-26T07:22:21Z",
-    "weeklyDownloads": 8099373,
-    "updatedAt": "2026-10-30T18:20:49.601Z"
+    "lastCommit": "2026-11-01T15:58:09Z",
+    "weeklyDownloads": 8085463,
+    "updatedAt": "2026-11-02T16:08:42.956Z"
   },
   "chartjs": {
-    "stars": 67768,
+    "stars": 67773,
     "version": "4.6.1",
     "lastCommit": "2026-10-23T11:47:55Z",
-    "weeklyDownloads": 16798696,
-    "updatedAt": "2026-10-30T18:21:09.917Z"
+    "weeklyDownloads": 16706315,
+    "updatedAt": "2026-11-02T16:09:09.376Z"
   },
   "chroma": {
-    "stars": 29608,
+    "stars": 29624,
     "version": "3.5.0",
-    "lastCommit": "2026-10-28T16:22:53Z",
-    "weeklyDownloads": 311445,
-    "updatedAt": "2026-10-30T18:21:44.503Z"
+    "lastCommit": "2026-10-30T21:09:26Z",
+    "weeklyDownloads": 294859,
+    "updatedAt": "2026-11-02T16:09:43.847Z"
   },
   "claude-code": {
-    "stars": 153952,
-    "version": "2.1.314",
-    "lastCommit": "2026-10-30T16:40:04Z",
-    "weeklyDownloads": 12083369,
-    "updatedAt": "2026-10-30T18:22:17.935Z"
+    "stars": 154265,
+    "version": "2.1.316",
+    "lastCommit": "2026-11-02T07:12:58Z",
+    "weeklyDownloads": 12886034,
+    "updatedAt": "2026-11-02T16:10:18.128Z"
   },
   "clickhouse": {
-    "stars": 50676,
+    "stars": 50718,
     "version": "v26.10.2.103-stable",
-    "lastCommit": "2026-10-30T17:57:59Z",
+    "lastCommit": "2026-11-02T16:08:39Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:21:40.925Z"
+    "updatedAt": "2026-11-02T16:09:40.553Z"
   },
   "cline": {
-    "stars": 71069,
+    "stars": 71212,
     "version": "v4.1.26",
-    "lastCommit": "2026-10-30T18:14:35Z",
+    "lastCommit": "2026-11-02T14:27:36Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:22:18.779Z"
+    "updatedAt": "2026-11-02T16:10:19.024Z"
   },
   "code-server": {
-    "stars": 79733,
+    "stars": 79757,
     "version": "v4.144.0",
-    "lastCommit": "2026-10-29T21:35:13Z",
+    "lastCommit": "2026-11-01T12:05:24Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:20:44.712Z"
+    "updatedAt": "2026-11-02T16:08:37.455Z"
   },
   "codex-cli": {
-    "stars": 131720,
+    "stars": 132864,
     "version": "rust-v0.166.0",
-    "lastCommit": "2026-10-30T18:21:21Z",
+    "lastCommit": "2026-11-02T16:00:39Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:22:19.393Z"
+    "updatedAt": "2026-11-02T16:10:19.626Z"
   },
   "commitizen": {
     "stars": 17496,
     "version": "4.3.2",
     "lastCommit": "2026-09-25T03:38:33Z",
-    "weeklyDownloads": 2357431,
-    "updatedAt": "2026-10-30T18:20:49.016Z"
+    "weeklyDownloads": 2323500,
+    "updatedAt": "2026-11-02T16:08:42.328Z"
   },
   "commitlint": {
-    "stars": 18791,
+    "stars": 18797,
     "version": "21.2.4",
-    "lastCommit": "2026-10-30T16:20:07Z",
-    "weeklyDownloads": 15661523,
-    "updatedAt": "2026-10-30T18:20:48.695Z"
+    "lastCommit": "2026-11-02T09:21:35Z",
+    "weeklyDownloads": 15651525,
+    "updatedAt": "2026-11-02T16:08:42.007Z"
   },
   "continue": {
-    "stars": 36373,
+    "stars": 36399,
     "version": "v2.0.0-vscode",
-    "lastCommit": "2026-10-30T09:11:13Z",
+    "lastCommit": "2026-11-02T12:11:19Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:22:19.057Z"
+    "updatedAt": "2026-11-02T16:10:19.276Z"
   },
   "coolify": {
-    "stars": 65318,
-    "version": "v4.5.3",
-    "lastCommit": "2026-10-30T17:42:18Z",
+    "stars": 65543,
+    "version": "v4.6.0",
+    "lastCommit": "2026-11-02T16:01:50Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:21:53.757Z"
+    "updatedAt": "2026-11-02T16:09:53.722Z"
   },
   "couchdb": {
-    "stars": 6993,
+    "stars": 6997,
     "version": null,
-    "lastCommit": "2026-10-30T18:18:09Z",
+    "lastCommit": "2026-11-02T11:36:07Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:21:47.248Z"
+    "updatedAt": "2026-11-02T16:09:46.791Z"
   },
   "cypress": {
-    "stars": 51017,
+    "stars": 51021,
     "version": "16.2.1",
-    "lastCommit": "2026-10-30T17:13:29Z",
-    "weeklyDownloads": 8038030,
-    "updatedAt": "2026-10-30T18:21:55.297Z"
+    "lastCommit": "2026-11-02T15:42:38Z",
+    "weeklyDownloads": 8029079,
+    "updatedAt": "2026-11-02T16:09:55.058Z"
   },
   "d3": {
-    "stars": 113827,
+    "stars": 113857,
     "version": "7.9.0",
     "lastCommit": "2026-10-21T22:24:11Z",
-    "weeklyDownloads": 30886530,
-    "updatedAt": "2026-10-30T18:21:06.569Z"
+    "weeklyDownloads": 31474706,
+    "updatedAt": "2026-11-02T16:09:06.262Z"
   },
   "dbeaver": {
-    "stars": 52252,
-    "version": "26.2.3",
-    "lastCommit": "2026-10-30T17:07:10Z",
+    "stars": 52270,
+    "version": "26.2.4",
+    "lastCommit": "2026-11-02T15:45:42Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:21:40.100Z"
+    "updatedAt": "2026-11-02T16:09:39.767Z"
   },
   "dbt": {
-    "stars": 14105,
+    "stars": 14111,
     "version": "v1.12.6",
-    "lastCommit": "2026-10-30T17:24:51Z",
+    "lastCommit": "2026-11-02T15:01:57Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:21:46.535Z"
+    "updatedAt": "2026-11-02T16:09:46.017Z"
   },
   "delta": {
-    "stars": 32611,
+    "stars": 32634,
     "version": "0.20.1",
     "lastCommit": "2026-10-28T02:45:33Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:20:47.348Z"
+    "updatedAt": "2026-11-02T16:08:40.685Z"
   },
   "deno": {
-    "stars": 108770,
+    "stars": 108795,
     "version": "v2.9.8",
     "lastCommit": "2026-10-29T08:03:10Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:21:18.526Z"
+    "updatedAt": "2026-11-02T16:09:18.264Z"
   },
   "difftastic": {
-    "stars": 26113,
+    "stars": 26134,
     "version": "0.72.0",
-    "lastCommit": "2026-10-29T21:23:12Z",
+    "lastCommit": "2026-11-02T00:02:38Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:20:47.554Z"
+    "updatedAt": "2026-11-02T16:08:40.997Z"
   },
   "django": {
-    "stars": 91454,
+    "stars": 91714,
     "version": null,
-    "lastCommit": "2026-10-30T15:57:28Z",
+    "lastCommit": "2026-11-02T10:25:27Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:21:11.407Z"
+    "updatedAt": "2026-11-02T16:09:13.790Z"
   },
   "docker": {
-    "stars": 72225,
+    "stars": 72235,
     "version": "docker-v29.9.2",
-    "lastCommit": "2026-10-30T18:06:10Z",
+    "lastCommit": "2026-11-02T15:36:29Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:21:47.488Z"
+    "updatedAt": "2026-11-02T16:09:47.055Z"
   },
   "docker-compose": {
-    "stars": 38527,
-    "version": "v5.6.1",
-    "lastCommit": "2026-10-30T09:06:47Z",
+    "stars": 38570,
+    "version": "v5.7.0",
+    "lastCommit": "2026-11-02T14:43:47Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:21:52.080Z"
+    "updatedAt": "2026-11-02T16:09:51.792Z"
   },
   "doom-emacs": {
-    "stars": 22793,
+    "stars": 22796,
     "version": null,
     "lastCommit": "2026-10-02T05:14:02Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:20:41.001Z"
+    "updatedAt": "2026-11-02T16:08:33.324Z"
   },
   "dprint": {
-    "stars": 4120,
+    "stars": 4122,
     "version": "0.64.3",
-    "lastCommit": "2026-10-30T05:55:46Z",
+    "lastCommit": "2026-11-02T03:59:21Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:22:14.871Z"
+    "updatedAt": "2026-11-02T16:10:15.080Z"
   },
   "drizzle-orm": {
-    "stars": 36180,
+    "stars": 36205,
     "version": "0.45.4",
-    "lastCommit": "2026-10-30T17:52:30Z",
-    "weeklyDownloads": 42821286,
-    "updatedAt": "2026-10-30T18:21:39.842Z"
+    "lastCommit": "2026-11-02T15:21:11Z",
+    "weeklyDownloads": 44221091,
+    "updatedAt": "2026-11-02T16:09:39.525Z"
   },
   "duckdb": {
-    "stars": 42690,
+    "stars": 42743,
     "version": "v2.0.0",
-    "lastCommit": "2026-10-30T18:16:44Z",
+    "lastCommit": "2026-11-02T16:00:58Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:21:41.133Z"
+    "updatedAt": "2026-11-02T16:09:40.805Z"
   },
   "eclipse": {
-    "stars": 171,
+    "stars": 172,
     "version": null,
-    "lastCommit": "2026-10-30T15:03:05Z",
+    "lastCommit": "2026-11-02T15:03:51Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:20:38.519Z"
+    "updatedAt": "2026-11-02T16:08:30.609Z"
   },
   "elysia": {
-    "stars": 19318,
+    "stars": 19328,
     "version": "1.4.30",
     "lastCommit": "2026-10-28T21:49:52Z",
-    "weeklyDownloads": 1936774,
-    "updatedAt": "2026-10-30T18:21:35.057Z"
+    "weeklyDownloads": 1965882,
+    "updatedAt": "2026-11-02T16:09:34.792Z"
   },
   "esbuild": {
-    "stars": 40119,
+    "stars": 40122,
     "version": "0.28.2",
     "lastCommit": "2026-08-09T17:20:12Z",
-    "weeklyDownloads": 397493252,
-    "updatedAt": "2026-10-30T18:20:57.244Z"
+    "weeklyDownloads": 395594972,
+    "updatedAt": "2026-11-02T16:08:50.908Z"
   },
   "eslint": {
-    "stars": 27601,
+    "stars": 27604,
     "version": "10.14.0",
-    "lastCommit": "2026-10-30T15:32:47Z",
-    "weeklyDownloads": 202066413,
-    "updatedAt": "2026-10-30T18:21:55.534Z"
+    "lastCommit": "2026-11-02T06:52:45Z",
+    "weeklyDownloads": 201266767,
+    "updatedAt": "2026-11-02T16:09:55.278Z"
   },
   "excalidraw": {
-    "stars": 134866,
+    "stars": 135035,
     "version": "0.18.1",
-    "lastCommit": "2026-10-30T15:40:43Z",
-    "weeklyDownloads": 1194063,
-    "updatedAt": "2026-10-30T18:22:28.037Z"
+    "lastCommit": "2026-11-01T20:55:25Z",
+    "weeklyDownloads": 1248265,
+    "updatedAt": "2026-11-02T16:10:25.431Z"
   },
   "express": {
-    "stars": 69580,
+    "stars": 69584,
     "version": "5.3.0",
-    "lastCommit": "2026-10-27T13:54:02Z",
-    "weeklyDownloads": 196630276,
-    "updatedAt": "2026-10-30T18:21:11.648Z"
+    "lastCommit": "2026-11-02T06:25:48Z",
+    "weeklyDownloads": 194960085,
+    "updatedAt": "2026-11-02T16:09:14.017Z"
   },
   "faker": {
     "stars": 15539,
     "version": "10.6.0",
-    "lastCommit": "2026-10-29T21:42:57Z",
-    "weeklyDownloads": 24652813,
-    "updatedAt": "2026-10-30T18:22:04.594Z"
+    "lastCommit": "2026-11-02T01:10:40Z",
+    "weeklyDownloads": 24516001,
+    "updatedAt": "2026-11-02T16:10:04.408Z"
   },
   "fastapi": {
-    "stars": 104279,
+    "stars": 104560,
     "version": "0.162.0",
-    "lastCommit": "2026-10-27T04:56:28Z",
+    "lastCommit": "2026-11-02T14:05:20Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:21:11.199Z"
+    "updatedAt": "2026-11-02T16:09:13.578Z"
   },
   "fastify": {
-    "stars": 37326,
-    "version": "5.12.7",
-    "lastCommit": "2026-10-29T14:30:53Z",
-    "weeklyDownloads": 21422804,
-    "updatedAt": "2026-10-30T18:21:19.317Z"
+    "stars": 37339,
+    "version": "5.12.8",
+    "lastCommit": "2026-11-02T10:51:32Z",
+    "weeklyDownloads": 21500327,
+    "updatedAt": "2026-11-02T16:09:21.954Z"
   },
   "fish": {
-    "stars": 34370,
+    "stars": 34391,
     "version": "4.9.3",
     "lastCommit": "2026-10-27T14:08:10Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:20:43.575Z"
+    "updatedAt": "2026-11-02T16:08:36.284Z"
   },
   "flask": {
-    "stars": 74924,
+    "stars": 75164,
     "version": "3.1.3",
     "lastCommit": "2026-10-30T15:05:22Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:21:18.768Z"
+    "updatedAt": "2026-11-02T16:09:18.587Z"
   },
   "fly-io": {
     "stars": 1718,
     "version": "v0.5.1",
-    "lastCommit": "2026-10-30T16:06:03Z",
+    "lastCommit": "2026-11-02T15:54:28Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:21:48.545Z"
+    "updatedAt": "2026-11-02T16:09:48.160Z"
   },
   "flyway": {
-    "stars": 10179,
+    "stars": 10183,
     "version": "flyway-13.12.0",
     "lastCommit": "2026-10-30T10:25:34Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:21:45.462Z"
+    "updatedAt": "2026-11-02T16:09:44.775Z"
   },
   "fzf": {
-    "stars": 83864,
+    "stars": 83943,
     "version": "v0.74.5",
-    "lastCommit": "2026-10-29T12:41:50Z",
+    "lastCommit": "2026-11-02T13:18:35Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:22:29.060Z"
+    "updatedAt": "2026-11-02T16:10:29.385Z"
   },
   "gemini-cli": {
-    "stars": 108629,
+    "stars": 108672,
     "version": "0.66.0",
-    "lastCommit": "2026-10-30T18:14:27Z",
-    "weeklyDownloads": 445883,
-    "updatedAt": "2026-10-30T18:22:19.617Z"
+    "lastCommit": "2026-11-02T01:22:37Z",
+    "weeklyDownloads": 445269,
+    "updatedAt": "2026-11-02T16:10:19.896Z"
   },
   "gh-dash": {
-    "stars": 12701,
+    "stars": 12711,
     "version": "v4.26.2",
     "lastCommit": "2026-10-26T18:21:17Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:20:50.591Z"
+    "updatedAt": "2026-11-02T16:08:44.050Z"
   },
   "ghostty": {
-    "stars": 63022,
+    "stars": 63270,
     "version": null,
-    "lastCommit": "2026-10-30T17:50:46Z",
+    "lastCommit": "2026-11-02T16:04:59Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:20:42.243Z"
+    "updatedAt": "2026-11-02T16:08:34.853Z"
   },
   "gin": {
-    "stars": 89451,
+    "stars": 89474,
     "version": "v1.12.0",
     "lastCommit": "2026-10-10T04:20:35Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:21:20.673Z"
+    "updatedAt": "2026-11-02T16:09:23.380Z"
   },
   "git": {
-    "stars": 64078,
+    "stars": 64119,
     "version": null,
-    "lastCommit": "2026-10-29T22:27:26Z",
+    "lastCommit": "2026-11-02T05:36:32Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:20:45.244Z"
+    "updatedAt": "2026-11-02T16:08:38.053Z"
   },
   "git-cliff": {
-    "stars": 12352,
+    "stars": 12355,
     "version": "v2.14.2",
-    "lastCommit": "2026-10-24T19:29:53Z",
+    "lastCommit": "2026-11-02T09:11:17Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:20:50.089Z"
+    "updatedAt": "2026-11-02T16:08:43.517Z"
   },
   "git-lfs": {
-    "stars": 14570,
+    "stars": 14573,
     "version": "v3.8.1",
-    "lastCommit": "2026-10-23T18:50:59Z",
+    "lastCommit": "2026-11-01T04:52:48Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:20:46.472Z"
+    "updatedAt": "2026-11-02T16:08:39.533Z"
   },
   "gitea": {
-    "stars": 58788,
-    "version": "v28.2.0",
-    "lastCommit": "2026-10-30T18:16:23Z",
+    "stars": 58826,
+    "version": "v28.3.0",
+    "lastCommit": "2026-11-02T14:49:40Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:20:45.971Z"
+    "updatedAt": "2026-11-02T16:08:38.952Z"
   },
   "github-cli": {
-    "stars": 46806,
+    "stars": 46843,
     "version": "v2.103.3",
-    "lastCommit": "2026-10-30T17:30:43Z",
+    "lastCommit": "2026-11-02T14:03:40Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:20:45.736Z"
+    "updatedAt": "2026-11-02T16:08:38.613Z"
   },
   "github-desktop": {
-    "stars": 22038,
+    "stars": 22042,
     "version": "release-3.6.10",
-    "lastCommit": "2026-10-30T16:57:27Z",
+    "lastCommit": "2026-11-02T15:59:18Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:20:46.727Z"
+    "updatedAt": "2026-11-02T16:08:39.817Z"
   },
   "gitleaks": {
-    "stars": 30524,
+    "stars": 30597,
     "version": "v8.30.1",
     "lastCommit": "2026-10-28T04:14:29Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:20:51.104Z"
+    "updatedAt": "2026-11-02T16:08:44.594Z"
   },
   "gitui": {
-    "stars": 22611,
+    "stars": 22620,
     "version": "v0.28.1",
     "lastCommit": "2026-10-06T07:08:04Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:20:47.162Z"
+    "updatedAt": "2026-11-02T16:08:40.376Z"
   },
   "go": {
-    "stars": 139452,
+    "stars": 139740,
     "version": null,
-    "lastCommit": "2026-10-30T17:10:11Z",
+    "lastCommit": "2026-11-01T22:20:25Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:21:21.389Z"
+    "updatedAt": "2026-11-02T16:09:24.194Z"
   },
   "golangci-lint": {
-    "stars": 19481,
+    "stars": 19496,
     "version": "v2.15.0",
-    "lastCommit": "2026-10-27T20:39:39Z",
+    "lastCommit": "2026-11-02T11:10:26Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:22:09.163Z"
+    "updatedAt": "2026-11-02T16:10:09.144Z"
   },
   "grafana": {
-    "stars": 77580,
+    "stars": 77629,
     "version": "v13.3.0",
-    "lastCommit": "2026-10-30T18:04:04Z",
+    "lastCommit": "2026-11-02T16:09:16Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:21:48.323Z"
+    "updatedAt": "2026-11-02T16:09:47.887Z"
   },
   "graphql": {
-    "stars": 20344,
+    "stars": 20343,
     "version": "17.0.2",
-    "lastCommit": "2026-10-30T14:52:07Z",
-    "weeklyDownloads": 69275043,
-    "updatedAt": "2026-10-30T18:21:18.274Z"
+    "lastCommit": "2026-11-02T13:18:00Z",
+    "weeklyDownloads": 68916655,
+    "updatedAt": "2026-11-02T16:09:17.938Z"
   },
   "grpc": {
-    "stars": 45407,
+    "stars": 45417,
     "version": "v1.85.1",
-    "lastCommit": "2026-10-30T16:00:38Z",
+    "lastCommit": "2026-11-02T14:57:44Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:21:23.107Z"
+    "updatedAt": "2026-11-02T16:09:25.839Z"
   },
   "hadolint": {
-    "stars": 12505,
+    "stars": 12509,
     "version": "v2.15.1",
     "lastCommit": "2026-10-19T12:12:51Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:22:09.669Z"
+    "updatedAt": "2026-11-02T16:10:09.708Z"
   },
   "helix": {
-    "stars": 46736,
+    "stars": 46771,
     "version": "25.07.1",
     "lastCommit": "2026-09-29T02:36:33Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:20:38.237Z"
+    "updatedAt": "2026-11-02T16:08:30.236Z"
   },
   "helm": {
-    "stars": 30382,
+    "stars": 30386,
     "version": "v4.3.1",
-    "lastCommit": "2026-10-30T09:53:59Z",
+    "lastCommit": "2026-11-01T19:43:11Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:21:49.575Z"
+    "updatedAt": "2026-11-02T16:09:49.144Z"
   },
   "homebrew": {
-    "stars": 50160,
-    "version": "7.0.11",
-    "lastCommit": "2026-10-30T16:46:08Z",
+    "stars": 50191,
+    "version": "7.0.12",
+    "lastCommit": "2026-11-02T15:56:45Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:22:28.852Z"
+    "updatedAt": "2026-11-02T16:10:29.038Z"
   },
   "hono": {
-    "stars": 32752,
-    "version": "4.13.14",
-    "lastCommit": "2026-10-30T12:13:38Z",
-    "weeklyDownloads": 100927517,
-    "updatedAt": "2026-10-30T18:21:14.678Z"
+    "stars": 32789,
+    "version": "4.13.16",
+    "lastCommit": "2026-11-01T02:52:19Z",
+    "weeklyDownloads": 101486097,
+    "updatedAt": "2026-11-02T16:09:14.318Z"
   },
   "htmx": {
-    "stars": 49576,
+    "stars": 49595,
     "version": "2.0.11",
-    "lastCommit": "2026-10-30T14:22:09Z",
-    "weeklyDownloads": 372805,
-    "updatedAt": "2026-10-30T18:20:55.964Z"
+    "lastCommit": "2026-11-01T23:12:53Z",
+    "weeklyDownloads": 392151,
+    "updatedAt": "2026-11-02T16:08:49.537Z"
   },
   "httpie": {
-    "stars": 38684,
+    "stars": 38686,
     "version": "3.2.4",
     "lastCommit": "2024-12-17T17:30:35Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:22:30.031Z"
+    "updatedAt": "2026-11-02T16:10:30.401Z"
   },
   "hugging-face": {
-    "stars": 168356,
+    "stars": 168448,
     "version": "4.3.2",
-    "lastCommit": "2026-10-30T17:40:42Z",
-    "weeklyDownloads": 4831931,
-    "updatedAt": "2026-10-30T18:22:24.225Z"
+    "lastCommit": "2026-11-02T16:08:00Z",
+    "weeklyDownloads": 5025220,
+    "updatedAt": "2026-11-02T16:10:24.545Z"
   },
   "husky": {
-    "stars": 35370,
+    "stars": 35378,
     "version": "9.1.7",
     "lastCommit": "2026-03-19T23:03:16Z",
-    "weeklyDownloads": 50419612,
-    "updatedAt": "2026-10-30T18:20:47.844Z"
+    "weeklyDownloads": 49919897,
+    "updatedAt": "2026-11-02T16:08:41.238Z"
   },
   "insomnia": {
-    "stars": 40105,
+    "stars": 40111,
     "version": "core@13.4.0",
-    "lastCommit": "2026-10-30T10:05:35Z",
+    "lastCommit": "2026-11-02T10:25:32Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:22:18.230Z"
+    "updatedAt": "2026-11-02T16:10:18.459Z"
   },
   "iterm2": {
-    "stars": 18238,
+    "stars": 18248,
     "version": null,
-    "lastCommit": "2026-10-30T17:45:25Z",
+    "lastCommit": "2026-11-01T07:24:11Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:20:43.278Z"
+    "updatedAt": "2026-11-02T16:08:35.957Z"
   },
   "jenkins": {
-    "stars": 26707,
+    "stars": 26717,
     "version": "jenkins-2.580.2",
-    "lastCommit": "2026-10-30T07:24:20Z",
+    "lastCommit": "2026-11-02T13:36:50Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:21:52.838Z"
+    "updatedAt": "2026-11-02T16:09:52.544Z"
   },
   "jest": {
-    "stars": 45467,
+    "stars": 45472,
     "version": "30.5.2",
-    "lastCommit": "2026-10-26T22:56:15Z",
-    "weeklyDownloads": 62205960,
-    "updatedAt": "2026-10-30T18:21:54.577Z"
+    "lastCommit": "2026-11-02T15:15:04Z",
+    "weeklyDownloads": 61698091,
+    "updatedAt": "2026-11-02T16:09:54.537Z"
   },
   "jq": {
-    "stars": 35983,
+    "stars": 36014,
     "version": "jq-1.8.2",
-    "lastCommit": "2026-10-25T05:40:52Z",
+    "lastCommit": "2026-11-02T07:08:10Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:22:29.509Z"
+    "updatedAt": "2026-11-02T16:10:29.941Z"
   },
   "jujutsu": {
-    "stars": 32309,
+    "stars": 32340,
     "version": "v0.46.0",
-    "lastCommit": "2026-10-30T16:27:00Z",
+    "lastCommit": "2026-11-02T15:45:12Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:20:50.369Z"
+    "updatedAt": "2026-11-02T16:08:43.752Z"
   },
   "junit": {
-    "stars": 7059,
+    "stars": 7060,
     "version": "r6.1.3",
-    "lastCommit": "2026-10-30T16:19:48Z",
+    "lastCommit": "2026-11-02T07:26:35Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:22:01.193Z"
+    "updatedAt": "2026-11-02T16:10:01.060Z"
   },
   "k3s": {
-    "stars": 34286,
+    "stars": 34321,
     "version": "v1.37.1+k3s1",
-    "lastCommit": "2026-10-30T18:20:36Z",
+    "lastCommit": "2026-11-02T09:31:54Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:21:52.331Z"
+    "updatedAt": "2026-11-02T16:09:52.021Z"
   },
   "k6": {
-    "stars": 32080,
+    "stars": 32106,
     "version": "v2.3.0",
-    "lastCommit": "2026-10-29T10:20:02Z",
+    "lastCommit": "2026-11-02T13:44:46Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:22:00.497Z"
+    "updatedAt": "2026-11-02T16:10:00.297Z"
   },
   "k9s": {
-    "stars": 34901,
+    "stars": 34911,
     "version": "v0.51.0",
-    "lastCommit": "2026-10-29T16:46:11Z",
+    "lastCommit": "2026-11-02T11:12:37Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:21:53.541Z"
+    "updatedAt": "2026-11-02T16:09:53.419Z"
   },
   "kafka": {
-    "stars": 34099,
+    "stars": 34116,
     "version": null,
-    "lastCommit": "2026-10-30T18:19:03Z",
+    "lastCommit": "2026-11-02T16:06:24Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:21:23.552Z"
+    "updatedAt": "2026-11-02T16:09:26.355Z"
   },
   "kakoune": {
-    "stars": 11124,
+    "stars": 11128,
     "version": "v2026.05.21",
     "lastCommit": "2026-10-30T13:47:36Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:20:39.303Z"
+    "updatedAt": "2026-11-02T16:08:31.583Z"
   },
   "keycloak": {
-    "stars": 37614,
+    "stars": 37653,
     "version": "26.8.1",
-    "lastCommit": "2026-10-30T14:00:01Z",
+    "lastCommit": "2026-11-02T15:55:34Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:21:22.604Z"
+    "updatedAt": "2026-11-02T16:09:25.256Z"
   },
   "kitty": {
-    "stars": 35476,
+    "stars": 35509,
     "version": "v0.49.2",
-    "lastCommit": "2026-10-30T13:00:12Z",
+    "lastCommit": "2026-11-02T15:55:11Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:20:41.752Z"
+    "updatedAt": "2026-11-02T16:08:34.271Z"
   },
   "knip": {
-    "stars": 12556,
-    "version": "6.44.0",
-    "lastCommit": "2026-10-30T15:44:01Z",
-    "weeklyDownloads": 27006888,
-    "updatedAt": "2026-10-30T18:22:10.509Z"
+    "stars": 12576,
+    "version": "6.44.1",
+    "lastCommit": "2026-10-31T10:39:34Z",
+    "weeklyDownloads": 27536484,
+    "updatedAt": "2026-11-02T16:10:10.571Z"
   },
   "kubernetes": {
-    "stars": 128524,
+    "stars": 128835,
     "version": "v1.37.2",
-    "lastCommit": "2026-10-30T17:47:55Z",
+    "lastCommit": "2026-11-02T15:47:57Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:21:47.787Z"
+    "updatedAt": "2026-11-02T16:09:47.280Z"
   },
   "kysely": {
-    "stars": 14319,
-    "version": "0.29.7",
-    "lastCommit": "2026-10-30T07:45:41Z",
-    "weeklyDownloads": 27512830,
-    "updatedAt": "2026-10-30T18:21:44.704Z"
+    "stars": 14325,
+    "version": "0.29.8",
+    "lastCommit": "2026-11-02T07:46:15Z",
+    "weeklyDownloads": 27102095,
+    "updatedAt": "2026-11-02T16:09:44.091Z"
   },
   "langchain": {
-    "stars": 148719,
+    "stars": 148881,
     "version": "1.6.0",
-    "lastCommit": "2026-10-30T18:03:44Z",
-    "weeklyDownloads": 4151182,
-    "updatedAt": "2026-10-30T18:22:20.585Z"
+    "lastCommit": "2026-11-02T15:57:57Z",
+    "weeklyDownloads": 4055159,
+    "updatedAt": "2026-11-02T16:10:20.984Z"
   },
   "lapce": {
-    "stars": 38961,
+    "stars": 38970,
     "version": "v0.4.6",
     "lastCommit": "2026-10-09T00:41:19Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:20:39.979Z"
+    "updatedAt": "2026-11-02T16:08:32.330Z"
   },
   "laravel": {
-    "stars": 34991,
+    "stars": 34986,
     "version": "v13.39.0",
-    "lastCommit": "2026-10-30T14:12:19Z",
+    "lastCommit": "2026-11-02T15:53:27Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:21:19.589Z"
+    "updatedAt": "2026-11-02T16:09:22.260Z"
   },
   "lazygit": {
-    "stars": 83540,
+    "stars": 83608,
     "version": "v0.66.2",
-    "lastCommit": "2026-10-30T17:17:42Z",
+    "lastCommit": "2026-10-31T14:20:09Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:20:45.486Z"
+    "updatedAt": "2026-11-02T16:08:38.302Z"
   },
   "lazyvim": {
-    "stars": 27767,
+    "stars": 27786,
     "version": "v16.0.1",
     "lastCommit": "2026-10-28T09:09:52Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:20:41.275Z"
+    "updatedAt": "2026-11-02T16:08:33.664Z"
   },
   "lefthook": {
-    "stars": 8968,
+    "stars": 8975,
     "version": "2.2.2",
-    "lastCommit": "2026-10-26T06:06:45Z",
-    "weeklyDownloads": 8973843,
-    "updatedAt": "2026-10-30T18:20:48.155Z"
+    "lastCommit": "2026-11-02T06:04:28Z",
+    "weeklyDownloads": 9396722,
+    "updatedAt": "2026-11-02T16:08:41.526Z"
   },
   "lighthouse": {
-    "stars": 30981,
+    "stars": 31002,
     "version": "13.6.0",
-    "lastCommit": "2026-10-29T22:35:02Z",
-    "weeklyDownloads": 6886044,
-    "updatedAt": "2026-10-30T18:22:10.807Z"
+    "lastCommit": "2026-11-01T19:53:04Z",
+    "weeklyDownloads": 6876399,
+    "updatedAt": "2026-11-02T16:10:10.825Z"
   },
   "lint-staged": {
-    "stars": 14752,
+    "stars": 14754,
     "version": "17.6.0",
-    "lastCommit": "2026-09-26T05:59:32Z",
-    "weeklyDownloads": 41377697,
-    "updatedAt": "2026-10-30T18:20:48.462Z"
+    "lastCommit": "2026-10-31T16:51:17Z",
+    "weeklyDownloads": 40901736,
+    "updatedAt": "2026-11-02T16:08:41.803Z"
   },
   "lit": {
-    "stars": 21871,
+    "stars": 21876,
     "version": "3.3.3",
     "lastCommit": "2026-10-22T17:53:29Z",
-    "weeklyDownloads": 9654233,
-    "updatedAt": "2026-10-30T18:20:56.513Z"
+    "weeklyDownloads": 9611740,
+    "updatedAt": "2026-11-02T16:08:50.104Z"
   },
   "llama-cpp": {
-    "stars": 132866,
+    "stars": 133156,
     "version": "v0.8.0",
-    "lastCommit": "2026-10-30T17:36:21Z",
+    "lastCommit": "2026-11-02T15:47:39Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:22:20.089Z"
+    "updatedAt": "2026-11-02T16:10:20.436Z"
   },
   "llamaindex": {
-    "stars": 52745,
+    "stars": 52777,
     "version": "v0.14.25",
     "lastCommit": "2026-10-26T21:25:10Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:22:20.906Z"
+    "updatedAt": "2026-11-02T16:10:21.486Z"
   },
   "locust": {
-    "stars": 28254,
+    "stars": 28258,
     "version": "2.47.0",
-    "lastCommit": "2026-10-27T22:12:54Z",
+    "lastCommit": "2026-11-02T13:04:21Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:22:14.052Z"
+    "updatedAt": "2026-11-02T16:10:14.155Z"
   },
   "loki": {
-    "stars": 29094,
+    "stars": 29109,
     "version": "v3.7.9",
-    "lastCommit": "2026-10-30T18:20:59Z",
+    "lastCommit": "2026-11-02T16:06:45Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:21:51.125Z"
+    "updatedAt": "2026-11-02T16:09:50.813Z"
   },
   "mariadb": {
-    "stars": 8486,
+    "stars": 8505,
     "version": "mariadb-13.0.2",
-    "lastCommit": "2026-10-30T17:36:52Z",
+    "lastCommit": "2026-11-02T15:40:56Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:21:40.679Z"
+    "updatedAt": "2026-11-02T16:09:40.315Z"
   },
   "mcp": {
-    "stars": 9568,
+    "stars": 9592,
     "version": "2026-07-28",
-    "lastCommit": "2026-10-30T18:13:51Z",
+    "lastCommit": "2026-11-02T08:09:46Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:22:24.458Z"
+    "updatedAt": "2026-11-02T16:10:24.839Z"
   },
   "meilisearch": {
-    "stars": 59719,
-    "version": "v1.56.0",
-    "lastCommit": "2026-10-29T17:10:14Z",
+    "stars": 59757,
+    "version": "v1.56.1",
+    "lastCommit": "2026-11-02T13:01:50Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:21:41.617Z"
+    "updatedAt": "2026-11-02T16:09:41.323Z"
   },
   "memcached": {
-    "stars": 14300,
+    "stars": 14304,
     "version": null,
     "lastCommit": "2026-09-11T03:07:33Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:21:47.040Z"
+    "updatedAt": "2026-11-02T16:09:46.544Z"
   },
   "mermaid": {
-    "stars": 90933,
+    "stars": 90977,
     "version": "12.2.0",
-    "lastCommit": "2026-10-30T18:21:05Z",
-    "weeklyDownloads": 23974465,
-    "updatedAt": "2026-10-30T18:22:28.330Z"
+    "lastCommit": "2026-11-02T15:05:29Z",
+    "weeklyDownloads": 24391826,
+    "updatedAt": "2026-11-02T16:10:28.475Z"
   },
   "metabase": {
-    "stars": 50021,
+    "stars": 50111,
     "version": "v0.65.2",
-    "lastCommit": "2026-10-30T18:15:05Z",
+    "lastCommit": "2026-11-02T16:09:43Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:21:46.148Z"
+    "updatedAt": "2026-11-02T16:09:45.549Z"
   },
   "micro": {
-    "stars": 29797,
+    "stars": 29818,
     "version": "v2.0.15",
-    "lastCommit": "2026-10-30T00:27:21Z",
+    "lastCommit": "2026-11-02T00:24:22Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:20:39.733Z"
+    "updatedAt": "2026-11-02T16:08:32.029Z"
   },
   "minio": {
-    "stars": 61292,
+    "stars": 61289,
     "version": "RELEASE.2025-10-15T17-29-55Z",
     "lastCommit": "2026-04-24T17:54:39Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:21:43.611Z"
+    "updatedAt": "2026-11-02T16:09:43.014Z"
   },
   "mocha": {
-    "stars": 22916,
+    "stars": 22912,
     "version": "12.0.3",
-    "lastCommit": "2026-10-30T16:18:55Z",
-    "weeklyDownloads": 15878896,
-    "updatedAt": "2026-10-30T18:21:59.621Z"
+    "lastCommit": "2026-11-02T12:50:48Z",
+    "weeklyDownloads": 15642761,
+    "updatedAt": "2026-11-02T16:09:59.546Z"
   },
   "mongodb": {
-    "stars": 28665,
+    "stars": 28670,
     "version": null,
-    "lastCommit": "2026-10-30T18:16:55Z",
+    "lastCommit": "2026-11-02T15:47:54Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:21:36.220Z"
+    "updatedAt": "2026-11-02T16:09:36.046Z"
   },
   "motion": {
-    "stars": 34672,
+    "stars": 34805,
     "version": "14.9.0",
-    "lastCommit": "2026-10-30T13:57:21Z",
-    "weeklyDownloads": 33942328,
-    "updatedAt": "2026-10-30T18:21:02.846Z"
+    "lastCommit": "2026-11-02T13:49:35Z",
+    "weeklyDownloads": 33321532,
+    "updatedAt": "2026-11-02T16:09:02.650Z"
   },
   "msw": {
-    "stars": 18319,
+    "stars": 18328,
     "version": "3.0.3",
     "lastCommit": "2026-10-17T11:14:59Z",
-    "weeklyDownloads": 32040948,
-    "updatedAt": "2026-10-30T18:22:01.525Z"
+    "weeklyDownloads": 32045431,
+    "updatedAt": "2026-11-02T16:10:01.374Z"
   },
   "mui": {
-    "stars": 99281,
+    "stars": 99299,
     "version": "9.5.0",
-    "lastCommit": "2026-10-30T16:18:26Z",
-    "weeklyDownloads": 13830256,
-    "updatedAt": "2026-10-30T18:20:59.058Z"
+    "lastCommit": "2026-11-02T13:53:07Z",
+    "weeklyDownloads": 13641521,
+    "updatedAt": "2026-11-02T16:08:52.874Z"
   },
   "mypy": {
-    "stars": 20712,
+    "stars": 20714,
     "version": null,
-    "lastCommit": "2026-10-30T15:12:02Z",
+    "lastCommit": "2026-11-02T15:42:18Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:22:08.432Z"
+    "updatedAt": "2026-11-02T16:10:08.456Z"
   },
   "mysql": {
-    "stars": 12491,
+    "stars": 12492,
     "version": null,
     "lastCommit": "2026-10-28T05:39:43Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:21:40.376Z"
+    "updatedAt": "2026-11-02T16:09:40.048Z"
   },
   "n8n": {
-    "stars": 209133,
+    "stars": 209360,
     "version": "2.45.7",
-    "lastCommit": "2026-10-30T18:19:15Z",
-    "weeklyDownloads": 159754,
-    "updatedAt": "2026-10-30T18:22:24.763Z"
+    "lastCommit": "2026-11-02T16:10:17Z",
+    "weeklyDownloads": 135213,
+    "updatedAt": "2026-11-02T16:10:25.104Z"
   },
   "neo4j": {
-    "stars": 17378,
+    "stars": 17386,
     "version": "3.2.0-alpha08",
     "lastCommit": "2026-10-23T07:54:45Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:21:42.372Z"
+    "updatedAt": "2026-11-02T16:09:41.861Z"
   },
   "neon": {
-    "stars": 23286,
+    "stars": 23291,
     "version": "release-proxy-8853",
     "lastCommit": "2026-08-31T11:03:14Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:21:42.978Z"
+    "updatedAt": "2026-11-02T16:09:42.482Z"
   },
   "neovide": {
-    "stars": 15289,
-    "version": "0.16.2",
-    "lastCommit": "2026-10-30T05:33:04Z",
+    "stars": 15293,
+    "version": "0.17.1",
+    "lastCommit": "2026-11-01T05:31:31Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:20:44.983Z"
+    "updatedAt": "2026-11-02T16:08:37.803Z"
   },
   "neovim": {
-    "stars": 103251,
+    "stars": 103301,
     "version": "v0.12.6",
-    "lastCommit": "2026-10-30T15:42:22Z",
+    "lastCommit": "2026-11-02T16:06:06Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:20:37.706Z"
+    "updatedAt": "2026-11-02T16:08:29.732Z"
   },
   "nestjs": {
-    "stars": 76949,
+    "stars": 76967,
     "version": "12.3.2",
-    "lastCommit": "2026-10-30T13:07:45Z",
-    "weeklyDownloads": 23041723,
-    "updatedAt": "2026-10-30T18:21:19.055Z"
+    "lastCommit": "2026-11-02T12:50:20Z",
+    "weeklyDownloads": 22836756,
+    "updatedAt": "2026-11-02T16:09:18.922Z"
   },
   "netbeans": {
     "stars": 3145,
     "version": "31",
-    "lastCommit": "2026-10-30T13:34:28Z",
+    "lastCommit": "2026-11-02T09:09:57Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:20:38.794Z"
+    "updatedAt": "2026-11-02T16:08:30.910Z"
   },
   "nextjs": {
-    "stars": 143213,
-    "version": "16.4.3",
-    "lastCommit": "2026-10-30T18:20:34Z",
-    "weeklyDownloads": 90620731,
-    "updatedAt": "2026-10-30T18:20:52.105Z"
+    "stars": 143467,
+    "version": "16.4.4",
+    "lastCommit": "2026-11-02T16:07:06Z",
+    "weeklyDownloads": 89613141,
+    "updatedAt": "2026-11-02T16:08:45.685Z"
   },
   "nginx": {
-    "stars": 32014,
+    "stars": 32033,
     "version": "release-1.31.8",
     "lastCommit": "2026-10-29T18:53:16Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:21:48.788Z"
+    "updatedAt": "2026-11-02T16:09:48.437Z"
   },
   "nodejs": {
-    "stars": 123113,
+    "stars": 123194,
     "version": "v26.13.0",
-    "lastCommit": "2026-10-30T18:19:28Z",
+    "lastCommit": "2026-11-02T15:18:10Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:21:10.705Z"
+    "updatedAt": "2026-11-02T16:09:12.973Z"
   },
   "notepad-plus-plus": {
-    "stars": 29736,
+    "stars": 29771,
     "version": "v8.9.8.1",
-    "lastCommit": "2026-10-30T13:19:27Z",
+    "lastCommit": "2026-11-02T14:55:09Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:20:40.550Z"
+    "updatedAt": "2026-11-02T16:08:32.862Z"
   },
   "nushell": {
-    "stars": 40749,
+    "stars": 40760,
     "version": "0.116.1",
-    "lastCommit": "2026-10-30T13:48:27Z",
+    "lastCommit": "2026-11-02T15:46:09Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:20:44.461Z"
+    "updatedAt": "2026-11-02T16:08:37.172Z"
   },
   "nuxt": {
-    "stars": 61003,
+    "stars": 61021,
     "version": "4.6.3",
-    "lastCommit": "2026-10-30T17:52:37Z",
-    "weeklyDownloads": 3328960,
-    "updatedAt": "2026-10-30T18:20:54.198Z"
+    "lastCommit": "2026-11-02T14:06:58Z",
+    "weeklyDownloads": 3285990,
+    "updatedAt": "2026-11-02T16:08:47.613Z"
   },
   "nx": {
-    "stars": 29437,
-    "version": "24.0.2",
-    "lastCommit": "2026-10-30T18:16:47Z",
-    "weeklyDownloads": 14734534,
-    "updatedAt": "2026-10-30T18:21:53.318Z"
+    "stars": 29443,
+    "version": "24.0.3",
+    "lastCommit": "2026-11-02T15:56:50Z",
+    "weeklyDownloads": 14480663,
+    "updatedAt": "2026-11-02T16:09:53.094Z"
   },
   "oh-my-zsh": {
-    "stars": 190249,
+    "stars": 190287,
     "version": null,
-    "lastCommit": "2026-10-27T11:37:50Z",
+    "lastCommit": "2026-11-02T08:23:34Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:20:44.140Z"
+    "updatedAt": "2026-11-02T16:08:36.926Z"
   },
   "ollama": {
-    "stars": 185354,
+    "stars": 185675,
     "version": "v0.40.13",
-    "lastCommit": "2026-10-30T17:49:58Z",
+    "lastCommit": "2026-11-02T05:30:37Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:22:19.878Z"
+    "updatedAt": "2026-11-02T16:10:20.187Z"
   },
   "openapi-generator": {
-    "stars": 26842,
+    "stars": 26846,
     "version": "2.42.0",
-    "lastCommit": "2026-10-30T09:08:27Z",
-    "weeklyDownloads": 1885926,
-    "updatedAt": "2026-10-30T18:21:22.845Z"
+    "lastCommit": "2026-11-02T07:54:13Z",
+    "weeklyDownloads": 1942328,
+    "updatedAt": "2026-11-02T16:09:25.546Z"
   },
   "opensearch": {
-    "stars": 13936,
+    "stars": 13950,
     "version": "3.9.0",
-    "lastCommit": "2026-10-30T11:34:04Z",
+    "lastCommit": "2026-11-02T07:55:11Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:21:41.366Z"
+    "updatedAt": "2026-11-02T16:09:41.063Z"
   },
   "opentelemetry": {
-    "stars": 7720,
+    "stars": 7728,
     "version": "v0.164.0",
-    "lastCommit": "2026-10-30T17:27:52Z",
+    "lastCommit": "2026-11-02T16:01:38Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:21:51.404Z"
+    "updatedAt": "2026-11-02T16:09:51.081Z"
   },
   "opentofu": {
-    "stars": 30677,
+    "stars": 30702,
     "version": "v1.13.2",
-    "lastCommit": "2026-10-30T12:56:22Z",
+    "lastCommit": "2026-11-02T13:46:12Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:21:50.598Z"
+    "updatedAt": "2026-11-02T16:09:50.226Z"
   },
   "oxlint": {
-    "stars": 23276,
+    "stars": 23299,
     "version": "1.90.0",
-    "lastCommit": "2026-10-30T16:27:12Z",
-    "weeklyDownloads": 40919944,
-    "updatedAt": "2026-10-30T18:22:07.952Z"
+    "lastCommit": "2026-11-02T13:35:37Z",
+    "weeklyDownloads": 41899356,
+    "updatedAt": "2026-11-02T16:10:07.722Z"
   },
   "parcel": {
-    "stars": 44009,
+    "stars": 44008,
     "version": "2.16.4",
-    "lastCommit": "2026-10-28T02:50:29Z",
-    "weeklyDownloads": 451571,
-    "updatedAt": "2026-10-30T18:20:57.779Z"
+    "lastCommit": "2026-11-02T07:58:30Z",
+    "weeklyDownloads": 438074,
+    "updatedAt": "2026-11-02T16:08:51.468Z"
   },
   "pgadmin": {
-    "stars": 3916,
+    "stars": 3920,
     "version": null,
     "lastCommit": "2026-10-30T10:09:41Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:21:45.920Z"
+    "updatedAt": "2026-11-02T16:09:45.244Z"
   },
   "pgvector": {
-    "stars": 23538,
+    "stars": 23568,
     "version": null,
-    "lastCommit": "2026-10-28T22:47:29Z",
+    "lastCommit": "2026-10-31T22:12:50Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:21:44.168Z"
+    "updatedAt": "2026-11-02T16:09:43.526Z"
   },
   "phoenix": {
-    "stars": 23211,
+    "stars": 23214,
     "version": "v1.8.16",
-    "lastCommit": "2026-10-30T13:32:21Z",
+    "lastCommit": "2026-11-02T13:44:21Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:21:21.138Z"
+    "updatedAt": "2026-11-02T16:09:23.945Z"
   },
   "playwright": {
-    "stars": 98887,
+    "stars": 99109,
     "version": "1.64.1",
-    "lastCommit": "2026-10-30T16:55:40Z",
-    "weeklyDownloads": 104208877,
-    "updatedAt": "2026-10-30T18:21:55.061Z"
+    "lastCommit": "2026-11-02T16:04:18Z",
+    "weeklyDownloads": 104750936,
+    "updatedAt": "2026-11-02T16:09:54.819Z"
   },
   "pnpm": {
-    "stars": 36968,
+    "stars": 36996,
     "version": "12.16.1",
-    "lastCommit": "2026-10-30T16:10:44Z",
-    "weeklyDownloads": 308042610,
-    "updatedAt": "2026-10-30T18:21:10.491Z"
+    "lastCommit": "2026-11-02T16:08:36Z",
+    "weeklyDownloads": 309921885,
+    "updatedAt": "2026-11-02T16:09:12.708Z"
   },
   "pocketbase": {
-    "stars": 61625,
+    "stars": 61611,
     "version": "v0.40.6",
     "lastCommit": "2026-10-26T18:07:11Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:21:31.212Z"
+    "updatedAt": "2026-11-02T16:09:30.938Z"
   },
   "podman": {
-    "stars": 33150,
+    "stars": 33165,
     "version": "v6.1.4",
-    "lastCommit": "2026-10-30T16:53:06Z",
+    "lastCommit": "2026-11-02T10:09:09Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:21:51.834Z"
+    "updatedAt": "2026-11-02T16:09:51.547Z"
   },
   "postgresql": {
-    "stars": 22638,
+    "stars": 22674,
     "version": null,
-    "lastCommit": "2026-10-30T18:12:10Z",
+    "lastCommit": "2026-11-02T10:44:47Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:21:35.313Z"
+    "updatedAt": "2026-11-02T16:09:35.082Z"
   },
   "pre-commit": {
-    "stars": 15672,
+    "stars": 15678,
     "version": "v4.7.0",
     "lastCommit": "2026-10-20T17:15:55Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:20:46.205Z"
+    "updatedAt": "2026-11-02T16:08:39.264Z"
   },
   "preact": {
-    "stars": 38966,
-    "version": "11.1.0",
-    "lastCommit": "2026-10-30T17:56:12Z",
-    "weeklyDownloads": 53600090,
-    "updatedAt": "2026-10-30T18:20:54.929Z"
+    "stars": 38973,
+    "version": "11.1.1",
+    "lastCommit": "2026-11-02T09:47:04Z",
+    "weeklyDownloads": 53809691,
+    "updatedAt": "2026-11-02T16:08:48.533Z"
   },
   "prettier": {
-    "stars": 52381,
+    "stars": 52405,
     "version": "3.9.10",
-    "lastCommit": "2026-10-30T14:53:43Z",
-    "weeklyDownloads": 180056360,
-    "updatedAt": "2026-10-30T18:21:55.732Z"
+    "lastCommit": "2026-11-02T09:05:19Z",
+    "weeklyDownloads": 179463219,
+    "updatedAt": "2026-11-02T16:09:55.536Z"
   },
   "prisma": {
-    "stars": 47665,
+    "stars": 47664,
     "version": "8.0.0-rc.29",
-    "lastCommit": "2026-10-30T18:20:18Z",
-    "weeklyDownloads": 25568134,
-    "updatedAt": "2026-10-30T18:21:36.792Z"
+    "lastCommit": "2026-11-02T16:08:09Z",
+    "weeklyDownloads": 25158115,
+    "updatedAt": "2026-11-02T16:09:36.485Z"
   },
   "prometheus": {
-    "stars": 66855,
+    "stars": 66903,
     "version": "v3.15.1",
-    "lastCommit": "2026-10-30T16:58:54Z",
+    "lastCommit": "2026-11-02T15:31:54Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:21:50.859Z"
+    "updatedAt": "2026-11-02T16:09:50.555Z"
   },
   "pulumi": {
-    "stars": 25837,
+    "stars": 25841,
     "version": "v3.273.0",
-    "lastCommit": "2026-10-30T18:18:19Z",
+    "lastCommit": "2026-11-02T16:01:33Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:21:50.355Z"
+    "updatedAt": "2026-11-02T16:09:49.928Z"
   },
   "puppeteer": {
-    "stars": 95770,
+    "stars": 95789,
     "version": "25.16.0",
-    "lastCommit": "2026-10-30T15:20:46Z",
-    "weeklyDownloads": 15430952,
-    "updatedAt": "2026-10-30T18:22:00.202Z"
+    "lastCommit": "2026-11-02T15:44:01Z",
+    "weeklyDownloads": 15563365,
+    "updatedAt": "2026-11-02T16:10:00.065Z"
   },
   "pydantic": {
-    "stars": 29238,
+    "stars": 29269,
     "version": "v2.14.2",
-    "lastCommit": "2026-10-30T18:17:25Z",
+    "lastCommit": "2026-11-02T16:02:33Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:21:27.112Z"
+    "updatedAt": "2026-11-02T16:09:27.154Z"
   },
   "pyright": {
-    "stars": 15720,
+    "stars": 15724,
     "version": "1.1.414",
     "lastCommit": "2026-10-30T17:49:37Z",
-    "weeklyDownloads": 1218203,
-    "updatedAt": "2026-10-30T18:22:08.690Z"
+    "weeklyDownloads": 1240594,
+    "updatedAt": "2026-11-02T16:10:08.800Z"
   },
   "pytest": {
-    "stars": 14656,
+    "stars": 14661,
     "version": "9.2.0",
-    "lastCommit": "2026-10-30T10:38:55Z",
+    "lastCommit": "2026-11-02T06:01:40Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:22:00.752Z"
+    "updatedAt": "2026-11-02T16:10:00.572Z"
   },
   "python": {
-    "stars": 77714,
+    "stars": 77794,
     "version": null,
-    "lastCommit": "2026-10-30T18:03:31Z",
+    "lastCommit": "2026-11-02T15:29:11Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:21:22.071Z"
+    "updatedAt": "2026-11-02T16:09:24.779Z"
   },
   "qdrant": {
-    "stars": 35336,
+    "stars": 35387,
     "version": "v1.20.0",
-    "lastCommit": "2026-10-29T18:42:49Z",
+    "lastCommit": "2026-11-02T15:49:34Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:21:43.856Z"
+    "updatedAt": "2026-11-02T16:09:43.303Z"
   },
   "qwik": {
-    "stars": 22066,
+    "stars": 22068,
     "version": "1.20.3",
-    "lastCommit": "2026-10-30T17:13:17Z",
-    "weeklyDownloads": 63257,
-    "updatedAt": "2026-10-30T18:20:55.266Z"
+    "lastCommit": "2026-11-02T08:18:33Z",
+    "weeklyDownloads": 61565,
+    "updatedAt": "2026-11-02T16:08:48.808Z"
   },
   "rabbitmq": {
-    "stars": 13951,
+    "stars": 13953,
     "version": "v4.4.0",
-    "lastCommit": "2026-10-30T17:23:27Z",
+    "lastCommit": "2026-11-02T14:28:10Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:21:23.347Z"
+    "updatedAt": "2026-11-02T16:09:26.097Z"
   },
   "radix-ui": {
-    "stars": 19449,
+    "stars": 19465,
     "version": "1.8.1",
     "lastCommit": "2026-10-14T21:52:47Z",
-    "weeklyDownloads": 24909307,
-    "updatedAt": "2026-10-30T18:20:58.761Z"
+    "weeklyDownloads": 25395600,
+    "updatedAt": "2026-11-02T16:08:52.575Z"
   },
   "rails": {
-    "stars": 58855,
+    "stars": 58846,
     "version": "v8.1.4",
-    "lastCommit": "2026-10-30T16:31:23Z",
+    "lastCommit": "2026-11-02T11:16:05Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:21:19.832Z"
+    "updatedAt": "2026-11-02T16:09:22.546Z"
   },
   "react": {
-    "stars": 251765,
+    "stars": 252091,
     "version": "19.3.1",
-    "lastCommit": "2026-10-30T18:07:32Z",
-    "weeklyDownloads": 244728980,
-    "updatedAt": "2026-10-30T18:20:51.819Z"
+    "lastCommit": "2026-10-31T13:53:11Z",
+    "weeklyDownloads": 243715739,
+    "updatedAt": "2026-11-02T16:08:45.362Z"
   },
   "react-hook-form": {
-    "stars": 44896,
+    "stars": 44899,
     "version": "7.91.0",
-    "lastCommit": "2026-10-30T02:38:30Z",
-    "weeklyDownloads": 60500655,
-    "updatedAt": "2026-10-30T18:21:10.235Z"
+    "lastCommit": "2026-11-01T11:20:47Z",
+    "weeklyDownloads": 59789804,
+    "updatedAt": "2026-11-02T16:09:09.673Z"
   },
   "react-router": {
-    "stars": 56626,
+    "stars": 56631,
     "version": "8.5.1",
-    "lastCommit": "2026-10-30T16:05:28Z",
-    "weeklyDownloads": 74131496,
-    "updatedAt": "2026-10-30T18:20:55.469Z"
+    "lastCommit": "2026-11-02T15:47:41Z",
+    "weeklyDownloads": 73416002,
+    "updatedAt": "2026-11-02T16:08:49.037Z"
   },
   "react-three-fiber": {
-    "stars": 33373,
+    "stars": 33430,
     "version": "9.8.2",
     "lastCommit": "2026-10-21T15:24:39Z",
-    "weeklyDownloads": 8889297,
-    "updatedAt": "2026-10-30T18:21:06.256Z"
+    "weeklyDownloads": 9331572,
+    "updatedAt": "2026-11-02T16:09:05.981Z"
   },
   "redis": {
-    "stars": 77096,
+    "stars": 77142,
     "version": "8.10.3",
-    "lastCommit": "2026-10-30T07:28:56Z",
+    "lastCommit": "2026-11-02T13:50:49Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:21:35.969Z"
+    "updatedAt": "2026-11-02T16:09:35.702Z"
   },
   "redux-toolkit": {
-    "stars": 11236,
+    "stars": 11239,
     "version": "2.13.0",
-    "lastCommit": "2026-10-28T13:25:03Z",
-    "weeklyDownloads": 45830769,
-    "updatedAt": "2026-10-30T18:20:58.013Z"
+    "lastCommit": "2026-11-02T16:03:01Z",
+    "weeklyDownloads": 45814989,
+    "updatedAt": "2026-11-02T16:08:51.802Z"
   },
   "release-please": {
-    "stars": 7712,
+    "stars": 7724,
     "version": "17.11.2",
-    "lastCommit": "2026-10-22T20:14:31Z",
-    "weeklyDownloads": 466057,
-    "updatedAt": "2026-10-30T18:20:49.846Z"
+    "lastCommit": "2026-10-31T22:42:02Z",
+    "weeklyDownloads": 522987,
+    "updatedAt": "2026-11-02T16:08:43.238Z"
   },
   "renovate": {
-    "stars": 22964,
-    "version": "44.198.2",
-    "lastCommit": "2026-10-30T18:00:04Z",
-    "weeklyDownloads": 559294,
-    "updatedAt": "2026-10-30T18:20:50.886Z"
+    "stars": 22991,
+    "version": "44.202.1",
+    "lastCommit": "2026-11-02T16:07:33Z",
+    "weeklyDownloads": 559492,
+    "updatedAt": "2026-11-02T16:08:44.316Z"
   },
   "ripgrep": {
-    "stars": 69568,
+    "stars": 69643,
     "version": "15.2.0",
     "lastCommit": "2026-10-27T18:31:31Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:22:29.253Z"
+    "updatedAt": "2026-11-02T16:10:29.639Z"
   },
   "rollup": {
-    "stars": 26305,
-    "version": "4.66.0",
-    "lastCommit": "2026-10-30T18:07:33Z",
-    "weeklyDownloads": 161304681,
-    "updatedAt": "2026-10-30T18:20:57.492Z"
+    "stars": 26304,
+    "version": "4.67.4",
+    "lastCommit": "2026-11-02T09:14:10Z",
+    "weeklyDownloads": 159572396,
+    "updatedAt": "2026-11-02T16:08:51.155Z"
   },
   "ruff": {
-    "stars": 50336,
+    "stars": 50393,
     "version": "0.17.3",
-    "lastCommit": "2026-10-30T18:20:56Z",
+    "lastCommit": "2026-11-02T16:08:41Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:22:08.192Z"
+    "updatedAt": "2026-11-02T16:10:07.967Z"
   },
   "rust": {
-    "stars": 120846,
+    "stars": 120976,
     "version": "1.99.1",
-    "lastCommit": "2026-10-30T18:21:12Z",
+    "lastCommit": "2026-11-02T15:48:26Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:21:21.695Z"
+    "updatedAt": "2026-11-02T16:09:24.475Z"
   },
   "selenium": {
-    "stars": 34572,
+    "stars": 34583,
     "version": "selenium-4.52.0",
-    "lastCommit": "2026-10-30T18:20:53Z",
+    "lastCommit": "2026-11-02T15:26:40Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:21:59.850Z"
+    "updatedAt": "2026-11-02T16:09:59.777Z"
   },
   "semantic-release": {
-    "stars": 24148,
+    "stars": 24150,
     "version": "25.0.9",
-    "lastCommit": "2026-10-30T14:12:52Z",
-    "weeklyDownloads": 4445058,
-    "updatedAt": "2026-10-30T18:20:49.292Z"
+    "lastCommit": "2026-10-31T12:09:33Z",
+    "weeklyDownloads": 4477898,
+    "updatedAt": "2026-11-02T16:08:42.636Z"
   },
   "semgrep": {
-    "stars": 17362,
+    "stars": 17408,
     "version": "v1.183.0",
-    "lastCommit": "2026-10-30T00:01:59Z",
+    "lastCommit": "2026-11-02T00:03:04Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:22:09.920Z"
+    "updatedAt": "2026-11-02T16:10:09.947Z"
   },
   "shadcn-ui": {
-    "stars": 126977,
+    "stars": 127181,
     "version": "4.23.0",
-    "lastCommit": "2026-10-30T09:01:57Z",
-    "weeklyDownloads": 16711958,
-    "updatedAt": "2026-10-30T18:20:53.482Z"
+    "lastCommit": "2026-11-02T07:02:07Z",
+    "weeklyDownloads": 16872065,
+    "updatedAt": "2026-11-02T16:08:46.882Z"
   },
   "shellcheck": {
-    "stars": 40260,
+    "stars": 40272,
     "version": "v0.11.0",
     "lastCommit": "2026-10-26T01:55:51Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:22:09.405Z"
+    "updatedAt": "2026-11-02T16:10:09.394Z"
   },
   "socket-io": {
-    "stars": 63228,
+    "stars": 63235,
     "version": "4.8.4",
     "lastCommit": "2026-09-29T09:18:54Z",
-    "weeklyDownloads": 25855983,
-    "updatedAt": "2026-10-30T18:21:27.399Z"
+    "weeklyDownloads": 26171098,
+    "updatedAt": "2026-11-02T16:09:27.411Z"
   },
   "solidjs": {
-    "stars": 36193,
+    "stars": 36207,
     "version": "1.9.18",
-    "lastCommit": "2026-10-30T18:19:41Z",
-    "weeklyDownloads": 10851484,
-    "updatedAt": "2026-10-30T18:20:54.635Z"
+    "lastCommit": "2026-11-02T16:01:45Z",
+    "weeklyDownloads": 10874774,
+    "updatedAt": "2026-11-02T16:08:48.233Z"
   },
   "sonarqube": {
-    "stars": 11129,
+    "stars": 11137,
     "version": "26.10.0.133078",
-    "lastCommit": "2026-10-29T20:07:26Z",
+    "lastCommit": "2026-10-30T20:06:29Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:21:56.275Z"
+    "updatedAt": "2026-11-02T16:09:56.060Z"
   },
   "spring-boot": {
-    "stars": 81712,
+    "stars": 81731,
     "version": "v4.1.2",
-    "lastCommit": "2026-10-30T16:38:37Z",
+    "lastCommit": "2026-11-02T13:55:56Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:21:20.043Z"
+    "updatedAt": "2026-11-02T16:09:22.856Z"
   },
   "sqlalchemy": {
-    "stars": 12274,
+    "stars": 12277,
     "version": "rel_2_1_6",
-    "lastCommit": "2026-10-29T16:01:18Z",
+    "lastCommit": "2026-11-01T15:19:46Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:21:45.189Z"
+    "updatedAt": "2026-11-02T16:09:44.526Z"
   },
   "starship": {
-    "stars": 60516,
+    "stars": 60567,
     "version": "v1.27.0",
-    "lastCommit": "2026-10-30T16:20:07Z",
+    "lastCommit": "2026-11-02T12:50:14Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:20:43.883Z"
+    "updatedAt": "2026-11-02T16:08:36.597Z"
   },
   "storybook": {
-    "stars": 91413,
+    "stars": 91427,
     "version": "10.6.5",
-    "lastCommit": "2026-10-30T16:28:32Z",
-    "weeklyDownloads": 34930908,
-    "updatedAt": "2026-10-30T18:21:03.127Z"
+    "lastCommit": "2026-11-02T16:01:55Z",
+    "weeklyDownloads": 34638462,
+    "updatedAt": "2026-11-02T16:09:02.945Z"
   },
   "strapi": {
-    "stars": 73407,
+    "stars": 73424,
     "version": "5.60.0",
-    "lastCommit": "2026-10-30T16:13:38Z",
-    "weeklyDownloads": 336880,
-    "updatedAt": "2026-10-30T18:21:30.933Z"
+    "lastCommit": "2026-11-02T16:07:30Z",
+    "weeklyDownloads": 315951,
+    "updatedAt": "2026-11-02T16:09:30.714Z"
   },
   "stryker": {
-    "stars": 3302,
+    "stars": 3311,
     "version": "10.1.1",
     "lastCommit": "2026-10-30T02:27:41Z",
-    "weeklyDownloads": 5510545,
-    "updatedAt": "2026-10-30T18:22:14.612Z"
+    "weeklyDownloads": 5628226,
+    "updatedAt": "2026-11-02T16:10:14.800Z"
   },
   "stylelint": {
     "stars": 11541,
     "version": "17.16.0",
-    "lastCommit": "2026-10-29T06:55:28Z",
-    "weeklyDownloads": 13880937,
-    "updatedAt": "2026-10-30T18:22:04.864Z"
+    "lastCommit": "2026-11-02T14:18:19Z",
+    "weeklyDownloads": 13934910,
+    "updatedAt": "2026-11-02T16:10:04.691Z"
   },
   "supabase": {
-    "stars": 114342,
+    "stars": 114440,
     "version": "2.118.0",
-    "lastCommit": "2026-10-30T18:13:11Z",
-    "weeklyDownloads": 55261565,
-    "updatedAt": "2026-10-30T18:21:35.597Z"
+    "lastCommit": "2026-11-02T16:05:44Z",
+    "weeklyDownloads": 63804172,
+    "updatedAt": "2026-11-02T16:09:35.359Z"
   },
   "svelte": {
-    "stars": 88493,
+    "stars": 88528,
     "version": "5.57.3",
-    "lastCommit": "2026-10-30T16:24:11Z",
-    "weeklyDownloads": 8995097,
-    "updatedAt": "2026-10-30T18:20:52.928Z"
+    "lastCommit": "2026-11-02T14:47:46Z",
+    "weeklyDownloads": 9053823,
+    "updatedAt": "2026-11-02T16:08:46.376Z"
   },
   "sveltekit": {
-    "stars": 20885,
+    "stars": 20892,
     "version": "3.1.1",
-    "lastCommit": "2026-10-30T17:13:29Z",
-    "weeklyDownloads": 4473234,
-    "updatedAt": "2026-10-30T18:20:55.692Z"
+    "lastCommit": "2026-11-02T16:02:14Z",
+    "weeklyDownloads": 4503568,
+    "updatedAt": "2026-11-02T16:08:49.295Z"
   },
   "swagger-ui": {
-    "stars": 29065,
+    "stars": 29071,
     "version": "5.34.1",
-    "lastCommit": "2026-10-30T13:34:06Z",
-    "weeklyDownloads": 174253,
-    "updatedAt": "2026-10-30T18:21:31.484Z"
+    "lastCommit": "2026-10-31T23:02:33Z",
+    "weeklyDownloads": 173140,
+    "updatedAt": "2026-11-02T16:09:31.207Z"
   },
   "tailscale": {
-    "stars": 38357,
+    "stars": 38527,
     "version": "v1.104.4",
-    "lastCommit": "2026-10-30T18:19:45Z",
+    "lastCommit": "2026-11-02T16:04:53Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:21:54.009Z"
+    "updatedAt": "2026-11-02T16:09:54.029Z"
   },
   "tailwindcss": {
-    "stars": 98020,
+    "stars": 98287,
     "version": "4.3.3",
-    "lastCommit": "2026-10-19T15:50:56Z",
-    "weeklyDownloads": 167732034,
-    "updatedAt": "2026-10-30T18:20:52.635Z"
+    "lastCommit": "2026-11-02T15:42:14Z",
+    "weeklyDownloads": 166043861,
+    "updatedAt": "2026-11-02T16:08:46.150Z"
   },
   "tanstack-query": {
-    "stars": 50502,
-    "version": "5.105.0",
-    "lastCommit": "2026-10-30T18:20:01Z",
-    "weeklyDownloads": 79359425,
-    "updatedAt": "2026-10-30T18:20:58.483Z"
+    "stars": 50520,
+    "version": "5.105.2",
+    "lastCommit": "2026-11-02T13:56:24Z",
+    "weeklyDownloads": 78954917,
+    "updatedAt": "2026-11-02T16:08:52.340Z"
   },
   "temporal": {
-    "stars": 24091,
+    "stars": 24136,
     "version": "v1.32.1",
-    "lastCommit": "2026-10-30T17:59:09Z",
+    "lastCommit": "2026-11-02T15:56:59Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:21:27.641Z"
+    "updatedAt": "2026-11-02T16:09:27.682Z"
   },
   "terraform": {
-    "stars": 50088,
+    "stars": 50349,
     "version": "v1.17.1",
-    "lastCommit": "2026-10-30T17:57:37Z",
+    "lastCommit": "2026-11-02T15:06:40Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:21:48.069Z"
+    "updatedAt": "2026-11-02T16:09:47.591Z"
   },
   "testcontainers": {
-    "stars": 2632,
+    "stars": 2633,
     "version": "12.2.1",
-    "lastCommit": "2026-10-27T15:20:59Z",
-    "weeklyDownloads": 11659253,
-    "updatedAt": "2026-10-30T18:22:14.315Z"
+    "lastCommit": "2026-11-02T00:45:31Z",
+    "weeklyDownloads": 11729395,
+    "updatedAt": "2026-11-02T16:10:14.448Z"
   },
   "testing-library": {
-    "stars": 19675,
+    "stars": 19678,
     "version": "16.3.3",
     "lastCommit": "2026-08-27T17:40:18Z",
-    "weeklyDownloads": 90148607,
-    "updatedAt": "2026-10-30T18:21:56.547Z"
+    "weeklyDownloads": 89491596,
+    "updatedAt": "2026-11-02T16:09:56.279Z"
   },
   "threejs": {
-    "stars": 117230,
+    "stars": 117430,
     "version": "0.187.0",
-    "lastCommit": "2026-10-30T14:56:31Z",
-    "weeklyDownloads": 31677583,
-    "updatedAt": "2026-10-30T18:20:53.686Z"
+    "lastCommit": "2026-11-02T15:44:54Z",
+    "weeklyDownloads": 32733258,
+    "updatedAt": "2026-11-02T16:08:47.128Z"
   },
   "tig": {
     "stars": 13374,
     "version": "tig-2.6.1",
     "lastCommit": "2026-10-13T16:57:21Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:20:46.943Z"
+    "updatedAt": "2026-11-02T16:08:40.127Z"
   },
   "tmux": {
-    "stars": 50073,
+    "stars": 50122,
     "version": "3.8",
-    "lastCommit": "2026-10-30T12:25:11Z",
+    "lastCommit": "2026-11-01T16:02:29Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:20:42.491Z"
+    "updatedAt": "2026-11-02T16:08:35.137Z"
   },
   "traefik": {
-    "stars": 65418,
+    "stars": 65441,
     "version": "v3.7.17",
-    "lastCommit": "2026-10-30T15:30:08Z",
+    "lastCommit": "2026-11-02T10:42:06Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:21:49.336Z"
+    "updatedAt": "2026-11-02T16:09:48.913Z"
   },
   "trivy": {
-    "stars": 38863,
+    "stars": 38914,
     "version": "v0.76.1",
-    "lastCommit": "2026-10-30T13:51:36Z",
+    "lastCommit": "2026-11-02T08:37:30Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:22:10.216Z"
+    "updatedAt": "2026-11-02T16:10:10.244Z"
   },
   "trpc": {
-    "stars": 40746,
+    "stars": 40761,
     "version": "11.22.1",
-    "lastCommit": "2026-10-28T23:19:07Z",
-    "weeklyDownloads": 7926494,
-    "updatedAt": "2026-10-30T18:21:14.927Z"
+    "lastCommit": "2026-11-02T16:07:23Z",
+    "weeklyDownloads": 7939851,
+    "updatedAt": "2026-11-02T16:09:14.603Z"
   },
   "trufflehog": {
-    "stars": 28782,
+    "stars": 28819,
     "version": "v3.99.7",
-    "lastCommit": "2026-10-30T14:54:10Z",
+    "lastCommit": "2026-11-02T16:07:57Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:20:51.373Z"
+    "updatedAt": "2026-11-02T16:08:44.883Z"
   },
   "turborepo": {
-    "stars": 31279,
+    "stars": 31295,
     "version": "2.11.10",
-    "lastCommit": "2026-10-30T16:35:21Z",
-    "weeklyDownloads": 42467242,
-    "updatedAt": "2026-10-30T18:21:53.075Z"
+    "lastCommit": "2026-11-02T15:58:28Z",
+    "weeklyDownloads": 42552873,
+    "updatedAt": "2026-11-02T16:09:52.828Z"
   },
   "turso": {
-    "stars": 17302,
+    "stars": 17310,
     "version": "libsql-server-v0.24.32",
     "lastCommit": "2026-10-17T08:02:28Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:21:43.295Z"
+    "updatedAt": "2026-11-02T16:09:42.755Z"
   },
   "typeorm": {
-    "stars": 36663,
+    "stars": 36665,
     "version": "1.1.2",
     "lastCommit": "2026-10-29T06:46:16Z",
-    "weeklyDownloads": 7240234,
-    "updatedAt": "2026-10-30T18:21:44.946Z"
+    "weeklyDownloads": 7100734,
+    "updatedAt": "2026-11-02T16:09:44.306Z"
   },
   "typescript": {
-    "stars": 111681,
+    "stars": 111721,
     "version": "7.0.2",
-    "lastCommit": "2026-10-30T16:01:45Z",
-    "weeklyDownloads": 401223752,
-    "updatedAt": "2026-10-30T18:20:56.761Z"
+    "lastCommit": "2026-11-02T12:34:35Z",
+    "weeklyDownloads": 400973874,
+    "updatedAt": "2026-11-02T16:08:50.363Z"
   },
   "typesense": {
-    "stars": 27064,
+    "stars": 27076,
     "version": "v30.2",
     "lastCommit": "2026-10-30T15:21:59Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:21:41.878Z"
+    "updatedAt": "2026-11-02T16:09:41.586Z"
   },
   "valkey": {
-    "stars": 27564,
+    "stars": 27582,
     "version": "9.1.3",
-    "lastCommit": "2026-10-30T15:31:54Z",
+    "lastCommit": "2026-11-02T15:59:38Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:21:46.790Z"
+    "updatedAt": "2026-11-02T16:09:46.264Z"
   },
   "vault": {
-    "stars": 36450,
+    "stars": 36458,
     "version": "v2.2.1",
-    "lastCommit": "2026-10-29T22:02:36Z",
+    "lastCommit": "2026-11-01T00:39:36Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:21:52.587Z"
+    "updatedAt": "2026-11-02T16:09:52.302Z"
   },
   "vercel-ai-sdk": {
-    "stars": 27628,
-    "version": "7.0.158",
-    "lastCommit": "2026-10-30T18:14:00Z",
-    "weeklyDownloads": 41889127,
-    "updatedAt": "2026-10-30T18:22:20.319Z"
+    "stars": 27695,
+    "version": "7.0.159",
+    "lastCommit": "2026-11-02T16:10:10Z",
+    "weeklyDownloads": 42581470,
+    "updatedAt": "2026-11-02T16:10:20.751Z"
   },
   "vim": {
     "stars": 41178,
     "version": null,
-    "lastCommit": "2026-10-30T18:09:13Z",
+    "lastCommit": "2026-11-01T17:32:45Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:20:39.042Z"
+    "updatedAt": "2026-11-02T16:08:31.326Z"
   },
   "vite": {
-    "stars": 83626,
+    "stars": 83671,
     "version": "8.3.5",
-    "lastCommit": "2026-10-30T10:47:46Z",
-    "weeklyDownloads": 251989031,
-    "updatedAt": "2026-10-30T18:20:52.365Z"
+    "lastCommit": "2026-11-02T09:23:48Z",
+    "weeklyDownloads": 249686964,
+    "updatedAt": "2026-11-02T16:08:45.896Z"
   },
   "vitest": {
-    "stars": 17311,
+    "stars": 17323,
     "version": "5.0.5",
-    "lastCommit": "2026-10-30T09:18:26Z",
-    "weeklyDownloads": 169698842,
-    "updatedAt": "2026-10-30T18:21:54.279Z"
+    "lastCommit": "2026-11-02T16:04:36Z",
+    "weeklyDownloads": 169972244,
+    "updatedAt": "2026-11-02T16:09:54.293Z"
   },
   "vs-code": {
-    "stars": 194374,
+    "stars": 194481,
     "version": "1.144.0",
-    "lastCommit": "2026-10-30T18:17:02Z",
+    "lastCommit": "2026-11-02T16:01:41Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:20:37.467Z"
+    "updatedAt": "2026-11-02T16:08:29.450Z"
   },
   "vscodium": {
-    "stars": 33882,
+    "stars": 33916,
     "version": "1.143.17232",
-    "lastCommit": "2026-10-30T02:01:58Z",
+    "lastCommit": "2026-10-31T02:11:53Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:20:40.252Z"
+    "updatedAt": "2026-11-02T16:08:32.604Z"
   },
   "vue": {
-    "stars": 54799,
+    "stars": 55028,
     "version": "3.5.44",
-    "lastCommit": "2026-10-30T07:58:14Z",
-    "weeklyDownloads": 24168162,
-    "updatedAt": "2026-10-30T18:20:53.972Z"
+    "lastCommit": "2026-11-02T10:40:30Z",
+    "weeklyDownloads": 24583048,
+    "updatedAt": "2026-11-02T16:08:47.381Z"
   },
   "webpack": {
-    "stars": 65969,
+    "stars": 65977,
     "version": "5.112.2",
-    "lastCommit": "2026-10-30T18:12:57Z",
-    "weeklyDownloads": 76441971,
-    "updatedAt": "2026-10-30T18:20:57.002Z"
+    "lastCommit": "2026-11-02T16:00:56Z",
+    "weeklyDownloads": 75897501,
+    "updatedAt": "2026-11-02T16:08:50.596Z"
   },
   "wezterm": {
-    "stars": 29399,
+    "stars": 29424,
     "version": "20240203-110809-5046fc22",
     "lastCommit": "2026-10-26T07:26:28Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:20:41.958Z"
+    "updatedAt": "2026-11-02T16:08:34.583Z"
   },
   "windows-terminal": {
-    "stars": 105288,
+    "stars": 105315,
     "version": "v1.25.2733.0",
-    "lastCommit": "2026-10-30T17:23:33Z",
+    "lastCommit": "2026-10-31T03:04:33Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:20:43.008Z"
+    "updatedAt": "2026-11-02T16:08:35.651Z"
   },
   "zed": {
-    "stars": 92426,
+    "stars": 92559,
     "version": "v1.26.2",
-    "lastCommit": "2026-10-30T18:15:29Z",
+    "lastCommit": "2026-11-02T16:00:13Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:20:37.978Z"
+    "updatedAt": "2026-11-02T16:08:29.973Z"
   },
   "zellij": {
-    "stars": 35897,
+    "stars": 35918,
     "version": "v0.45.1",
-    "lastCommit": "2026-10-30T16:09:49Z",
+    "lastCommit": "2026-11-02T15:46:54Z",
     "weeklyDownloads": null,
-    "updatedAt": "2026-10-30T18:20:42.741Z"
+    "updatedAt": "2026-11-02T16:08:35.356Z"
   },
   "zod": {
-    "stars": 44231,
+    "stars": 44246,
     "version": "4.6.7",
-    "lastCommit": "2026-10-29T21:12:58Z",
-    "weeklyDownloads": 442969207,
-    "updatedAt": "2026-10-30T18:21:26.878Z"
+    "lastCommit": "2026-10-30T20:36:35Z",
+    "weeklyDownloads": 444545419,
+    "updatedAt": "2026-11-02T16:09:26.929Z"
   },
   "zustand": {
-    "stars": 58885,
+    "stars": 58894,
     "version": "5.0.16",
     "lastCommit": "2026-10-22T04:23:23Z",
-    "weeklyDownloads": 86597741,
-    "updatedAt": "2026-10-30T18:20:58.231Z"
+    "weeklyDownloads": 87812553,
+    "updatedAt": "2026-11-02T16:08:52.115Z"
   }
 }
