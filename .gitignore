@@ -43,3 +43,10 @@ next-env.d.ts
 # local
 /artifacts/
 /.playwright-mcp/
+CLAUDE.md
+AGENTS.md
+GEMINI.md
+COMECE-AQUI.md
+.claude/
+docs/prompts/
+.playwright-mcp/
